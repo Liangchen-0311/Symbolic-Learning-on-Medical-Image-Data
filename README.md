@@ -1,4 +1,4 @@
-# Fracture Symbolic v3 — Symbolic Feature Discovery for Bone Fracture Classification
+# Fracture Symbolic  — Symbolic Feature Discovery for Bone Fracture Classification
 
 A reinforcement learning framework that discovers interpretable symbolic formulas for bone fracture classification on the HBFMID dataset (10 fracture types). A PPO agent searches over tensor operator sequences (edge detection, morphology, multiscale, Gabor, etc.) to construct feature extraction programs, which are then encoded and fed to ensemble classifiers.
 
