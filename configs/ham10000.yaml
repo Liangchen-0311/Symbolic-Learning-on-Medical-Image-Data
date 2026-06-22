@@ -1,0 +1,113 @@
+dataset: ham10000
+device: cuda:0
+gpu_id: 0
+
+dataset_options:
+  data_dir: /home/lqg1/code_8T/25/lxw/4/skin_symbolic_v3/datasets
+  metadata_csv: /home/lqg1/code_8T/25/lxw/4/ham10000_data/HAM10000_metadata.csv
+  # v3: unified resolution — all steps use original 600x450
+  resolution: 600
+  num_classes: 7
+  class_names:
+    - akiec    # Actinic Keratosis / Bowen's Disease
+    - bcc      # Basal Cell Carcinoma
+    - bkl      # Benign Keratosis
+    - df       # Dermatofibroma
+    - mel      # Melanoma
+    - nv       # Melanocytic Nevus
+    - vasc     # Vascular Lesion
+  task: multiclass
+
+model:
+  max_depth: 6
+  max_sequence_length: 15
+  embedding_dim: 128
+  hidden_size: 256
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  batch_size: 32          # smaller batch for 600x450 (more GPU memory)
+  eval_batch_size: 32
+  iterations: 5000
+  episodes_per_iteration: 20  # fewer episodes per iter (slower per episode at full res)
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.05
+  max_grad_norm: 0.5
+  n_epochs_ppo: 6
+  batch_size_ppo: 64
+  binary_op_bias: 0.3
+  length_penalty: 0.01
+  diversity_penalty: 0.08
+  num_classes: 7
+  entropy_coef_start: 0.10
+  entropy_coef_end: 0.005
+  entropy_decay_fraction: 0.5
+  lr_warmup_iterations: 20
+  # v3: early stopping — if no new formula added in N iterations, skip to next bank
+  early_stop_patience: 150
+
+strategy:
+  # v3: larger bank to accommodate more formulas
+  feature_bank_size: 1500
+  min_accuracy_threshold: 0.15  
+  correlation_threshold: 0.90    # raised from 0.85 to allow more diverse formulas
+  correlation_threshold_full: 0.85  # raised from 0.80
+  adaptive_threshold: true
+  threshold_warmup_fraction: 0.6
+  reward_type: balanced_accuracy
+  use_hierarchical_eval: true
+  hierarchical_switch_fraction: 0.3
+  diversity_penalty: 0.05        # lowered from 0.08 to reduce penalty on similar formulas
+  medical_interpretability_bonus: 0.05
+
+multi_bank:
+  enabled: true
+  num_banks: 4
+  bank_configs:
+    - {max_depth: 4, max_sequence_length: 8, focus: "color_structure"}
+    - {max_depth: 6, max_sequence_length: 15, binary_op_bias: 0.5, focus: "texture_pattern"}
+    - {max_depth: 5, max_sequence_length: 12, focus: "border_morphology"}
+    - {max_depth: 6, max_sequence_length: 15, focus: "multiscale_symmetry"}
+
+# v2/v3: exclude tophat (produces near-zero output on smooth signals)
+exclude_operators: ['tophat']
+
+phase3:
+  distribution_stats:
+    n_stats: 16
+    n_regions: 7
+    features_per_body: 112
+
+  fisher_vector:
+    n_patches: 64
+    pca_dim: 16
+    gmm_k: 32
+    fv_dim: 1024
+
+  kernel_map:
+    order: 1
+    top_k_features: 5000
+
+  l1_select_target: 5000
+  interaction_top_k: 100
+
+classifier:
+  weight_decay_sweep: [1, 5, 10, 20, 50]
+  epochs: 50
+  train_samples_per_class: -1
+  use_smote: false
+  use_class_weight: true
+
+# v3: Phase A pre-filter + full-resolution validation
+validation:
+  prefilter_acc_threshold: 0.05   # Phase A: lowered to get ~1500 formulas
+  fullres_acc_threshold: 0.12     # Phase B: full-res validation threshold
+
+checkpoint_interval: 200
+output_dir: outputs（smote）
+augment: true
