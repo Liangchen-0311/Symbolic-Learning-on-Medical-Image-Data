@@ -1,0 +1,6 @@
+path: /home/lqg1/code_8T/25/lxw/4/fracture_symbolic_v3/dataset_split
+train: train/images
+val: val/images
+test: test/images
+nc: 10
+names: ['Comminuted', 'Greenstick', 'Healthy', 'Linear', 'Oblique Displaced', 'Oblique', 'Segmental', 'Spiral', 'Transverse Displaced', 'Transverse']
