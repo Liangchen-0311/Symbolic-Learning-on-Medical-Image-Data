@@ -1,0 +1,98 @@
+dataset: brain_tumor
+device: cuda:0
+gpu_id: 0
+
+dataset_options:
+  data_dir: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain Tumor MRI Dataset
+  resolution: 96           # tiny for a fast end-to-end smoke test
+  val_fraction: 0.15
+  split_seed: 42
+  num_classes: 4
+  class_names:
+    - glioma
+    - meningioma
+    - pituitary
+    - notumor
+  task: multiclass
+
+terminal_tokens: [I_GRAY, I_BLUR, I_GRAD, I_LOCALSTD, I_LOG, I_LBP]
+
+model:
+  max_depth: 4
+  max_sequence_length: 8
+  embedding_dim: 64
+  hidden_size: 128
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  batch_size: 16
+  eval_batch_size: 128
+  iterations: 15
+  episodes_per_iteration: 8
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.05
+  max_grad_norm: 0.5
+  n_epochs_ppo: 4
+  batch_size_ppo: 32
+  binary_op_bias: 0.3
+  length_penalty: 0.01
+  diversity_penalty: 0.08
+  num_classes: 4
+  entropy_coef_start: 0.10
+  entropy_coef_end: 0.005
+  entropy_decay_fraction: 0.5
+  lr_warmup_iterations: 5
+  early_stop_patience: 1000
+
+strategy:
+  feature_bank_size: 60
+  min_accuracy_threshold: 0.26
+  correlation_threshold: 0.95
+  correlation_threshold_full: 0.90
+  adaptive_threshold: true
+  threshold_warmup_fraction: 0.6
+  reward_type: balanced_accuracy
+  use_hierarchical_eval: true
+  hierarchical_switch_fraction: 0.3
+  diversity_penalty: 0.05
+
+multi_bank:
+  enabled: true
+  num_banks: 2
+  bank_configs:
+    - {max_depth: 4, max_sequence_length: 8, focus: "intensity_structure"}
+    - {max_depth: 4, max_sequence_length: 8, focus: "bilateral_symmetry"}
+
+exclude_operators:
+  - tophat
+
+phase3:
+  distribution_stats:
+    n_stats: 16
+    n_regions: 7
+    features_per_body: 112
+  l1_select_target: 5000
+  interaction_top_k: 100
+
+classifier:
+  light_cv: true          # tiny HGB grid + skip sample_weight variants (data is balanced)
+  use_smote: false
+  use_class_weight: true
+
+validation:
+  signature_subset_size: 400
+  min_quality_keep_fraction: 0.8
+  dedup_correlation_threshold: 0.95
+  max_formulas: 200
+
+step6:
+  permutation_importance: false
+
+checkpoint_interval: 200
+output_dir: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke2
+augment: true

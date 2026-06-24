@@ -1,0 +1,29 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 5 → 6
+======================================================================
+
+======================================================================
+  STEP 5: Train Classifier (v2 — HGB Variants with sample_weight, no SMOTE)
+======================================================================
+  17 formulas x 112 stats = 1020 dims
+  Train: 4760 | Val: 840 | Test: 1600, 4 classes
+  Train dist: {0: 1190, 1: 1190, 2: 1190, 3: 1190}
+  Val dist:   {0: 210, 1: 210, 2: 210, 3: 210}
+  Test dist:  {0: 400, 1: 400, 2: 400, 3: 400}
+  Removing 5 constant features...
+  Non-constant features: 1015 / 1020
+  ANOVA pre-selection: top-1000 from 1015 features
+  After ANOVA: 1000 features
+  MI pool: top-1015, then MI top-1000
+  After MI: 1000 features
+  Sample weights: min=1.000, max=1.000
+
+  --- Method 1: HistGB + ANOVA (baseline) ---
+  Best: max_iter=300, lr=0.1, max_depth=5, K=500, cv_acc=0.941, cv_bal=0.941
+  Test: acc=0.897, bal_acc=0.897, AUC=0.971
+
+  --- Method 2: HistGB + ANOVA + sample_weight ---

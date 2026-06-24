@@ -1,0 +1,126 @@
+dataset: brain_tumor
+device: cuda:0
+gpu_id: 0
+dataset_options:
+  data_dir: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain
+    Tumor MRI Dataset
+  resolution: 224
+  val_fraction: 0.15
+  split_seed: 42
+  num_classes: 4
+  class_names:
+  - glioma
+  - meningioma
+  - pituitary
+  - notumor
+  task: multiclass
+terminal_tokens:
+- I_GRAY
+- I_BLUR
+- I_GRAD
+- I_LOCALSTD
+- I_LOG
+- I_LBP
+model:
+  max_depth: 6
+  max_sequence_length: 15
+  embedding_dim: 128
+  hidden_size: 256
+  num_layers: 2
+  dropout: 0.1
+training:
+  batch_size: 32
+  eval_batch_size: 256
+  iterations: 3000
+  episodes_per_iteration: 20
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.05
+  max_grad_norm: 0.5
+  n_epochs_ppo: 6
+  batch_size_ppo: 64
+  binary_op_bias: 0.3
+  length_penalty: 0.01
+  diversity_penalty: 0.08
+  num_classes: 4
+  entropy_coef_start: 0.1
+  entropy_coef_end: 0.005
+  entropy_decay_fraction: 0.5
+  lr_warmup_iterations: 20
+  early_stop_patience: 150
+strategy:
+  feature_bank_size: 1500
+  min_accuracy_threshold: 0.3
+  correlation_threshold: 0.9
+  correlation_threshold_full: 0.85
+  adaptive_threshold: true
+  threshold_warmup_fraction: 0.6
+  reward_type: balanced_accuracy
+  use_hierarchical_eval: true
+  hierarchical_switch_fraction: 0.3
+  diversity_penalty: 0.05
+multi_bank:
+  enabled: true
+  num_banks: 4
+  bank_configs:
+  - max_depth: 4
+    max_sequence_length: 8
+    focus: intensity_structure
+  - max_depth: 6
+    max_sequence_length: 15
+    binary_op_bias: 0.5
+    focus: texture_pattern
+  - max_depth: 5
+    max_sequence_length: 12
+    focus: border_morphology
+  - max_depth: 6
+    max_sequence_length: 15
+    focus: bilateral_symmetry
+exclude_operators:
+- tophat
+- classic_edge_x
+- classic_edge_y
+- classic_laplacian
+- classic_gabor_0
+- classic_gabor_45
+- classic_gabor_90
+- conv3x3_0
+- conv3x3_1
+- conv3x3_2
+- conv3x3_3
+- conv3x3_4
+- conv3x3_5
+- conv3x3_6
+- conv3x3_7
+- conv5x5_0
+- conv5x5_1
+- conv5x5_2
+- conv5x5_3
+phase3:
+  distribution_stats:
+    n_stats: 16
+    n_regions: 7
+    features_per_body: 112
+  l1_select_target: 5000
+  interaction_top_k: 100
+classifier:
+  light_cv: false
+  use_smote: false
+  use_class_weight: true
+validation:
+  signature_subset_size: 1200
+  min_quality_keep_fraction: 0.7
+  dedup_correlation_threshold: 0.95
+  max_formulas: 800
+  focus_pair:
+  - glioma
+  - meningioma
+  focus_weight: 0.5
+step6:
+  permutation_importance: false
+checkpoint_interval: 200
+output_dir: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_dir3
+augment: true

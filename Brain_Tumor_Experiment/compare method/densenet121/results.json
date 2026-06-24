@@ -1,0 +1,14 @@
+{
+  "method": "densenet121",
+  "acc": 0.9525,
+  "bal_acc": 0.9525,
+  "auc": 0.9930609375,
+  "per_class": {
+    "glioma": 0.8175,
+    "meningioma": 0.9925,
+    "pituitary": 1.0,
+    "notumor": 1.0
+  },
+  "time_seconds": 311.8822274208069,
+  "epochs": 30
+}

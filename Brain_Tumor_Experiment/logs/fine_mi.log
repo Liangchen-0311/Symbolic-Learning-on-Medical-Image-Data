@@ -1,0 +1,45 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 5 → 5
+======================================================================
+
+======================================================================
+  STEP 5: Train Classifier (v2 — HGB Variants with sample_weight, no SMOTE)
+======================================================================
+  800 formulas x 120 stats = 96000 dims
+  Train: 4760 | Val: 840 | Test: 1600, 4 classes
+  Train dist: {0: 1190, 1: 1190, 2: 1190, 3: 1190}
+  Val dist:   {0: 210, 1: 210, 2: 210, 3: 210}
+  Test dist:  {0: 400, 1: 400, 2: 400, 3: 400}
+  Removing 425 constant features...
+  Non-constant features: 95575 / 96000
+  ANOVA pre-selection: top-1000 from 95575 features
+  After ANOVA: 1000 features
+  CV: light_cv=True, methods=['hgb_baseline', 'hgb_mi'], K=[200], n_configs=2, MI=True
+  MI pool: top-3000, then MI top-1000
+  After MI: 1000 features
+  Sample weights: min=1.000, max=1.000
+
+  --- Method 1: HistGB + ANOVA (baseline) ---
+  Best: max_iter=300, lr=0.05, max_depth=5, K=200, cv_acc=0.936, cv_bal=0.936
+  Test: acc=0.910, bal_acc=0.910, AUC=0.971
+
+  --- Method 3: HistGB + MI ---
+  Best: cfg=(300, 0.05, 5), K=200, cv_acc=0.935, cv_bal=0.935
+  Test: acc=0.912, bal_acc=0.912, AUC=0.971
+
+  ============================================================
+  COMPARISON SUMMARY (v2 — HGB Variants with sample_weight)
+  ============================================================
+    hgb_baseline             : acc=0.910, bal_acc=0.910, AUC=0.971 cv_acc=0.936, cv_bal=0.936
+    hgb_mi                   : acc=0.912, bal_acc=0.912, AUC=0.971 cv_acc=0.935, cv_bal=0.935 <-- BEST
+
+  Results saved to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_dir3_fine_mi
+  Best method: hgb_mi (acc=0.912, bal_acc=0.912, AUC=0.971)
+
+======================================================================
+  Pipeline Complete!
+======================================================================

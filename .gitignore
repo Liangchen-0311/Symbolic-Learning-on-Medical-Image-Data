@@ -1,0 +1,28 @@
+# ---- Large regenerable artifacts (NOT committed) ----
+# Extracted feature matrices: up to 4.4GB each, fully regenerable by re-running
+# step4 from the validated formulas. Far over GitHub's 100MB/file limit.
+*.npz
+
+# Raw datasets (public Kaggle data; see README for source/download).
+Brain Tumor MRI Dataset/
+datasets/
+
+# Model checkpoints / weights (regenerable; large binaries).
+*.pth
+*.pt
+best_weights.pth
+
+# RL training checkpoints (intermediate, regenerable) + cloud-uploader cruft.
+**/checkpoints/
+**/feature_bank_resume/
+*.baiduyun.uploading.cfg
+*.baiduyun.*
+
+# Torch/HF caches
+*.cache/
+
+# ---- OS / editor cruft ----
+.DS_Store
+._*
+**/__pycache__/
+*.pyc

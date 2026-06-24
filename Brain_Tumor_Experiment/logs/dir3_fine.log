@@ -1,0 +1,354 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 4 → 6
+======================================================================
+
+======================================================================
+  STEP 4: Extract Features
+======================================================================
+  800 unique bodies from 800 formulas
+  Distribution encoding: 12 stats x 10 regions = 120/body
+
+  Extracting features for train...
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+Step4 train:   0%|          | 0/75 [00:00<?, ?batch/s]Step4 train:   1%|▏         | 1/75 [00:06<08:20,  6.76s/batch]Step4 train:   3%|▎         | 2/75 [00:10<06:22,  5.23s/batch]Step4 train:   4%|▍         | 3/75 [00:15<05:42,  4.75s/batch]Step4 train:   5%|▌         | 4/75 [00:19<05:19,  4.51s/batch]Step4 train:   7%|▋         | 5/75 [00:23<05:06,  4.39s/batch]Step4 train:   8%|▊         | 6/75 [00:27<04:57,  4.31s/batch]Step4 train:   9%|▉         | 7/75 [00:31<04:53,  4.31s/batch]Step4 train:  11%|█         | 8/75 [00:36<04:50,  4.34s/batch]Step4 train:  12%|█▏        | 9/75 [00:40<04:45,  4.33s/batch]Step4 train:  13%|█▎        | 10/75 [00:45<04:43,  4.36s/batch]Step4 train:  15%|█▍        | 11/75 [00:49<04:38,  4.35s/batch]Step4 train:  16%|█▌        | 12/75 [00:53<04:33,  4.34s/batch]Step4 train:  17%|█▋        | 13/75 [00:58<04:31,  4.37s/batch]Step4 train:  19%|█▊        | 14/75 [01:02<04:26,  4.36s/batch]Step4 train:  20%|██        | 15/75 [01:06<04:23,  4.39s/batch]Step4 train:  21%|██▏       | 16/75 [01:11<04:18,  4.38s/batch]Step4 train:  23%|██▎       | 17/75 [01:16<04:23,  4.54s/batch]Step4 train:  24%|██▍       | 18/75 [01:20<04:15,  4.49s/batch]Step4 train:  25%|██▌       | 19/75 [01:24<04:09,  4.45s/batch]Step4 train:  27%|██▋       | 20/75 [01:29<04:03,  4.43s/batch]Step4 train:  28%|██▊       | 21/75 [01:33<03:57,  4.39s/batch]Step4 train:  29%|██▉       | 22/75 [01:37<03:50,  4.34s/batch]Step4 train:  31%|███       | 23/75 [01:42<03:44,  4.32s/batch]Step4 train:  32%|███▏      | 24/75 [01:46<03:40,  4.32s/batch]Step4 train:  33%|███▎      | 25/75 [01:50<03:37,  4.35s/batch]Step4 train:  35%|███▍      | 26/75 [01:55<03:32,  4.33s/batch]Step4 train:  36%|███▌      | 27/75 [01:59<03:28,  4.34s/batch]Step4 train:  37%|███▋      | 28/75 [02:03<03:22,  4.31s/batch]Step4 train:  39%|███▊      | 29/75 [02:07<03:17,  4.30s/batch]Step4 train:  40%|████      | 30/75 [02:12<03:13,  4.31s/batch]Step4 train:  41%|████▏     | 31/75 [02:16<03:08,  4.29s/batch]Step4 train:  43%|████▎     | 32/75 [02:20<03:03,  4.26s/batch]Step4 train:  44%|████▍     | 33/75 [02:29<03:54,  5.59s/batch]Step4 train:  45%|████▌     | 34/75 [02:41<05:13,  7.65s/batch]Step4 train:  47%|████▋     | 35/75 [02:54<06:00,  9.01s/batch]Step4 train:  48%|████▊     | 36/75 [03:06<06:27,  9.94s/batch]Step4 train:  49%|████▉     | 37/75 [03:18<06:42, 10.60s/batch]Step4 train:  51%|█████     | 38/75 [03:30<06:49, 11.07s/batch]Step4 train:  52%|█████▏    | 39/75 [03:42<06:49, 11.38s/batch]Step4 train:  53%|█████▎    | 40/75 [03:55<06:49, 11.70s/batch]Step4 train:  55%|█████▍    | 41/75 [04:07<06:42, 11.85s/batch]Step4 train:  56%|█████▌    | 42/75 [04:19<06:34, 11.95s/batch]Step4 train:  57%|█████▋    | 43/75 [04:31<06:23, 11.99s/batch]Step4 train:  59%|█████▊    | 44/75 [04:43<06:13, 12.06s/batch]Step4 train:  60%|██████    | 45/75 [04:55<06:02, 12.09s/batch]Step4 train:  61%|██████▏   | 46/75 [05:08<05:51, 12.11s/batch]Step4 train:  63%|██████▎   | 47/75 [05:20<05:41, 12.19s/batch]Step4 train:  64%|██████▍   | 48/75 [05:32<05:29, 12.19s/batch]Step4 train:  65%|██████▌   | 49/75 [05:44<05:16, 12.18s/batch]Step4 train:  67%|██████▋   | 50/75 [05:56<05:04, 12.18s/batch]Step4 train:  68%|██████▊   | 51/75 [06:09<04:52, 12.18s/batch]Step4 train:  69%|██████▉   | 52/75 [06:16<04:05, 10.68s/batch]Step4 train:  71%|███████   | 53/75 [06:20<03:12,  8.75s/batch]Step4 train:  72%|███████▏  | 54/75 [06:24<02:34,  7.38s/batch]Step4 train:  73%|███████▎  | 55/75 [06:29<02:11,  6.59s/batch]Step4 train:  75%|███████▍  | 56/75 [06:33<01:51,  5.88s/batch]Step4 train:  76%|███████▌  | 57/75 [06:37<01:36,  5.38s/batch]Step4 train:  77%|███████▋  | 58/75 [06:42<01:25,  5.00s/batch]Step4 train:  79%|███████▊  | 59/75 [06:46<01:16,  4.76s/batch]Step4 train:  80%|████████  | 60/75 [06:50<01:08,  4.58s/batch]Step4 train:  81%|████████▏ | 61/75 [06:54<01:02,  4.46s/batch]Step4 train:  83%|████████▎ | 62/75 [06:58<00:56,  4.38s/batch]Step4 train:  84%|████████▍ | 63/75 [07:02<00:51,  4.30s/batch]Step4 train:  85%|████████▌ | 64/75 [07:07<00:47,  4.36s/batch]Step4 train:  87%|████████▋ | 65/75 [07:12<00:44,  4.45s/batch]Step4 train:  88%|████████▊ | 66/75 [07:16<00:40,  4.51s/batch]Step4 train:  89%|████████▉ | 67/75 [07:22<00:38,  4.85s/batch]Step4 train:  91%|█████████ | 68/75 [07:26<00:33,  4.79s/batch]Step4 train:  92%|█████████▏| 69/75 [07:31<00:27,  4.62s/batch]Step4 train:  93%|█████████▎| 70/75 [07:35<00:22,  4.48s/batch]Step4 train:  95%|█████████▍| 71/75 [07:39<00:17,  4.39s/batch]Step4 train:  96%|█████████▌| 72/75 [07:43<00:13,  4.34s/batch]Step4 train:  97%|█████████▋| 73/75 [07:47<00:08,  4.30s/batch]Step4 train:  99%|█████████▊| 74/75 [07:52<00:04,  4.27s/batch]Step4 train: 100%|██████████| 75/75 [07:55<00:00,  4.07s/batch]Step4 train: 100%|██████████| 75/75 [07:55<00:00,  6.34s/batch]
+  train: (4760, 96000)
+
+  Extracting features for val...
+  BrainTumor val: 840 images
+    glioma      (Glioma tumor      ):   210
+    meningioma  (Meningioma tumor  ):   210
+    pituitary   (Pituitary tumor   ):   210
+    notumor     (No tumor          ):   210
+Step4 val:   0%|          | 0/14 [00:00<?, ?batch/s]Step4 val:   7%|▋         | 1/14 [00:04<00:56,  4.35s/batch]Step4 val:  14%|█▍        | 2/14 [00:08<00:50,  4.23s/batch]Step4 val:  21%|██▏       | 3/14 [00:12<00:46,  4.20s/batch]Step4 val:  29%|██▊       | 4/14 [00:16<00:41,  4.18s/batch]Step4 val:  36%|███▌      | 5/14 [00:20<00:37,  4.17s/batch]Step4 val:  43%|████▎     | 6/14 [00:25<00:34,  4.36s/batch]Step4 val:  50%|█████     | 7/14 [00:29<00:30,  4.31s/batch]Step4 val:  57%|█████▋    | 8/14 [00:34<00:25,  4.26s/batch]Step4 val:  64%|██████▍   | 9/14 [00:38<00:21,  4.22s/batch]Step4 val:  71%|███████▏  | 10/14 [00:42<00:16,  4.19s/batch]Step4 val:  79%|███████▊  | 11/14 [00:46<00:12,  4.19s/batch]Step4 val:  86%|████████▌ | 12/14 [00:51<00:08,  4.38s/batch]Step4 val:  93%|█████████▎| 13/14 [00:55<00:04,  4.28s/batch]Step4 val: 100%|██████████| 14/14 [00:58<00:00,  3.98s/batch]Step4 val: 100%|██████████| 14/14 [00:58<00:00,  4.19s/batch]
+  val: (840, 96000)
+
+  Extracting features for test...
+  BrainTumor test: 1600 images
+    glioma      (Glioma tumor      ):   400
+    meningioma  (Meningioma tumor  ):   400
+    pituitary   (Pituitary tumor   ):   400
+    notumor     (No tumor          ):   400
+Step4 test:   0%|          | 0/25 [00:00<?, ?batch/s]Step4 test:   4%|▍         | 1/25 [00:04<01:46,  4.44s/batch]Step4 test:   8%|▊         | 2/25 [00:08<01:38,  4.28s/batch]Step4 test:  12%|█▏        | 3/25 [00:12<01:31,  4.18s/batch]Step4 test:  16%|█▌        | 4/25 [00:16<01:26,  4.14s/batch]Step4 test:  20%|██        | 5/25 [00:20<01:22,  4.10s/batch]Step4 test:  24%|██▍       | 6/25 [00:24<01:17,  4.09s/batch]Step4 test:  28%|██▊       | 7/25 [00:28<01:13,  4.08s/batch]Step4 test:  32%|███▏      | 8/25 [00:32<01:09,  4.08s/batch]Step4 test:  36%|███▌      | 9/25 [00:37<01:05,  4.06s/batch]Step4 test:  40%|████      | 10/25 [00:41<01:00,  4.05s/batch]Step4 test:  44%|████▍     | 11/25 [00:45<00:56,  4.05s/batch]Step4 test:  48%|████▊     | 12/25 [00:49<00:52,  4.04s/batch]Step4 test:  52%|█████▏    | 13/25 [00:53<00:48,  4.04s/batch]Step4 test:  56%|█████▌    | 14/25 [00:57<00:44,  4.08s/batch]Step4 test:  60%|██████    | 15/25 [01:01<00:40,  4.07s/batch]Step4 test:  64%|██████▍   | 16/25 [01:05<00:36,  4.05s/batch]Step4 test:  68%|██████▊   | 17/25 [01:09<00:32,  4.04s/batch]Step4 test:  72%|███████▏  | 18/25 [01:13<00:29,  4.20s/batch]Step4 test:  76%|███████▌  | 19/25 [01:17<00:24,  4.15s/batch]Step4 test:  80%|████████  | 20/25 [01:22<00:20,  4.12s/batch]Step4 test:  84%|████████▍ | 21/25 [01:26<00:16,  4.08s/batch]Step4 test:  88%|████████▊ | 22/25 [01:30<00:12,  4.06s/batch]Step4 test:  92%|█████████▏| 23/25 [01:34<00:08,  4.06s/batch]Step4 test:  96%|█████████▌| 24/25 [01:38<00:04,  4.04s/batch]Step4 test: 100%|██████████| 25/25 [01:42<00:00,  4.04s/batch]Step4 test: 100%|██████████| 25/25 [01:42<00:00,  4.09s/batch]
+  test: (1600, 96000)
+  Features saved: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_dir3_fine/features.npz
+
+======================================================================
+  STEP 5: Train Classifier (v2 — HGB Variants with sample_weight, no SMOTE)
+======================================================================
+  800 formulas x 120 stats = 96000 dims
+  Train: 4760 | Val: 840 | Test: 1600, 4 classes
+  Train dist: {0: 1190, 1: 1190, 2: 1190, 3: 1190}
+  Val dist:   {0: 210, 1: 210, 2: 210, 3: 210}
+  Test dist:  {0: 400, 1: 400, 2: 400, 3: 400}
+  Removing 425 constant features...
+  Non-constant features: 95575 / 96000
+  ANOVA pre-selection: top-1000 from 95575 features
+  After ANOVA: 1000 features
+  CV: light_cv=False, methods=['hgb_baseline', 'hgb_sample_weight'], K=[100, 200, 300, 500], n_configs=5, MI=False
+  Sample weights: min=1.000, max=1.000
+
+  --- Method 1: HistGB + ANOVA (baseline) ---
+  Best: max_iter=300, lr=0.1, max_depth=5, K=500, cv_acc=0.947, cv_bal=0.947
+  Test: acc=0.916, bal_acc=0.916, AUC=0.975
+
+  --- Method 2: HistGB + ANOVA + sample_weight ---
+  Best: cfg=(300, 0.1, 5), K=500, cv_acc=0.947, cv_bal=0.947
+  Test: acc=0.916, bal_acc=0.916, AUC=0.975
+
+  ============================================================
+  COMPARISON SUMMARY (v2 — HGB Variants with sample_weight)
+  ============================================================
+    hgb_baseline             : acc=0.916, bal_acc=0.916, AUC=0.975 cv_acc=0.947, cv_bal=0.947 <-- BEST
+    hgb_sample_weight        : acc=0.916, bal_acc=0.916, AUC=0.975 cv_acc=0.947, cv_bal=0.947
+
+  Results saved to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_dir3_fine
+  Best method: hgb_baseline (acc=0.916, bal_acc=0.916, AUC=0.975)
+
+======================================================================
+  STEP 6: Generate Interpretability Report
+======================================================================
+======================================================================
+BRAIN TUMOR MRI SYMBOLIC FEATURE INTERPRETABILITY REPORT
+======================================================================
+
+Total validated formulas: 800
+Feature dimensions: 800 formulas x 120 stats (12 stats x 10 regions) = 96000
+Best classifier method: hgb_baseline
+
+TOP-20 FORMULAS BY ANOVA-F QUALITY (step 3):
+--------------------------------------------------
+   1. F= 1025.14  I_LOCALSTD edge_mag I_BLUR negate corner_harris negate gabor_mag blur_7x7 dilate gabor_90 subtract border_sharp negate normalize
+   2. F=  708.74  I_LOCALSTD edge_xx edge_mag edge_yy opening flip_h negate edge_mag lr_symmetry edge_mag normalize
+   3. F=  632.37  I_LOG I_LBP multiply edge_mag I_BLUR multiply I_GRAD multiply edge_mag pow2 normalize sigmoid closing normalize
+   4. F=  535.71  I_LBP pow2 negate local_std_5x5 gabor_45 local_std_5x5 edge_yy abs opening log1p_abs gabor_0 lbp_like relu opening
+   5. F=  479.38  I_LOCALSTD edge_mag edge_y edge_mag edge_xx edge_mag flip_h corner_harris I_GRAD flip_h multiply
+   6. F=  460.59  I_GRAY I_GRAY diag_symmetry local_range log1p_abs subtract abs
+   7. F=  455.62  I_GRAY border_sharp edge_yy sqrt_abs stride_pool_4 texture_entropy dilate texture_entropy stride_pool_4 texture_entropy normalize
+   8. F=  441.20  I_GRAD flip_h I_GRAD multiply abs flip_h abs high_freq downsample_2x edge_y opening gabor_0 tb_symmetry lbp_like
+   9. F=  436.68  I_GRAD diag_symmetry closing dilate I_GRAY multiply local_range pow2 I_BLUR subtract normalize opening I_LOCALSTD subtract
+  10. F=  434.70  I_BLUR corner_harris gabor_mag high_freq negate local_var opening gabor_mag edge_mag border_sharp edge_mag flip_h blur edge_orient
+  11. F=  432.34  I_LOG log1p_abs blur_7x7 laplacian flip_v edge_mag local_range high_freq I_GRAD multiply pow2 texture_entropy local_std_5x5 opening
+  12. F=  430.21  I_BLUR I_GRAY lbp_like closing high_freq edge_x subtract
+  13. F=  423.04  I_BLUR abs edge_x flip_h gabor_mag local_range flip_v
+  14. F=  422.29  I_GRAY relu edge_x local_std_5x5 local_range dilate flip_v
+  15. F=  422.09  I_BLUR blur dilate edge_x lbp_like flip_v border_sharp
+  16. F=  420.06  I_GRAY log1p_abs edge_yy I_BLUR log1p_abs edge_x opening local_var local_contrast I_LOCALSTD subtract subtract low_freq log1p_abs
+  17. F=  418.49  I_GRAY dilate flip_h flip_v high_freq closing texture_entropy
+  18. F=  409.44  I_BLUR gabor_mag I_GRAD subtract local_std_5x5 edge_y high_freq gabor_mag dog gabor_0 local_range downsample_2x lr_symmetry normalize
+  19. F=  408.75  I_GRAY corner_harris local_range corner_harris local_contrast edge_mag normalize flip_v I_LOCALSTD edge_x edge_y sigmoid texture_entropy multiply
+  20. F=  404.83  I_BLUR normalize log1p_abs I_GRAY diag_symmetry edge_mag subtract
+
+CLASSIFIER FEATURE ANALYSIS:
+--------------------------------------------------
+  Method: hgb_baseline
+  Feature selection: ANOVA (top-500)
+  Selected 500 features
+  (HistGB has no feature_importances_; using selection scores as ranking)
+  Top-20 features by anova_fscore:
+     1. formula[682].skew (anova_fscore=2032.8009)
+     2. formula[478].mean_q2 (anova_fscore=1980.2644)
+     3. formula[71].skew (anova_fscore=1935.6986)
+     4. formula[453].skew (anova_fscore=1911.5374)
+     5. formula[170].std_bottom (anova_fscore=1900.9531)
+     6. formula[447].mean_q2 (anova_fscore=1824.9955)
+     7. formula[170].mean_bottom (anova_fscore=1820.1098)
+     8. formula[102].mean_q2 (anova_fscore=1804.3407)
+     9. formula[779].kurtosis (anova_fscore=1798.8267)
+    10. formula[161].mean_q2 (anova_fscore=1780.6080)
+    11. formula[223].mean_q2 (anova_fscore=1766.1570)
+    12. formula[448].stat_69 (anova_fscore=1764.9701)
+    13. formula[779].skew (anova_fscore=1754.9875)
+    14. formula[590].skew (anova_fscore=1749.0184)
+    15. formula[557].q90 (anova_fscore=1744.4495)
+    16. formula[71].q10 (anova_fscore=1742.7222)
+    17. formula[43].skew (anova_fscore=1740.3048)
+    18. formula[434].stat_109 (anova_fscore=1729.2870)
+    19. formula[487].skew (anova_fscore=1726.5587)
+    20. formula[359].skew (anova_fscore=1724.7225)
+
+OPERATOR FREQUENCY ANALYSIS:
+--------------------------------------------------
+  Total operator occurrences: 7334
+  Unique operators: 47
+
+  edge_mag                 :  367 (  5.0%)
+  subtract                 :  341 (  4.6%)
+  texture_entropy          :  316 (  4.3%) [BRAIN-MRI]
+  multiply                 :  278 (  3.8%)
+  edge_x                   :  274 (  3.7%)
+  dilate                   :  264 (  3.6%)
+  opening                  :  254 (  3.5%)
+  sqrt_abs                 :  231 (  3.1%)
+  flip_h                   :  217 (  3.0%)
+  local_range              :  209 (  2.8%) [BRAIN-MRI]
+  closing                  :  206 (  2.8%)
+  downsample_2x            :  202 (  2.8%)
+  edge_y                   :  201 (  2.7%)
+  flip_v                   :  197 (  2.7%)
+  abs                      :  189 (  2.6%)
+  normalize                :  188 (  2.6%)
+  log1p_abs                :  175 (  2.4%)
+  gabor_mag                :  172 (  2.3%)
+  blur                     :  162 (  2.2%)
+  blur_7x7                 :  157 (  2.1%)
+  local_std_5x5            :  157 (  2.1%)
+  negate                   :  143 (  1.9%)
+  border_sharp             :  143 (  1.9%) [BRAIN-MRI]
+  edge_orient              :  137 (  1.9%)
+  relu                     :  134 (  1.8%)
+  stride_pool_4            :  131 (  1.8%)
+  pow2                     :  130 (  1.8%)
+  sigmoid                  :  122 (  1.7%)
+  dog                      :  118 (  1.6%)
+  laplacian                :  116 (  1.6%)
+  lbp_like                 :  113 (  1.5%)
+  diag_symmetry            :  113 (  1.5%) [BRAIN-MRI]
+  high_freq                :  108 (  1.5%)
+  gabor_45                 :  107 (  1.5%)
+  low_freq                 :   96 (  1.3%)
+  downsample_4x            :   93 (  1.3%)
+  gabor_0                  :   87 (  1.2%)
+  add                      :   87 (  1.2%)
+  gabor_90                 :   81 (  1.1%)
+  local_contrast           :   81 (  1.1%)
+  tb_symmetry              :   78 (  1.1%) [BRAIN-MRI]
+  local_var                :   78 (  1.1%) [BRAIN-MRI]
+  edge_yy                  :   77 (  1.0%)
+  lr_symmetry              :   65 (  0.9%) [BRAIN-MRI]
+  edge_xx                  :   63 (  0.9%)
+  corner_harris            :   60 (  0.8%)
+  div                      :   16 (  0.2%)
+
+TERMINAL FREQUENCY ANALYSIS:
+--------------------------------------------------
+  Total terminal occurrences: 1522
+  Unique terminals: 6
+
+  I_BLUR                   :  433 ( 28.4%)
+  I_GRAY                   :  343 ( 22.5%)
+  I_GRAD                   :  326 ( 21.4%)
+  I_LOCALSTD               :  150 (  9.9%)
+  I_LOG                    :  142 (  9.3%)
+  I_LBP                    :  128 (  8.4%)
+
+ROOT OPERATOR FREQUENCY ANALYSIS:
+--------------------------------------------------
+
+RADIOLOGICAL INTERPRETATION OF TOP FORMULAS:
+--------------------------------------------------
+
+  Formula 1: I_LOCALSTD edge_mag I_BLUR negate corner_harris negate gabor_mag blur_7x7 dilate gabor_90 subtract border_sharp negate normalize
+  ANOVA-F quality (step 3): 1025.14
+  Interpretation:
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - negate: Negation — invert signal
+    - negate: Negation — invert signal
+    - gabor_mag: Gabor magnitude — texture energy
+    - dilate: Dilation — expand bright (hyperintense) regions
+    - gabor_90: Gabor filter 90° — directional texture
+    - border_sharp: Gradient magnitude — mass effect / tumor margin sharpness
+    - negate: Negation — invert signal
+    - normalize: Normalization — standardize intensity range
+
+  Formula 2: I_LOCALSTD edge_xx edge_mag edge_yy opening flip_h negate edge_mag lr_symmetry edge_mag normalize
+  ANOVA-F quality (step 3): 708.74
+  Interpretation:
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - opening: Morphological opening — remove small bright specks
+    - flip_h: Horizontal flip — symmetry analysis
+    - negate: Negation — invert signal
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - lr_symmetry: Left-right mirror difference — tumors break bilateral brain symmetry
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - normalize: Normalization — standardize intensity range
+
+  Formula 3: I_LOG I_LBP multiply edge_mag I_BLUR multiply I_GRAD multiply edge_mag pow2 normalize sigmoid closing normalize
+  ANOVA-F quality (step 3): 632.37
+  Interpretation:
+    - I_LOG: Laplacian channel — blob / ring-enhancing structures
+    - I_LBP: LBP channel — fine texture
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - normalize: Normalization — standardize intensity range
+    - sigmoid: Sigmoid activation — nonlinear mapping
+    - closing: Morphological closing — fill small dark holes
+    - normalize: Normalization — standardize intensity range
+
+  Formula 4: I_LBP pow2 negate local_std_5x5 gabor_45 local_std_5x5 edge_yy abs opening log1p_abs gabor_0 lbp_like relu opening
+  ANOVA-F quality (step 3): 535.71
+  Interpretation:
+    - I_LBP: LBP channel — fine texture
+    - negate: Negation — invert signal
+    - local_std_5x5: Local std — texture heterogeneity
+    - gabor_45: Gabor filter 45° — directional texture
+    - local_std_5x5: Local std — texture heterogeneity
+    - abs: Absolute value — magnitude features
+    - opening: Morphological opening — remove small bright specks
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - gabor_0: Gabor filter 0° — directional texture
+    - lbp_like: Local binary pattern — fine texture descriptor
+    - relu: ReLU activation — nonlinear mapping
+    - opening: Morphological opening — remove small bright specks
+
+  Formula 5: I_LOCALSTD edge_mag edge_y edge_mag edge_xx edge_mag flip_h corner_harris I_GRAD flip_h multiply
+  ANOVA-F quality (step 3): 479.38
+  Interpretation:
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - edge_y: Vertical edge — horizontal borders
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - flip_h: Horizontal flip — symmetry analysis
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - flip_h: Horizontal flip — symmetry analysis
+
+  Formula 6: I_GRAY I_GRAY diag_symmetry local_range log1p_abs subtract abs
+  ANOVA-F quality (step 3): 460.59
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - diag_symmetry: Diagonal (transpose) asymmetry
+    - local_range: Local intensity range — tissue heterogeneity (necrosis/edema vs. solid)
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - abs: Absolute value — magnitude features
+
+  Formula 7: I_GRAY border_sharp edge_yy sqrt_abs stride_pool_4 texture_entropy dilate texture_entropy stride_pool_4 texture_entropy normalize
+  ANOVA-F quality (step 3): 455.62
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - border_sharp: Gradient magnitude — mass effect / tumor margin sharpness
+    - sqrt_abs: Sqrt of absolute — compress dynamic range
+    - texture_entropy: Local texture entropy — disordered tumor microstructure
+    - dilate: Dilation — expand bright (hyperintense) regions
+    - texture_entropy: Local texture entropy — disordered tumor microstructure
+    - texture_entropy: Local texture entropy — disordered tumor microstructure
+    - normalize: Normalization — standardize intensity range
+
+  Formula 8: I_GRAD flip_h I_GRAD multiply abs flip_h abs high_freq downsample_2x edge_y opening gabor_0 tb_symmetry lbp_like
+  ANOVA-F quality (step 3): 441.20
+  Interpretation:
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - flip_h: Horizontal flip — symmetry analysis
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - abs: Absolute value — magnitude features
+    - flip_h: Horizontal flip — symmetry analysis
+    - abs: Absolute value — magnitude features
+    - downsample_2x: Downsample 2x — multi-scale analysis
+    - edge_y: Vertical edge — horizontal borders
+    - opening: Morphological opening — remove small bright specks
+    - gabor_0: Gabor filter 0° — directional texture
+    - tb_symmetry: Top-bottom mirror difference — superior/inferior asymmetry
+    - lbp_like: Local binary pattern — fine texture descriptor
+
+  Formula 9: I_GRAD diag_symmetry closing dilate I_GRAY multiply local_range pow2 I_BLUR subtract normalize opening I_LOCALSTD subtract
+  ANOVA-F quality (step 3): 436.68
+  Interpretation:
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - diag_symmetry: Diagonal (transpose) asymmetry
+    - closing: Morphological closing — fill small dark holes
+    - dilate: Dilation — expand bright (hyperintense) regions
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - local_range: Local intensity range — tissue heterogeneity (necrosis/edema vs. solid)
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - normalize: Normalization — standardize intensity range
+    - opening: Morphological opening — remove small bright specks
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+
+  Formula 10: I_BLUR corner_harris gabor_mag high_freq negate local_var opening gabor_mag edge_mag border_sharp edge_mag flip_h blur edge_orient
+  ANOVA-F quality (step 3): 434.70
+  Interpretation:
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - gabor_mag: Gabor magnitude — texture energy
+    - negate: Negation — invert signal
+    - local_var: Local variance — fine texture heterogeneity
+    - opening: Morphological opening — remove small bright specks
+    - gabor_mag: Gabor magnitude — texture energy
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - border_sharp: Gradient magnitude — mass effect / tumor margin sharpness
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - flip_h: Horizontal flip — symmetry analysis
+    - blur: Gaussian blur — smoothing for noise reduction
+
+FORMULA STATISTICS:
+--------------------------------------------------
+  Formula length (tokens): min=7, max=14, avg=11.1
+  ANOVA-F quality: min=42.76, max=1025.14, avg=249.10
+
+  Report saved to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_dir3_fine/interpretability_report.txt
+
+======================================================================
+  Pipeline Complete!
+======================================================================

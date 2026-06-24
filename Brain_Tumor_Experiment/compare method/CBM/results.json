@@ -1,0 +1,14 @@
+{
+  "method": "CBM",
+  "acc": 0.950625,
+  "bal_acc": 0.950625,
+  "auc": 0.9670291666666666,
+  "per_class": {
+    "glioma": 0.8075,
+    "meningioma": 0.9975,
+    "pituitary": 0.9975,
+    "notumor": 1.0
+  },
+  "time_seconds": 341.20139479637146,
+  "epochs": 30
+}

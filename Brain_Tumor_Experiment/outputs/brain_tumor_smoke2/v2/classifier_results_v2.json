@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "method": "hgb_baseline",
+  "test_accuracy": 0.895,
+  "test_balanced_accuracy": 0.895,
+  "test_auc": 0.9625854166666667,
+  "per_class_test": {
+    "glioma": 0.7075,
+    "meningioma": 0.92,
+    "pituitary": 0.96,
+    "notumor": 0.9925
+  },
+  "all_methods": {
+    "hgb_baseline": {
+      "acc": 0.895,
+      "bal_acc": 0.895,
+      "auc": 0.9625854166666667
+    }
+  },
+  "all_per_class": {
+    "hgb_baseline": {
+      "glioma": 0.7075,
+      "meningioma": 0.92,
+      "pituitary": 0.96,
+      "notumor": 0.9925
+    }
+  },
+  "cv_accs": {
+    "hgb_baseline": 0.9232142857142858
+  },
+  "cv_bal_accs": {
+    "hgb_baseline": 0.9232142857142858
+  }
+}

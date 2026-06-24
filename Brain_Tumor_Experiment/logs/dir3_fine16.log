@@ -1,0 +1,33 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 4 → 6
+======================================================================
+
+======================================================================
+  STEP 4: Extract Features
+======================================================================
+  800 unique bodies from 800 formulas
+  Distribution encoding: 12 stats x 17 regions = 204/body
+
+  Extracting features for train...
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+Step4 train:   0%|          | 0/75 [00:00<?, ?batch/s]/home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/src/symbolic/feature_encoding.py:132: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+  std = flat.std(dim=1, correction=0).clamp(min=1e-8)
+Step4 train:   0%|          | 0/75 [00:12<?, ?batch/s]
+Traceback (most recent call last):
+  File "/home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/experiments/run_brain_tumor_pipeline.py", line 1657, in <module>
+    main()
+  File "/home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/experiments/run_brain_tumor_pipeline.py", line 1647, in main
+    STEPS[step_id](config, device)
+  File "/home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/experiments/run_brain_tumor_pipeline.py", line 833, in step4_extract_features
+    stats = encode_body_distribution_v2(result, n_stats=n_stats, n_regions=n_regions)
+  File "/home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/src/symbolic/feature_encoding.py", line 133, in encode_body_distribution_v2
+    maximum = flat.max(dim=1).values
+IndexError: max(): Expected reduction dim 1 to have non-zero size.

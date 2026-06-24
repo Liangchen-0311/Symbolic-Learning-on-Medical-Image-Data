@@ -1,0 +1,293 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 0 → 6
+======================================================================
+
+======================================================================
+  STEP 0: Validate Brain Tumor MRI Dataset
+======================================================================
+  Data dir: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain Tumor MRI Dataset
+  Num classes: 4
+  Class names: ['glioma', 'meningioma', 'pituitary', 'notumor']
+  Val carved from Training (fraction=0.15, seed=42)
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+  train total: 4760 images
+  BrainTumor val: 840 images
+    glioma      (Glioma tumor      ):   210
+    meningioma  (Meningioma tumor  ):   210
+    pituitary   (Pituitary tumor   ):   210
+    notumor     (No tumor          ):   210
+  val total: 840 images
+  BrainTumor test: 1600 images
+    glioma      (Glioma tumor      ):   400
+    meningioma  (Meningioma tumor  ):   400
+    pituitary   (Pituitary tumor   ):   400
+    notumor     (No tumor          ):   400
+  test total: 1600 images
+
+  Testing data batch creation...
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+  images shape: torch.Size([4, 1, 96, 96])
+  labels shape: torch.Size([4])
+  Sample labels: [2, 1, 3, 2]
+  Label names: ['pituitary', 'meningioma', 'notumor', 'pituitary']
+
+  Dataset validation PASSED
+
+======================================================================
+  STEP 1: Phase 1 — Symbolic Feature Discovery (grayscale MRI + early stop)
+======================================================================
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+
+--- Bank 0/2 ---
+  [Vocab] Excluded operators: ['tophat']
+  [Vocab] Active operators: 93
+  [Vocab] Custom terminals: ['I_GRAY', 'I_BLUR', 'I_GRAD', 'I_LOCALSTD', 'I_LOG', 'I_LBP']
+Cached 512 images (CPU, balanced): [c0:128, c1:128, c2:128, c3:128]
+  Training: 15 iterations x 8 episodes @ 96px
+  Vocab size: 102, Bank focus: intensity_structure
+  Early stop patience: 1000 iters
+Bank 0:   0%|          | 0/15 [00:00<?, ?iter/s]Bank 0:   0%|          | 0/15 [00:00<?, ?iter/s, bank_sz=5, new=5, reward=-0.024, best=0.228, no_new=0, dur=1.0s]Bank 0:   7%|▋         | 1/15 [00:00<00:13,  1.03iter/s, bank_sz=5, new=5, reward=-0.024, best=0.228, no_new=0, dur=1.0s]Bank 0:   7%|▋         | 1/15 [00:01<00:13,  1.03iter/s, bank_sz=8, new=3, reward=0.124, best=0.246, no_new=0, dur=0.3s] Bank 0:  13%|█▎        | 2/15 [00:01<00:07,  1.77iter/s, bank_sz=8, new=3, reward=0.124, best=0.246, no_new=0, dur=0.3s]Bank 0:  13%|█▎        | 2/15 [00:01<00:07,  1.77iter/s, bank_sz=12, new=4, reward=0.142, best=0.339, no_new=0, dur=0.3s]Bank 0:  20%|██        | 3/15 [00:01<00:05,  2.29iter/s, bank_sz=12, new=4, reward=0.142, best=0.339, no_new=0, dur=0.3s]Bank 0:  20%|██        | 3/15 [00:01<00:05,  2.29iter/s, bank_sz=15, new=3, reward=-0.205, best=0.348, no_new=0, dur=0.2s]Bank 0:  27%|██▋       | 4/15 [00:01<00:03,  2.85iter/s, bank_sz=15, new=3, reward=-0.205, best=0.348, no_new=0, dur=0.2s]Bank 0:  27%|██▋       | 4/15 [00:02<00:03,  2.85iter/s, bank_sz=19, new=4, reward=0.137, best=0.384, no_new=0, dur=0.3s] Bank 0:  33%|███▎      | 5/15 [00:02<00:03,  3.13iter/s, bank_sz=19, new=4, reward=0.137, best=0.384, no_new=0, dur=0.3s]Bank 0:  33%|███▎      | 5/15 [00:02<00:03,  3.13iter/s, bank_sz=24, new=5, reward=0.087, best=0.384, no_new=0, dur=0.2s]Bank 0:  40%|████      | 6/15 [00:02<00:02,  3.43iter/s, bank_sz=24, new=5, reward=0.087, best=0.384, no_new=0, dur=0.2s]Bank 0:  40%|████      | 6/15 [00:02<00:02,  3.43iter/s, bank_sz=28, new=4, reward=0.147, best=0.592, no_new=0, dur=0.2s]Bank 0:  47%|████▋     | 7/15 [00:02<00:02,  3.65iter/s, bank_sz=28, new=4, reward=0.147, best=0.592, no_new=0, dur=0.2s]Bank 0:  47%|████▋     | 7/15 [00:02<00:02,  3.65iter/s, bank_sz=31, new=3, reward=0.163, best=0.592, no_new=0, dur=0.2s]Bank 0:  53%|█████▎    | 8/15 [00:02<00:01,  3.80iter/s, bank_sz=31, new=3, reward=0.163, best=0.592, no_new=0, dur=0.2s]Bank 0:  53%|█████▎    | 8/15 [00:02<00:01,  3.80iter/s, bank_sz=35, new=4, reward=0.173, best=0.592, no_new=0, dur=0.2s]Bank 0:  60%|██████    | 9/15 [00:02<00:01,  3.90iter/s, bank_sz=35, new=4, reward=0.173, best=0.592, no_new=0, dur=0.2s]Bank 0:  60%|██████    | 9/15 [00:03<00:01,  3.90iter/s, bank_sz=38, new=3, reward=0.121, best=0.592, no_new=0, dur=0.2s]Bank 0:  67%|██████▋   | 10/15 [00:03<00:01,  3.96iter/s, bank_sz=38, new=3, reward=0.121, best=0.592, no_new=0, dur=0.2s]Bank 0:  67%|██████▋   | 10/15 [00:03<00:01,  3.96iter/s, bank_sz=41, new=3, reward=0.173, best=0.592, no_new=0, dur=0.2s]Bank 0:  73%|███████▎  | 11/15 [00:03<00:00,  4.02iter/s, bank_sz=41, new=3, reward=0.173, best=0.592, no_new=0, dur=0.2s]Bank 0:  73%|███████▎  | 11/15 [00:03<00:00,  4.02iter/s, bank_sz=44, new=3, reward=-0.001, best=0.592, no_new=0, dur=0.2s]Bank 0:  80%|████████  | 12/15 [00:03<00:00,  4.09iter/s, bank_sz=44, new=3, reward=-0.001, best=0.592, no_new=0, dur=0.2s]Bank 0:  80%|████████  | 12/15 [00:03<00:00,  4.09iter/s, bank_sz=47, new=3, reward=-0.001, best=0.592, no_new=0, dur=0.2s]Bank 0:  87%|████████▋ | 13/15 [00:03<00:00,  4.07iter/s, bank_sz=47, new=3, reward=-0.001, best=0.592, no_new=0, dur=0.2s]Bank 0:  87%|████████▋ | 13/15 [00:04<00:00,  4.07iter/s, bank_sz=49, new=2, reward=0.021, best=0.592, no_new=0, dur=0.3s] Bank 0:  93%|█████████▎| 14/15 [00:04<00:00,  3.99iter/s, bank_sz=49, new=2, reward=0.021, best=0.592, no_new=0, dur=0.3s]Bank 0:  93%|█████████▎| 14/15 [00:04<00:00,  3.99iter/s, bank_sz=52, new=3, reward=-0.038, best=0.592, no_new=0, dur=0.2s]Bank 0: 100%|██████████| 15/15 [00:04<00:00,  4.15iter/s, bank_sz=52, new=3, reward=-0.038, best=0.592, no_new=0, dur=0.2s]Bank 0: 100%|██████████| 15/15 [00:04<00:00,  3.39iter/s, bank_sz=52, new=3, reward=-0.038, best=0.592, no_new=0, dur=0.2s]
+DEBUG: New best reward -0.8. Info keys: dict_keys(['valid', 'reason'])
+  [Bank] added [1/60]
+DEBUG: New best reward 0.2176190634071827. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [2/60]
+  [Bank] added [3/60]
+  [Bank] added [4/60]
+DEBUG: New best reward 0.2282588408142328. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [5/60]
+  [Bank] added [6/60]
+DEBUG: New best reward 0.23732170581817624. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+DEBUG: New best reward 0.24594563290476798. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [7/60]
+  [Bank] added [8/60]
+  [Bank] added [9/60]
+  [Bank] added [10/60]
+  [Bank] added [11/60]
+DEBUG: New best reward 0.33886187940835955. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [12/60]
+  [Bank] added [13/60]
+DEBUG: New best reward 0.3484287072718144. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [14/60]
+  [Bank] added [15/60]
+  [Bank] added [16/60]
+  [Bank] added [17/60]
+  [Bank] added [18/60]
+DEBUG: New best reward 0.3838058058917523. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [19/60]
+  [Bank] added [20/60]
+  [Bank] added [21/60]
+  [Bank] added [22/60]
+  [Bank] added [23/60]
+  [Bank] added [24/60]
+  [Bank] added [25/60]
+DEBUG: New best reward 0.5442810726165772. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [26/60]
+DEBUG: New best reward 0.5924001124501229. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [27/60]
+  [Bank] added [28/60]
+  [Bank] added [29/60]
+  [Bank] added [30/60]
+  [Bank] added [31/60]
+  [Bank] added [32/60]
+  [Bank] added [33/60]
+  [Bank] added [34/60]
+  [Bank] added [35/60]
+  [Bank] added [36/60]
+  [Bank] added [37/60]
+  [Bank] added [38/60]
+[FeatureBank] Saved 38 formulas to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/phase1/bank_0/feature_bank_resume
+  [Bank] added [39/60]
+  [Bank] added [40/60]
+  [Bank] added [41/60]
+  [Bank] added [42/60]
+  [Bank] added [43/60]
+  [Bank] added [44/60]
+  [Bank] added [45/60]
+  [Bank] added [46/60]
+  [Bank] added [47/60]
+  [Bank] added [48/60]
+  [Bank] added [49/60]
+  [Bank] added [50/60]
+  [Bank] added [51/60]
+  [Bank] added [52/60]
+[FeatureBank] Saved 52 formulas to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/phase1/bank_0/feature_bank
+  Bank 0 final size: 52 (completed 15 iters)
+
+--- Bank 1/2 ---
+  [Vocab] Excluded operators: ['tophat']
+  [Vocab] Active operators: 93
+  [Vocab] Custom terminals: ['I_GRAY', 'I_BLUR', 'I_GRAD', 'I_LOCALSTD', 'I_LOG', 'I_LBP']
+Cached 512 images (CPU, balanced): [c0:128, c1:128, c2:128, c3:128]
+  Training: 15 iterations x 8 episodes @ 96px
+  Vocab size: 102, Bank focus: bilateral_symmetry
+  Early stop patience: 1000 iters
+Bank 1:   0%|          | 0/15 [00:00<?, ?iter/s]Bank 1:   0%|          | 0/15 [00:00<?, ?iter/s, bank_sz=3, new=3, reward=0.093, best=0.346, no_new=0, dur=0.3s]Bank 1:   7%|▋         | 1/15 [00:00<00:04,  3.31iter/s, bank_sz=3, new=3, reward=0.093, best=0.346, no_new=0, dur=0.3s]Bank 1:   7%|▋         | 1/15 [00:00<00:04,  3.31iter/s, bank_sz=7, new=4, reward=0.133, best=0.362, no_new=0, dur=0.3s]Bank 1:  13%|█▎        | 2/15 [00:00<00:03,  3.45iter/s, bank_sz=7, new=4, reward=0.133, best=0.362, no_new=0, dur=0.3s]Bank 1:  13%|█▎        | 2/15 [00:00<00:03,  3.45iter/s, bank_sz=10, new=3, reward=-0.303, best=0.362, no_new=0, dur=0.2s]Bank 1:  20%|██        | 3/15 [00:00<00:03,  3.88iter/s, bank_sz=10, new=3, reward=-0.303, best=0.362, no_new=0, dur=0.2s]Bank 1:  20%|██        | 3/15 [00:01<00:03,  3.88iter/s, bank_sz=13, new=3, reward=0.231, best=0.413, no_new=0, dur=0.3s] Bank 1:  27%|██▋       | 4/15 [00:01<00:02,  3.77iter/s, bank_sz=13, new=3, reward=0.231, best=0.413, no_new=0, dur=0.3s]Bank 1:  27%|██▋       | 4/15 [00:01<00:02,  3.77iter/s, bank_sz=17, new=4, reward=0.044, best=0.413, no_new=0, dur=0.3s]Bank 1:  33%|███▎      | 5/15 [00:01<00:02,  3.68iter/s, bank_sz=17, new=4, reward=0.044, best=0.413, no_new=0, dur=0.3s]Bank 1:  33%|███▎      | 5/15 [00:01<00:02,  3.68iter/s, bank_sz=23, new=6, reward=0.164, best=0.413, no_new=0, dur=0.3s]Bank 1:  40%|████      | 6/15 [00:01<00:02,  3.61iter/s, bank_sz=23, new=6, reward=0.164, best=0.413, no_new=0, dur=0.3s]Bank 1:  40%|████      | 6/15 [00:01<00:02,  3.61iter/s, bank_sz=27, new=4, reward=0.018, best=0.413, no_new=0, dur=0.3s]Bank 1:  47%|████▋     | 7/15 [00:01<00:02,  3.67iter/s, bank_sz=27, new=4, reward=0.018, best=0.413, no_new=0, dur=0.3s]Bank 1:  47%|████▋     | 7/15 [00:02<00:02,  3.67iter/s, bank_sz=32, new=5, reward=0.143, best=0.464, no_new=0, dur=0.3s]Bank 1:  53%|█████▎    | 8/15 [00:02<00:01,  3.71iter/s, bank_sz=32, new=5, reward=0.143, best=0.464, no_new=0, dur=0.3s]Bank 1:  53%|█████▎    | 8/15 [00:02<00:01,  3.71iter/s, bank_sz=35, new=3, reward=0.035, best=0.464, no_new=0, dur=0.3s]Bank 1:  60%|██████    | 9/15 [00:02<00:01,  3.71iter/s, bank_sz=35, new=3, reward=0.035, best=0.464, no_new=0, dur=0.3s]Bank 1:  60%|██████    | 9/15 [00:02<00:01,  3.71iter/s, bank_sz=39, new=4, reward=0.193, best=0.464, no_new=0, dur=0.3s]Bank 1:  67%|██████▋   | 10/15 [00:02<00:01,  3.64iter/s, bank_sz=39, new=4, reward=0.193, best=0.464, no_new=0, dur=0.3s]Bank 1:  67%|██████▋   | 10/15 [00:02<00:01,  3.64iter/s, bank_sz=40, new=1, reward=-0.154, best=0.464, no_new=0, dur=0.2s]Bank 1:  73%|███████▎  | 11/15 [00:02<00:01,  3.84iter/s, bank_sz=40, new=1, reward=-0.154, best=0.464, no_new=0, dur=0.2s]Bank 1:  73%|███████▎  | 11/15 [00:03<00:01,  3.84iter/s, bank_sz=42, new=2, reward=0.099, best=0.464, no_new=0, dur=0.3s] Bank 1:  80%|████████  | 12/15 [00:03<00:00,  3.80iter/s, bank_sz=42, new=2, reward=0.099, best=0.464, no_new=0, dur=0.3s]Bank 1:  80%|████████  | 12/15 [00:03<00:00,  3.80iter/s, bank_sz=44, new=2, reward=0.057, best=0.464, no_new=0, dur=0.3s]Bank 1:  87%|████████▋ | 13/15 [00:03<00:00,  3.80iter/s, bank_sz=44, new=2, reward=0.057, best=0.464, no_new=0, dur=0.3s]Bank 1:  87%|████████▋ | 13/15 [00:03<00:00,  3.80iter/s, bank_sz=47, new=3, reward=0.172, best=0.464, no_new=0, dur=0.3s]Bank 1:  93%|█████████▎| 14/15 [00:03<00:00,  3.73iter/s, bank_sz=47, new=3, reward=0.172, best=0.464, no_new=0, dur=0.3s]Bank 1:  93%|█████████▎| 14/15 [00:04<00:00,  3.73iter/s, bank_sz=54, new=7, reward=0.156, best=0.464, no_new=0, dur=0.3s]Bank 1: 100%|██████████| 15/15 [00:04<00:00,  3.69iter/s, bank_sz=54, new=7, reward=0.156, best=0.464, no_new=0, dur=0.3s]Bank 1: 100%|██████████| 15/15 [00:04<00:00,  3.70iter/s, bank_sz=54, new=7, reward=0.156, best=0.464, no_new=0, dur=0.3s]
+DEBUG: New best reward -0.04724137365818021. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [1/60]
+DEBUG: New best reward 0.22645161122083665. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [2/60]
+DEBUG: New best reward 0.34553606927394864. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [3/60]
+  [Bank] added [4/60]
+DEBUG: New best reward 0.36171786606311795. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [5/60]
+  [Bank] added [6/60]
+  [Bank] added [7/60]
+  [Bank] added [8/60]
+  [Bank] added [9/60]
+  [Bank] added [10/60]
+  [Bank] added [11/60]
+  [Bank] added [12/60]
+  [Bank] added [13/60]
+DEBUG: New best reward 0.41320410415530207. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [14/60]
+  [Bank] added [15/60]
+  [Bank] added [16/60]
+  [Bank] added [17/60]
+  [Bank] added [18/60]
+  [Bank] added [19/60]
+  [Bank] added [20/60]
+  [Bank] added [21/60]
+  [Bank] added [22/60]
+  [Bank] added [23/60]
+  [Bank] added [24/60]
+  [Bank] added [25/60]
+  [Bank] added [26/60]
+  [Bank] added [27/60]
+  [Bank] added [28/60]
+  [Bank] added [29/60]
+  [Bank] added [30/60]
+  [Bank] added [31/60]
+  [Bank] added [32/60]
+DEBUG: New best reward 0.46361803829669956. Info keys: dict_keys(['valid', 'formula', 'accuracy', 'top5_accuracy', 'diversity_penalty', 'bank_size', 'reward'])
+  [Bank] added [33/60]
+  [Bank] added [34/60]
+  [Bank] added [35/60]
+  [Bank] added [36/60]
+  [Bank] added [37/60]
+  [Bank] added [38/60]
+  [Bank] added [39/60]
+[FeatureBank] Saved 39 formulas to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/phase1/bank_1/feature_bank_resume
+  [Bank] added [40/60]
+  [Bank] added [41/60]
+  [Bank] added [42/60]
+  [Bank] added [43/60]
+  [Bank] added [44/60]
+  [Bank] added [45/60]
+  [Bank] added [46/60]
+  [Bank] added [47/60]
+  [Bank] added [48/60]
+  [Bank] added [49/60]
+  [Bank] added [50/60]
+  [Bank] added [51/60]
+  [Bank] added [52/60]
+  [Bank] added [53/60]
+  [Bank] added [54/60]
+[FeatureBank] Saved 54 formulas to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/phase1/bank_1/feature_bank
+  Bank 1 final size: 54 (completed 15 iters)
+
+  Phase 1 complete: 106 total formulas across 2 banks
+
+======================================================================
+  STEP 2: Merge Feature Banks
+======================================================================
+  Merged 106 unique formulas from all banks
+  Saved to /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/merged_formulas.json
+
+======================================================================
+  STEP 3: Validate Formulas (Phase A only — 128px multi-root)
+======================================================================
+  Validating 106 formulas...
+  106 unique bodies from 106 formulas
+
+  --- Phase A: Quick validation @ 224px (multi-root) ---
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+  BrainTumor val: 840 images
+    glioma      (Glioma tumor      ):   210
+    meningioma  (Meningioma tumor  ):   210
+    pituitary   (Pituitary tumor   ):   210
+    notumor     (No tumor          ):   210
+  Train subset: 1024 images @ 96px
+  Val set: 840 images @ 96px
+Step3 PhaseA:   0%|          | 0/106 [00:00<?, ?body/s]Step3 PhaseA:   0%|          | 0/106 [00:00<?, ?body/s, valid=1, best_bacc=0.449]Step3 PhaseA:   1%|          | 1/106 [00:00<00:19,  5.46body/s, valid=1, best_bacc=0.449]Step3 PhaseA:   1%|          | 1/106 [00:00<00:19,  5.46body/s, valid=2, best_bacc=0.339]Step3 PhaseA:   2%|▏         | 2/106 [00:00<00:15,  6.79body/s, valid=2, best_bacc=0.339]Step3 PhaseA:   2%|▏         | 2/106 [00:00<00:15,  6.79body/s, valid=3, best_bacc=0.494]Step3 PhaseA:   3%|▎         | 3/106 [00:00<00:13,  7.79body/s, valid=3, best_bacc=0.494]Step3 PhaseA:   3%|▎         | 3/106 [00:00<00:13,  7.79body/s, valid=4, best_bacc=0.337]Step3 PhaseA:   3%|▎         | 3/106 [00:00<00:13,  7.79body/s, valid=5, best_bacc=0.296]Step3 PhaseA:   5%|▍         | 5/106 [00:00<00:11,  8.78body/s, valid=5, best_bacc=0.296]Step3 PhaseA:   5%|▍         | 5/106 [00:00<00:11,  8.78body/s, valid=6, best_bacc=0.357]Step3 PhaseA:   6%|▌         | 6/106 [00:00<00:11,  8.65body/s, valid=6, best_bacc=0.357]Step3 PhaseA:   6%|▌         | 6/106 [00:00<00:11,  8.65body/s, valid=7, best_bacc=0.487]Step3 PhaseA:   7%|▋         | 7/106 [00:00<00:11,  8.56body/s, valid=7, best_bacc=0.487]Step3 PhaseA:   7%|▋         | 7/106 [00:00<00:11,  8.56body/s, valid=8, best_bacc=0.331]Step3 PhaseA:   8%|▊         | 8/106 [00:00<00:11,  8.81body/s, valid=8, best_bacc=0.331]Step3 PhaseA:   8%|▊         | 8/106 [00:01<00:11,  8.81body/s, valid=9, best_bacc=0.450]Step3 PhaseA:   8%|▊         | 9/106 [00:01<00:11,  8.72body/s, valid=9, best_bacc=0.450]Step3 PhaseA:   8%|▊         | 9/106 [00:01<00:11,  8.72body/s, valid=10, best_bacc=0.442]Step3 PhaseA:   9%|▉         | 10/106 [00:01<00:10,  8.83body/s, valid=10, best_bacc=0.442]Step3 PhaseA:   9%|▉         | 10/106 [00:01<00:10,  8.83body/s, valid=11, best_bacc=0.477]Step3 PhaseA:  10%|█         | 11/106 [00:01<00:11,  8.04body/s, valid=11, best_bacc=0.477]Step3 PhaseA:  10%|█         | 11/106 [00:01<00:11,  8.04body/s, valid=12, best_bacc=0.500]Step3 PhaseA:  11%|█▏        | 12/106 [00:01<00:11,  8.12body/s, valid=12, best_bacc=0.500]Step3 PhaseA:  11%|█▏        | 12/106 [00:01<00:11,  8.12body/s, valid=13, best_bacc=0.326]Step3 PhaseA:  12%|█▏        | 13/106 [00:01<00:11,  8.21body/s, valid=13, best_bacc=0.326]Step3 PhaseA:  12%|█▏        | 13/106 [00:01<00:11,  8.21body/s, valid=14, best_bacc=0.523]Step3 PhaseA:  13%|█▎        | 14/106 [00:01<00:11,  8.29body/s, valid=14, best_bacc=0.523]Step3 PhaseA:  13%|█▎        | 14/106 [00:01<00:11,  8.29body/s, valid=15, best_bacc=0.258]Step3 PhaseA:  14%|█▍        | 15/106 [00:01<00:10,  8.31body/s, valid=15, best_bacc=0.258]Step3 PhaseA:  14%|█▍        | 15/106 [00:01<00:10,  8.31body/s, valid=16, best_bacc=0.362]Step3 PhaseA:  15%|█▌        | 16/106 [00:01<00:10,  8.28body/s, valid=16, best_bacc=0.362]Step3 PhaseA:  15%|█▌        | 16/106 [00:02<00:10,  8.28body/s, valid=17, best_bacc=0.443]Step3 PhaseA:  16%|█▌        | 17/106 [00:02<00:10,  8.22body/s, valid=17, best_bacc=0.443]Step3 PhaseA:  16%|█▌        | 17/106 [00:02<00:10,  8.22body/s, valid=18, best_bacc=0.400]Step3 PhaseA:  17%|█▋        | 18/106 [00:02<00:10,  8.23body/s, valid=18, best_bacc=0.400]Step3 PhaseA:  17%|█▋        | 18/106 [00:02<00:10,  8.23body/s, valid=19, best_bacc=0.455]Step3 PhaseA:  18%|█▊        | 19/106 [00:02<00:10,  8.30body/s, valid=19, best_bacc=0.455]Step3 PhaseA:  18%|█▊        | 19/106 [00:02<00:10,  8.30body/s, valid=20, best_bacc=0.410]Step3 PhaseA:  19%|█▉        | 20/106 [00:02<00:10,  8.53body/s, valid=20, best_bacc=0.410]Step3 PhaseA:  19%|█▉        | 20/106 [00:02<00:10,  8.53body/s, valid=21, best_bacc=0.419]Step3 PhaseA:  20%|█▉        | 21/106 [00:02<00:10,  8.32body/s, valid=21, best_bacc=0.419]Step3 PhaseA:  20%|█▉        | 21/106 [00:02<00:10,  8.32body/s, valid=22, best_bacc=0.479]Step3 PhaseA:  21%|██        | 22/106 [00:02<00:10,  8.37body/s, valid=22, best_bacc=0.479]Step3 PhaseA:  21%|██        | 22/106 [00:02<00:10,  8.37body/s, valid=23, best_bacc=0.505]Step3 PhaseA:  22%|██▏       | 23/106 [00:02<00:09,  8.43body/s, valid=23, best_bacc=0.505]Step3 PhaseA:  22%|██▏       | 23/106 [00:02<00:09,  8.43body/s, valid=24, best_bacc=0.304]Step3 PhaseA:  23%|██▎       | 24/106 [00:02<00:09,  8.40body/s, valid=24, best_bacc=0.304]Step3 PhaseA:  23%|██▎       | 24/106 [00:03<00:09,  8.40body/s, valid=25, best_bacc=0.488]Step3 PhaseA:  24%|██▎       | 25/106 [00:03<00:09,  8.29body/s, valid=25, best_bacc=0.488]Step3 PhaseA:  24%|██▎       | 25/106 [00:03<00:09,  8.29body/s, valid=26, best_bacc=0.385]Step3 PhaseA:  25%|██▍       | 26/106 [00:03<00:09,  8.33body/s, valid=26, best_bacc=0.385]Step3 PhaseA:  25%|██▍       | 26/106 [00:03<00:09,  8.33body/s, valid=27, best_bacc=0.451]Step3 PhaseA:  25%|██▌       | 27/106 [00:03<00:09,  8.37body/s, valid=27, best_bacc=0.451]Step3 PhaseA:  25%|██▌       | 27/106 [00:03<00:09,  8.37body/s, valid=28, best_bacc=0.542]Step3 PhaseA:  26%|██▋       | 28/106 [00:03<00:09,  8.32body/s, valid=28, best_bacc=0.542]Step3 PhaseA:  26%|██▋       | 28/106 [00:03<00:09,  8.32body/s, valid=29, best_bacc=0.443]Step3 PhaseA:  27%|██▋       | 29/106 [00:03<00:09,  7.98body/s, valid=29, best_bacc=0.443]Step3 PhaseA:  27%|██▋       | 29/106 [00:03<00:09,  7.98body/s, valid=30, best_bacc=0.436]Step3 PhaseA:  28%|██▊       | 30/106 [00:03<00:09,  8.10body/s, valid=30, best_bacc=0.436]Step3 PhaseA:  28%|██▊       | 30/106 [00:03<00:09,  8.10body/s, valid=31, best_bacc=0.426]Step3 PhaseA:  29%|██▉       | 31/106 [00:03<00:08,  8.34body/s, valid=31, best_bacc=0.426]Step3 PhaseA:  29%|██▉       | 31/106 [00:03<00:08,  8.34body/s, valid=32, best_bacc=0.373]Step3 PhaseA:  30%|███       | 32/106 [00:03<00:08,  8.54body/s, valid=32, best_bacc=0.373]Step3 PhaseA:  30%|███       | 32/106 [00:03<00:08,  8.54body/s, valid=33, best_bacc=0.377]Step3 PhaseA:  31%|███       | 33/106 [00:03<00:08,  8.51body/s, valid=33, best_bacc=0.377]Step3 PhaseA:  31%|███       | 33/106 [00:04<00:08,  8.51body/s, valid=34, best_bacc=0.549]Step3 PhaseA:  32%|███▏      | 34/106 [00:04<00:08,  8.53body/s, valid=34, best_bacc=0.549]Step3 PhaseA:  32%|███▏      | 34/106 [00:04<00:08,  8.53body/s, valid=35, best_bacc=0.543]Step3 PhaseA:  33%|███▎      | 35/106 [00:04<00:07,  8.90body/s, valid=35, best_bacc=0.543]Step3 PhaseA:  33%|███▎      | 35/106 [00:04<00:07,  8.90body/s, valid=36, best_bacc=0.363]Step3 PhaseA:  34%|███▍      | 36/106 [00:04<00:07,  9.03body/s, valid=36, best_bacc=0.363]Step3 PhaseA:  34%|███▍      | 36/106 [00:04<00:07,  9.03body/s, valid=37, best_bacc=0.315]Step3 PhaseA:  35%|███▍      | 37/106 [00:04<00:07,  9.19body/s, valid=37, best_bacc=0.315]Step3 PhaseA:  35%|███▍      | 37/106 [00:04<00:07,  9.19body/s, valid=38, best_bacc=0.398]Step3 PhaseA:  36%|███▌      | 38/106 [00:04<00:07,  8.68body/s, valid=38, best_bacc=0.398]Step3 PhaseA:  36%|███▌      | 38/106 [00:04<00:07,  8.68body/s, valid=39, best_bacc=0.365]Step3 PhaseA:  37%|███▋      | 39/106 [00:04<00:08,  8.22body/s, valid=39, best_bacc=0.365]Step3 PhaseA:  37%|███▋      | 39/106 [00:04<00:08,  8.22body/s, valid=40, best_bacc=0.386]Step3 PhaseA:  38%|███▊      | 40/106 [00:04<00:08,  8.10body/s, valid=40, best_bacc=0.386]Step3 PhaseA:  38%|███▊      | 40/106 [00:04<00:08,  8.10body/s, valid=41, best_bacc=0.494]Step3 PhaseA:  39%|███▊      | 41/106 [00:04<00:08,  7.91body/s, valid=41, best_bacc=0.494]Step3 PhaseA:  39%|███▊      | 41/106 [00:05<00:08,  7.91body/s, valid=42, best_bacc=0.373]Step3 PhaseA:  40%|███▉      | 42/106 [00:05<00:07,  8.04body/s, valid=42, best_bacc=0.373]Step3 PhaseA:  40%|███▉      | 42/106 [00:05<00:07,  8.04body/s, valid=43, best_bacc=0.363]Step3 PhaseA:  41%|████      | 43/106 [00:05<00:07,  8.50body/s, valid=43, best_bacc=0.363]Step3 PhaseA:  41%|████      | 43/106 [00:05<00:07,  8.50body/s, valid=44, best_bacc=0.452]Step3 PhaseA:  42%|████▏     | 44/106 [00:05<00:07,  8.73body/s, valid=44, best_bacc=0.452]Step3 PhaseA:  42%|████▏     | 44/106 [00:05<00:07,  8.73body/s, valid=45, best_bacc=0.261]Step3 PhaseA:  42%|████▏     | 45/106 [00:05<00:06,  9.04body/s, valid=45, best_bacc=0.261]Step3 PhaseA:  42%|████▏     | 45/106 [00:05<00:06,  9.04body/s, valid=46, best_bacc=0.420]Step3 PhaseA:  43%|████▎     | 46/106 [00:05<00:06,  9.18body/s, valid=46, best_bacc=0.420]Step3 PhaseA:  43%|████▎     | 46/106 [00:05<00:06,  9.18body/s, valid=47, best_bacc=0.350]Step3 PhaseA:  44%|████▍     | 47/106 [00:05<00:06,  9.11body/s, valid=47, best_bacc=0.350]Step3 PhaseA:  44%|████▍     | 47/106 [00:05<00:06,  9.11body/s, valid=48, best_bacc=0.488]Step3 PhaseA:  45%|████▌     | 48/106 [00:05<00:06,  8.77body/s, valid=48, best_bacc=0.488]Step3 PhaseA:  45%|████▌     | 48/106 [00:05<00:06,  8.77body/s, valid=49, best_bacc=0.364]Step3 PhaseA:  46%|████▌     | 49/106 [00:05<00:06,  8.90body/s, valid=49, best_bacc=0.364]Step3 PhaseA:  46%|████▌     | 49/106 [00:05<00:06,  8.90body/s, valid=50, best_bacc=0.269]Step3 PhaseA:  47%|████▋     | 50/106 [00:05<00:06,  8.41body/s, valid=50, best_bacc=0.269]Step3 PhaseA:  47%|████▋     | 50/106 [00:06<00:06,  8.41body/s, valid=51, best_bacc=0.280]Step3 PhaseA:  48%|████▊     | 51/106 [00:06<00:06,  8.12body/s, valid=51, best_bacc=0.280]Step3 PhaseA:  48%|████▊     | 51/106 [00:06<00:06,  8.12body/s, valid=52, best_bacc=0.432]Step3 PhaseA:  49%|████▉     | 52/106 [00:06<00:06,  8.21body/s, valid=52, best_bacc=0.432]Step3 PhaseA:  49%|████▉     | 52/106 [00:06<00:06,  8.21body/s, valid=53, best_bacc=0.524]Step3 PhaseA:  50%|█████     | 53/106 [00:06<00:06,  8.21body/s, valid=53, best_bacc=0.524]Step3 PhaseA:  50%|█████     | 53/106 [00:06<00:06,  8.21body/s, valid=54, best_bacc=0.295]Step3 PhaseA:  51%|█████     | 54/106 [00:06<00:06,  8.19body/s, valid=54, best_bacc=0.295]Step3 PhaseA:  51%|█████     | 54/106 [00:06<00:06,  8.19body/s, valid=55, best_bacc=0.331]Step3 PhaseA:  52%|█████▏    | 55/106 [00:06<00:06,  8.47body/s, valid=55, best_bacc=0.331]Step3 PhaseA:  52%|█████▏    | 55/106 [00:06<00:06,  8.47body/s, valid=56, best_bacc=0.340]Step3 PhaseA:  53%|█████▎    | 56/106 [00:06<00:06,  8.21body/s, valid=56, best_bacc=0.340]Step3 PhaseA:  53%|█████▎    | 56/106 [00:06<00:06,  8.21body/s, valid=57, best_bacc=0.414]Step3 PhaseA:  54%|█████▍    | 57/106 [00:06<00:05,  8.25body/s, valid=57, best_bacc=0.414]Step3 PhaseA:  54%|█████▍    | 57/106 [00:06<00:05,  8.25body/s, valid=58, best_bacc=0.427]Step3 PhaseA:  55%|█████▍    | 58/106 [00:06<00:05,  8.49body/s, valid=58, best_bacc=0.427]Step3 PhaseA:  55%|█████▍    | 58/106 [00:07<00:05,  8.49body/s, valid=59, best_bacc=0.368]Step3 PhaseA:  56%|█████▌    | 59/106 [00:07<00:05,  8.19body/s, valid=59, best_bacc=0.368]Step3 PhaseA:  56%|█████▌    | 59/106 [00:07<00:05,  8.19body/s, valid=60, best_bacc=0.285]Step3 PhaseA:  57%|█████▋    | 60/106 [00:07<00:05,  8.19body/s, valid=60, best_bacc=0.285]Step3 PhaseA:  57%|█████▋    | 60/106 [00:07<00:05,  8.19body/s, valid=61, best_bacc=0.317]Step3 PhaseA:  58%|█████▊    | 61/106 [00:07<00:05,  8.45body/s, valid=61, best_bacc=0.317]Step3 PhaseA:  58%|█████▊    | 61/106 [00:07<00:05,  8.45body/s, valid=62, best_bacc=0.317]Step3 PhaseA:  58%|█████▊    | 62/106 [00:07<00:05,  8.34body/s, valid=62, best_bacc=0.317]Step3 PhaseA:  58%|█████▊    | 62/106 [00:07<00:05,  8.34body/s, valid=63, best_bacc=0.489]Step3 PhaseA:  59%|█████▉    | 63/106 [00:07<00:05,  8.42body/s, valid=63, best_bacc=0.489]Step3 PhaseA:  59%|█████▉    | 63/106 [00:07<00:05,  8.42body/s, valid=64, best_bacc=0.439]Step3 PhaseA:  60%|██████    | 64/106 [00:07<00:05,  8.40body/s, valid=64, best_bacc=0.439]Step3 PhaseA:  60%|██████    | 64/106 [00:07<00:05,  8.40body/s, valid=65, best_bacc=0.268]Step3 PhaseA:  61%|██████▏   | 65/106 [00:07<00:05,  7.95body/s, valid=65, best_bacc=0.268]Step3 PhaseA:  61%|██████▏   | 65/106 [00:07<00:05,  7.95body/s, valid=66, best_bacc=0.386]Step3 PhaseA:  62%|██████▏   | 66/106 [00:07<00:05,  7.97body/s, valid=66, best_bacc=0.386]Step3 PhaseA:  62%|██████▏   | 66/106 [00:08<00:05,  7.97body/s, valid=67, best_bacc=0.399]Step3 PhaseA:  63%|██████▎   | 67/106 [00:08<00:04,  8.05body/s, valid=67, best_bacc=0.399]Step3 PhaseA:  63%|██████▎   | 67/106 [00:08<00:04,  8.05body/s, valid=68, best_bacc=0.320]Step3 PhaseA:  64%|██████▍   | 68/106 [00:08<00:04,  8.37body/s, valid=68, best_bacc=0.320]Step3 PhaseA:  64%|██████▍   | 68/106 [00:08<00:04,  8.37body/s, valid=69, best_bacc=0.392]Step3 PhaseA:  65%|██████▌   | 69/106 [00:08<00:04,  8.18body/s, valid=69, best_bacc=0.392]Step3 PhaseA:  65%|██████▌   | 69/106 [00:08<00:04,  8.18body/s, valid=70, best_bacc=0.362]Step3 PhaseA:  66%|██████▌   | 70/106 [00:08<00:04,  8.43body/s, valid=70, best_bacc=0.362]Step3 PhaseA:  66%|██████▌   | 70/106 [00:08<00:04,  8.43body/s, valid=71, best_bacc=0.299]Step3 PhaseA:  67%|██████▋   | 71/106 [00:08<00:04,  8.43body/s, valid=71, best_bacc=0.299]Step3 PhaseA:  67%|██████▋   | 71/106 [00:08<00:04,  8.43body/s, valid=72, best_bacc=0.274]Step3 PhaseA:  68%|██████▊   | 72/106 [00:08<00:04,  8.27body/s, valid=72, best_bacc=0.274]Step3 PhaseA:  68%|██████▊   | 72/106 [00:08<00:04,  8.27body/s, valid=73, best_bacc=0.444]Step3 PhaseA:  69%|██████▉   | 73/106 [00:08<00:03,  8.41body/s, valid=73, best_bacc=0.444]Step3 PhaseA:  69%|██████▉   | 73/106 [00:08<00:03,  8.41body/s, valid=74, best_bacc=0.420]Step3 PhaseA:  70%|██████▉   | 74/106 [00:08<00:03,  8.37body/s, valid=74, best_bacc=0.420]Step3 PhaseA:  70%|██████▉   | 74/106 [00:08<00:03,  8.37body/s, valid=75, best_bacc=0.349]Step3 PhaseA:  71%|███████   | 75/106 [00:08<00:03,  8.64body/s, valid=75, best_bacc=0.349]Step3 PhaseA:  71%|███████   | 75/106 [00:09<00:03,  8.64body/s, valid=76, best_bacc=0.323]Step3 PhaseA:  72%|███████▏  | 76/106 [00:09<00:03,  8.75body/s, valid=76, best_bacc=0.323]Step3 PhaseA:  72%|███████▏  | 76/106 [00:09<00:03,  8.75body/s, valid=77, best_bacc=0.429]Step3 PhaseA:  73%|███████▎  | 77/106 [00:09<00:03,  8.63body/s, valid=77, best_bacc=0.429]Step3 PhaseA:  73%|███████▎  | 77/106 [00:09<00:03,  8.63body/s, valid=78, best_bacc=0.442]Step3 PhaseA:  74%|███████▎  | 78/106 [00:09<00:03,  8.57body/s, valid=78, best_bacc=0.442]Step3 PhaseA:  74%|███████▎  | 78/106 [00:09<00:03,  8.57body/s, valid=79, best_bacc=0.392]Step3 PhaseA:  75%|███████▍  | 79/106 [00:09<00:03,  8.52body/s, valid=79, best_bacc=0.392]Step3 PhaseA:  75%|███████▍  | 79/106 [00:09<00:03,  8.52body/s, valid=80, best_bacc=0.386]Step3 PhaseA:  75%|███████▌  | 80/106 [00:09<00:03,  8.46body/s, valid=80, best_bacc=0.386]Step3 PhaseA:  75%|███████▌  | 80/106 [00:09<00:03,  8.46body/s, valid=81, best_bacc=0.339]Step3 PhaseA:  76%|███████▋  | 81/106 [00:09<00:02,  8.46body/s, valid=81, best_bacc=0.339]Step3 PhaseA:  76%|███████▋  | 81/106 [00:09<00:02,  8.46body/s, valid=82, best_bacc=0.385]Step3 PhaseA:  77%|███████▋  | 82/106 [00:09<00:02,  8.29body/s, valid=82, best_bacc=0.385]Step3 PhaseA:  77%|███████▋  | 82/106 [00:09<00:02,  8.29body/s, valid=83, best_bacc=0.443]Step3 PhaseA:  78%|███████▊  | 83/106 [00:09<00:02,  8.27body/s, valid=83, best_bacc=0.443]Step3 PhaseA:  78%|███████▊  | 83/106 [00:10<00:02,  8.27body/s, valid=84, best_bacc=0.326]Step3 PhaseA:  79%|███████▉  | 84/106 [00:10<00:02,  8.23body/s, valid=84, best_bacc=0.326]Step3 PhaseA:  79%|███████▉  | 84/106 [00:10<00:02,  8.23body/s, valid=85, best_bacc=0.308]Step3 PhaseA:  80%|████████  | 85/106 [00:10<00:02,  8.56body/s, valid=85, best_bacc=0.308]Step3 PhaseA:  80%|████████  | 85/106 [00:10<00:02,  8.56body/s, valid=86, best_bacc=0.373]Step3 PhaseA:  81%|████████  | 86/106 [00:10<00:02,  8.50body/s, valid=86, best_bacc=0.373]Step3 PhaseA:  81%|████████  | 86/106 [00:10<00:02,  8.50body/s, valid=87, best_bacc=0.362]Step3 PhaseA:  82%|████████▏ | 87/106 [00:10<00:02,  8.60body/s, valid=87, best_bacc=0.362]Step3 PhaseA:  82%|████████▏ | 87/106 [00:10<00:02,  8.60body/s, valid=88, best_bacc=0.426]Step3 PhaseA:  83%|████████▎ | 88/106 [00:10<00:02,  8.56body/s, valid=88, best_bacc=0.426]Step3 PhaseA:  83%|████████▎ | 88/106 [00:10<00:02,  8.56body/s, valid=89, best_bacc=0.335]Step3 PhaseA:  83%|████████▎ | 88/106 [00:10<00:02,  8.56body/s, valid=90, best_bacc=0.464]Step3 PhaseA:  85%|████████▍ | 90/106 [00:10<00:01,  8.85body/s, valid=90, best_bacc=0.464]Step3 PhaseA:  85%|████████▍ | 90/106 [00:10<00:01,  8.85body/s, valid=91, best_bacc=0.285]Step3 PhaseA:  86%|████████▌ | 91/106 [00:10<00:01,  8.74body/s, valid=91, best_bacc=0.285]Step3 PhaseA:  86%|████████▌ | 91/106 [00:10<00:01,  8.74body/s, valid=92, best_bacc=0.319]Step3 PhaseA:  87%|████████▋ | 92/106 [00:10<00:01,  8.64body/s, valid=92, best_bacc=0.319]Step3 PhaseA:  87%|████████▋ | 92/106 [00:11<00:01,  8.64body/s, valid=93, best_bacc=0.452]Step3 PhaseA:  88%|████████▊ | 93/106 [00:11<00:01,  8.80body/s, valid=93, best_bacc=0.452]Step3 PhaseA:  88%|████████▊ | 93/106 [00:11<00:01,  8.80body/s, valid=94, best_bacc=0.363]Step3 PhaseA:  89%|████████▊ | 94/106 [00:11<00:01,  8.46body/s, valid=94, best_bacc=0.363]Step3 PhaseA:  89%|████████▊ | 94/106 [00:11<00:01,  8.46body/s, valid=95, best_bacc=0.505]Step3 PhaseA:  90%|████████▉ | 95/106 [00:11<00:01,  8.68body/s, valid=95, best_bacc=0.505]Step3 PhaseA:  90%|████████▉ | 95/106 [00:11<00:01,  8.68body/s, valid=96, best_bacc=0.474]Step3 PhaseA:  91%|█████████ | 96/106 [00:11<00:01,  8.52body/s, valid=96, best_bacc=0.474]Step3 PhaseA:  91%|█████████ | 96/106 [00:11<00:01,  8.52body/s, valid=97, best_bacc=0.263]Step3 PhaseA:  92%|█████████▏| 97/106 [00:11<00:01,  7.97body/s, valid=97, best_bacc=0.263]Step3 PhaseA:  92%|█████████▏| 97/106 [00:11<00:01,  7.97body/s, valid=98, best_bacc=0.510]Step3 PhaseA:  92%|█████████▏| 98/106 [00:11<00:00,  8.07body/s, valid=98, best_bacc=0.510]Step3 PhaseA:  92%|█████████▏| 98/106 [00:11<00:00,  8.07body/s, valid=99, best_bacc=0.321]Step3 PhaseA:  93%|█████████▎| 99/106 [00:11<00:00,  8.16body/s, valid=99, best_bacc=0.321]Step3 PhaseA:  93%|█████████▎| 99/106 [00:11<00:00,  8.16body/s, valid=100, best_bacc=0.251]Step3 PhaseA:  94%|█████████▍| 100/106 [00:11<00:00,  8.19body/s, valid=100, best_bacc=0.251]Step3 PhaseA:  94%|█████████▍| 100/106 [00:12<00:00,  8.19body/s, valid=101, best_bacc=0.440]Step3 PhaseA:  95%|█████████▌| 101/106 [00:12<00:00,  8.27body/s, valid=101, best_bacc=0.440]Step3 PhaseA:  95%|█████████▌| 101/106 [00:12<00:00,  8.27body/s, valid=102, best_bacc=0.402]Step3 PhaseA:  96%|█████████▌| 102/106 [00:12<00:00,  8.29body/s, valid=102, best_bacc=0.402]Step3 PhaseA:  96%|█████████▌| 102/106 [00:12<00:00,  8.29body/s, valid=103, best_bacc=0.389]Step3 PhaseA:  97%|█████████▋| 103/106 [00:12<00:00,  8.48body/s, valid=103, best_bacc=0.389]Step3 PhaseA:  97%|█████████▋| 103/106 [00:12<00:00,  8.48body/s, valid=104, best_bacc=0.527]Step3 PhaseA:  98%|█████████▊| 104/106 [00:12<00:00,  8.40body/s, valid=104, best_bacc=0.527]Step3 PhaseA:  98%|█████████▊| 104/106 [00:12<00:00,  8.40body/s, valid=105, best_bacc=0.305]Step3 PhaseA:  99%|█████████▉| 105/106 [00:12<00:00,  8.45body/s, valid=105, best_bacc=0.305]Step3 PhaseA:  99%|█████████▉| 105/106 [00:12<00:00,  8.45body/s, valid=106, best_bacc=0.551]Step3 PhaseA: 100%|██████████| 106/106 [00:12<00:00,  8.07body/s, valid=106, best_bacc=0.551]Step3 PhaseA: 100%|██████████| 106/106 [00:12<00:00,  8.39body/s, valid=106, best_bacc=0.551]
+
+  Validated: 106/106 bodies (top-200 by bacc, min_bacc=0.251)
+
+======================================================================
+  STEP 4: Extract Features
+======================================================================
+  106 unique bodies from 106 formulas
+
+  Extracting features for train...
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+Step4 train:   0%|          | 0/75 [00:00<?, ?batch/s]Step4 train:   1%|▏         | 1/75 [00:00<00:38,  1.92batch/s]Step4 train:   3%|▎         | 2/75 [00:00<00:23,  3.04batch/s]Step4 train:   4%|▍         | 3/75 [00:00<00:19,  3.75batch/s]Step4 train:   5%|▌         | 4/75 [00:01<00:16,  4.21batch/s]Step4 train:   7%|▋         | 5/75 [00:01<00:15,  4.51batch/s]Step4 train:   8%|▊         | 6/75 [00:01<00:14,  4.72batch/s]Step4 train:   9%|▉         | 7/75 [00:01<00:13,  4.86batch/s]Step4 train:  11%|█         | 8/75 [00:01<00:13,  4.97batch/s]Step4 train:  12%|█▏        | 9/75 [00:02<00:13,  5.03batch/s]Step4 train:  13%|█▎        | 10/75 [00:02<00:12,  5.08batch/s]Step4 train:  15%|█▍        | 11/75 [00:02<00:12,  5.11batch/s]Step4 train:  16%|█▌        | 12/75 [00:02<00:12,  5.13batch/s]Step4 train:  17%|█▋        | 13/75 [00:02<00:12,  5.14batch/s]Step4 train:  19%|█▊        | 14/75 [00:03<00:11,  5.16batch/s]Step4 train:  20%|██        | 15/75 [00:03<00:11,  5.15batch/s]Step4 train:  21%|██▏       | 16/75 [00:03<00:11,  5.15batch/s]Step4 train:  23%|██▎       | 17/75 [00:03<00:11,  5.14batch/s]Step4 train:  24%|██▍       | 18/75 [00:03<00:11,  5.15batch/s]Step4 train:  25%|██▌       | 19/75 [00:04<00:10,  5.16batch/s]Step4 train:  27%|██▋       | 20/75 [00:04<00:10,  5.17batch/s]Step4 train:  28%|██▊       | 21/75 [00:04<00:10,  5.17batch/s]Step4 train:  29%|██▉       | 22/75 [00:04<00:10,  5.17batch/s]Step4 train:  31%|███       | 23/75 [00:04<00:10,  5.18batch/s]Step4 train:  32%|███▏      | 24/75 [00:04<00:09,  5.18batch/s]Step4 train:  33%|███▎      | 25/75 [00:05<00:09,  5.17batch/s]Step4 train:  35%|███▍      | 26/75 [00:05<00:09,  5.19batch/s]Step4 train:  36%|███▌      | 27/75 [00:05<00:09,  5.19batch/s]Step4 train:  37%|███▋      | 28/75 [00:05<00:09,  5.18batch/s]Step4 train:  39%|███▊      | 29/75 [00:05<00:08,  5.18batch/s]Step4 train:  40%|████      | 30/75 [00:06<00:08,  5.17batch/s]Step4 train:  41%|████▏     | 31/75 [00:06<00:08,  5.17batch/s]Step4 train:  43%|████▎     | 32/75 [00:06<00:08,  5.18batch/s]Step4 train:  44%|████▍     | 33/75 [00:06<00:08,  5.19batch/s]Step4 train:  45%|████▌     | 34/75 [00:06<00:07,  5.19batch/s]Step4 train:  47%|████▋     | 35/75 [00:07<00:07,  5.19batch/s]Step4 train:  48%|████▊     | 36/75 [00:07<00:07,  5.18batch/s]Step4 train:  49%|████▉     | 37/75 [00:07<00:07,  5.18batch/s]Step4 train:  51%|█████     | 38/75 [00:07<00:07,  5.18batch/s]Step4 train:  52%|█████▏    | 39/75 [00:07<00:06,  5.17batch/s]Step4 train:  53%|█████▎    | 40/75 [00:08<00:06,  5.18batch/s]Step4 train:  55%|█████▍    | 41/75 [00:08<00:06,  5.19batch/s]Step4 train:  56%|█████▌    | 42/75 [00:08<00:06,  5.19batch/s]Step4 train:  57%|█████▋    | 43/75 [00:08<00:06,  5.19batch/s]Step4 train:  59%|█████▊    | 44/75 [00:08<00:05,  5.18batch/s]Step4 train:  60%|██████    | 45/75 [00:09<00:05,  5.18batch/s]Step4 train:  61%|██████▏   | 46/75 [00:09<00:05,  5.18batch/s]Step4 train:  63%|██████▎   | 47/75 [00:09<00:05,  5.18batch/s]Step4 train:  64%|██████▍   | 48/75 [00:09<00:05,  5.17batch/s]Step4 train:  65%|██████▌   | 49/75 [00:09<00:05,  5.18batch/s]Step4 train:  67%|██████▋   | 50/75 [00:09<00:04,  5.19batch/s]Step4 train:  68%|██████▊   | 51/75 [00:10<00:04,  5.20batch/s]Step4 train:  69%|██████▉   | 52/75 [00:10<00:04,  5.20batch/s]Step4 train:  71%|███████   | 53/75 [00:10<00:04,  5.19batch/s]Step4 train:  72%|███████▏  | 54/75 [00:10<00:04,  5.19batch/s]Step4 train:  73%|███████▎  | 55/75 [00:10<00:03,  5.19batch/s]Step4 train:  75%|███████▍  | 56/75 [00:11<00:03,  5.18batch/s]Step4 train:  76%|███████▌  | 57/75 [00:11<00:03,  5.18batch/s]Step4 train:  77%|███████▋  | 58/75 [00:11<00:03,  5.18batch/s]Step4 train:  79%|███████▊  | 59/75 [00:11<00:03,  5.18batch/s]Step4 train:  80%|████████  | 60/75 [00:11<00:02,  5.19batch/s]Step4 train:  81%|████████▏ | 61/75 [00:12<00:02,  5.20batch/s]Step4 train:  83%|████████▎ | 62/75 [00:12<00:02,  5.19batch/s]Step4 train:  84%|████████▍ | 63/75 [00:12<00:02,  5.19batch/s]Step4 train:  85%|████████▌ | 64/75 [00:12<00:02,  5.18batch/s]Step4 train:  87%|████████▋ | 65/75 [00:12<00:01,  5.18batch/s]Step4 train:  88%|████████▊ | 66/75 [00:13<00:01,  5.17batch/s]Step4 train:  89%|████████▉ | 67/75 [00:13<00:01,  5.17batch/s]Step4 train:  91%|█████████ | 68/75 [00:13<00:01,  5.19batch/s]Step4 train:  92%|█████████▏| 69/75 [00:13<00:01,  5.19batch/s]Step4 train:  93%|█████████▎| 70/75 [00:13<00:00,  5.19batch/s]Step4 train:  95%|█████████▍| 71/75 [00:14<00:00,  5.20batch/s]Step4 train:  96%|█████████▌| 72/75 [00:14<00:00,  5.21batch/s]Step4 train:  97%|█████████▋| 73/75 [00:14<00:00,  5.21batch/s]Step4 train:  99%|█████████▊| 74/75 [00:14<00:00,  5.20batch/s]Step4 train: 100%|██████████| 75/75 [00:14<00:00,  4.79batch/s]Step4 train: 100%|██████████| 75/75 [00:14<00:00,  5.03batch/s]
+  train: (4760, 6360)
+
+  Extracting features for val...
+  BrainTumor val: 840 images
+    glioma      (Glioma tumor      ):   210
+    meningioma  (Meningioma tumor  ):   210
+    pituitary   (Pituitary tumor   ):   210
+    notumor     (No tumor          ):   210
+Step4 val:   0%|          | 0/14 [00:00<?, ?batch/s]Step4 val:   7%|▋         | 1/14 [00:00<00:05,  2.42batch/s]Step4 val:  14%|█▍        | 2/14 [00:00<00:03,  3.52batch/s]Step4 val:  21%|██▏       | 3/14 [00:00<00:02,  4.09batch/s]Step4 val:  29%|██▊       | 4/14 [00:01<00:02,  4.40batch/s]Step4 val:  36%|███▌      | 5/14 [00:01<00:01,  4.66batch/s]Step4 val:  43%|████▎     | 6/14 [00:01<00:01,  4.82batch/s]Step4 val:  50%|█████     | 7/14 [00:01<00:01,  4.95batch/s]Step4 val:  57%|█████▋    | 8/14 [00:01<00:01,  5.04batch/s]Step4 val:  64%|██████▍   | 9/14 [00:01<00:00,  5.07batch/s]Step4 val:  71%|███████▏  | 10/14 [00:02<00:00,  5.11batch/s]Step4 val:  79%|███████▊  | 11/14 [00:02<00:00,  5.14batch/s]Step4 val:  86%|████████▌ | 12/14 [00:02<00:00,  5.13batch/s]Step4 val:  93%|█████████▎| 13/14 [00:02<00:00,  5.15batch/s]Step4 val: 100%|██████████| 14/14 [00:02<00:00,  5.06batch/s]Step4 val: 100%|██████████| 14/14 [00:03<00:00,  4.65batch/s]
+  val: (840, 6360)
+
+  Extracting features for test...
+  BrainTumor test: 1600 images
+    glioma      (Glioma tumor      ):   400
+    meningioma  (Meningioma tumor  ):   400
+    pituitary   (Pituitary tumor   ):   400
+    notumor     (No tumor          ):   400
+Step4 test:   0%|          | 0/25 [00:00<?, ?batch/s]Step4 test:   4%|▍         | 1/25 [00:00<00:09,  2.40batch/s]Step4 test:   8%|▊         | 2/25 [00:00<00:06,  3.48batch/s]Step4 test:  12%|█▏        | 3/25 [00:00<00:05,  4.06batch/s]Step4 test:  16%|█▌        | 4/25 [00:01<00:04,  4.43batch/s]Step4 test:  20%|██        | 5/25 [00:01<00:04,  4.68batch/s]Step4 test:  24%|██▍       | 6/25 [00:01<00:03,  4.84batch/s]Step4 test:  28%|██▊       | 7/25 [00:01<00:03,  4.94batch/s]Step4 test:  32%|███▏      | 8/25 [00:01<00:03,  5.02batch/s]Step4 test:  36%|███▌      | 9/25 [00:01<00:03,  5.07batch/s]Step4 test:  40%|████      | 10/25 [00:02<00:02,  5.10batch/s]Step4 test:  44%|████▍     | 11/25 [00:02<00:02,  5.12batch/s]Step4 test:  48%|████▊     | 12/25 [00:02<00:02,  5.14batch/s]Step4 test:  52%|█████▏    | 13/25 [00:02<00:02,  5.15batch/s]Step4 test:  56%|█████▌    | 14/25 [00:02<00:02,  5.15batch/s]Step4 test:  60%|██████    | 15/25 [00:03<00:01,  5.14batch/s]Step4 test:  64%|██████▍   | 16/25 [00:03<00:01,  5.16batch/s]Step4 test:  68%|██████▊   | 17/25 [00:03<00:01,  5.15batch/s]Step4 test:  72%|███████▏  | 18/25 [00:03<00:01,  5.15batch/s]Step4 test:  76%|███████▌  | 19/25 [00:03<00:01,  5.14batch/s]Step4 test:  80%|████████  | 20/25 [00:04<00:00,  5.16batch/s]Step4 test:  84%|████████▍ | 21/25 [00:04<00:00,  5.18batch/s]Step4 test:  88%|████████▊ | 22/25 [00:04<00:00,  5.18batch/s]Step4 test:  92%|█████████▏| 23/25 [00:04<00:00,  5.19batch/s]Step4 test:  96%|█████████▌| 24/25 [00:04<00:00,  5.20batch/s]Step4 test: 100%|██████████| 25/25 [00:05<00:00,  5.21batch/s]Step4 test: 100%|██████████| 25/25 [00:05<00:00,  4.85batch/s]
+  test: (1600, 6360)
+  Features saved: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke/features.npz
+
+======================================================================
+  STEP 5: Train Classifier (v2 — HGB Variants with sample_weight, no SMOTE)
+======================================================================
+  106 formulas x 112 stats = 6360 dims
+  Train: 4760 | Val: 840 | Test: 1600, 4 classes
+  Train dist: {0: 1190, 1: 1190, 2: 1190, 3: 1190}
+  Val dist:   {0: 210, 1: 210, 2: 210, 3: 210}
+  Test dist:  {0: 400, 1: 400, 2: 400, 3: 400}
+  Removing 140 constant features...
+  Non-constant features: 6220 / 6360
+  ANOVA pre-selection: top-1000 from 6220 features
+  After ANOVA: 1000 features
+  MI pool: top-3000, then MI top-1000
+  After MI: 1000 features
+  Sample weights: min=1.000, max=1.000
+
+  --- Method 1: HistGB + ANOVA (baseline) ---
+  Best: max_iter=300, lr=0.1, max_depth=5, K=500, cv_acc=0.927, cv_bal=0.927
+  Test: acc=0.892, bal_acc=0.893, AUC=0.967
+
+  --- Method 2: HistGB + ANOVA + sample_weight ---
+  Best: cfg=(300, 0.1, 5), K=500, cv_acc=0.927, cv_bal=0.927
+  Test: acc=0.892, bal_acc=0.893, AUC=0.967
+
+  --- Method 3: HistGB + MI ---

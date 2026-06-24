@@ -1,0 +1,14 @@
+{
+  "method": "swin_tiny",
+  "acc": 0.95,
+  "bal_acc": 0.95,
+  "auc": 0.9922080729166666,
+  "per_class": {
+    "glioma": 0.815,
+    "meningioma": 0.9875,
+    "pituitary": 0.9975,
+    "notumor": 1.0
+  },
+  "time_seconds": 717.3668735027313,
+  "epochs": 30
+}

@@ -1,0 +1,14 @@
+{
+  "method": "efficientnet_b0",
+  "acc": 0.946875,
+  "bal_acc": 0.946875,
+  "auc": 0.99402578125,
+  "per_class": {
+    "glioma": 0.7975,
+    "meningioma": 0.99,
+    "pituitary": 1.0,
+    "notumor": 1.0
+  },
+  "time_seconds": 188.75769758224487,
+  "epochs": 30
+}

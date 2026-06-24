@@ -1,0 +1,14 @@
+{
+  "method": "dinov2_linear",
+  "acc": 0.919375,
+  "bal_acc": 0.919375,
+  "auc": 0.9781880208333333,
+  "per_class": {
+    "glioma": 0.745,
+    "meningioma": 0.9625,
+    "pituitary": 0.97,
+    "notumor": 1.0
+  },
+  "time_seconds": 49.23523449897766,
+  "epochs": 30
+}

@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "method": "hgb_baseline",
+  "test_accuracy": 0.905625,
+  "test_balanced_accuracy": 0.905625,
+  "test_auc": 0.9699114583333334,
+  "per_class_test": {
+    "glioma": 0.7025,
+    "meningioma": 0.94,
+    "pituitary": 0.9825,
+    "notumor": 0.9975
+  },
+  "all_methods": {
+    "hgb_baseline": {
+      "acc": 0.905625,
+      "bal_acc": 0.905625,
+      "auc": 0.9699114583333334
+    },
+    "hgb_sample_weight": {
+      "acc": 0.905625,
+      "bal_acc": 0.905625,
+      "auc": 0.9699114583333334
+    }
+  },
+  "all_per_class": {
+    "hgb_baseline": {
+      "glioma": 0.7025,
+      "meningioma": 0.94,
+      "pituitary": 0.9825,
+      "notumor": 0.9975
+    },
+    "hgb_sample_weight": {
+      "glioma": 0.7025,
+      "meningioma": 0.94,
+      "pituitary": 0.9825,
+      "notumor": 0.9975
+    }
+  },
+  "cv_accs": {
+    "hgb_baseline": 0.9326785714285715,
+    "hgb_sample_weight": 0.9326785714285715
+  },
+  "cv_bal_accs": {
+    "hgb_baseline": 0.9326785714285715,
+    "hgb_sample_weight": 0.9326785714285715
+  }
+}

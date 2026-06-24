@@ -1,0 +1,8 @@
+run_brain_all.sh: line 4: cd: $'/bin\nfor m in resnet50 densenet121 efficientnet_b0 swin_tiny dinov2_linear rulefit CBM CRL; do\n  echo ##########': No such file or directory
+usage: train_brain.py [-h] --method
+                      {resnet50,densenet121,efficientnet_b0,swin_tiny,dinov2_linear,rulefit,CBM,CRL}
+                      [--epochs EPOCHS] [--batch_size BATCH_SIZE] [--lr LR]
+                      [--gpu GPU]
+train_brain.py: error: argument --method: invalid choice: '' (choose from 'resnet50', 'densenet121', 'efficientnet_b0', 'swin_tiny', 'dinov2_linear', 'rulefit', 'CBM', 'CRL')
+run_brain_all.sh: line 6: syntax error near unexpected token `done'
+run_brain_all.sh: line 6: `done'

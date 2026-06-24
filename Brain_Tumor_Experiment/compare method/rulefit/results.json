@@ -1,0 +1,14 @@
+{
+  "method": "rulefit",
+  "acc": 0.74375,
+  "bal_acc": 0.74375,
+  "auc": 0.9145880208333332,
+  "per_class": {
+    "glioma": 0.5525,
+    "meningioma": 0.5675,
+    "pituitary": 0.8625,
+    "notumor": 0.9925
+  },
+  "time_seconds": 10.748305559158325,
+  "epochs": 30
+}

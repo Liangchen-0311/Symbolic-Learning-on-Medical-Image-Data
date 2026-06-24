@@ -1,0 +1,14 @@
+{
+  "method": "CRL",
+  "acc": 0.948125,
+  "bal_acc": 0.948125,
+  "auc": 0.9840609375,
+  "per_class": {
+    "glioma": 0.7975,
+    "meningioma": 0.9975,
+    "pituitary": 0.9975,
+    "notumor": 1.0
+  },
+  "time_seconds": 344.08965706825256,
+  "epochs": 30
+}

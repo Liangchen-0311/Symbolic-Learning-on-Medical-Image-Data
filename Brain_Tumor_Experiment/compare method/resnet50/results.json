@@ -1,0 +1,14 @@
+{
+  "method": "resnet50",
+  "acc": 0.951875,
+  "bal_acc": 0.951875,
+  "auc": 0.9925994791666667,
+  "per_class": {
+    "glioma": 0.8175,
+    "meningioma": 0.99,
+    "pituitary": 1.0,
+    "notumor": 1.0
+  },
+  "time_seconds": 261.00239658355713,
+  "epochs": 30
+}

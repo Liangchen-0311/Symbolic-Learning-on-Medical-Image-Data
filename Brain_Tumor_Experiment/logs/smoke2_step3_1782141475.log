@@ -1,0 +1,61 @@
+
+======================================================================
+  Brain Tumor MRI Symbolic Feature Discovery Pipeline
+  Dataset: brain_tumor
+  Device: cuda:0
+  Steps: 3 → 4
+======================================================================
+
+======================================================================
+  STEP 3: Merge de-duplication + quality gating
+======================================================================
+  106 unique bodies from 106 formulas
+  dedup |r|>=0.95, keep top 80% by quality, cap=200
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+  Signature subset: 400 images @ 96px
+Step3 sig:   0%|          | 0/106 [00:00<?, ?body/s]Step3 sig:   0%|          | 0/106 [00:00<?, ?body/s, kept=1]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=1]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=2]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=3]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=4]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=5]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=6]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=7]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=8]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=9]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=10]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=11]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=12]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=13]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=14]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=15]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=16]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=17]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=18]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=19]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=20]Step3 sig:   8%|▊         | 8/106 [00:00<00:01, 79.57body/s, kept=21]Step3 sig: 100%|██████████| 106/106 [00:00<00:00, 589.02body/s, kept=21]
+  Quality gate: 17/21 kept (min F=39.54)
+  De-dup: removed 0, kept 17
+
+  Validated: 17 bodies (from 106 unique; quality range 39.54–114.46)
+
+======================================================================
+  STEP 4: Extract Features
+======================================================================
+  17 unique bodies from 17 formulas
+
+  Extracting features for train...
+  BrainTumor train: 4760 images
+    glioma      (Glioma tumor      ):  1190
+    meningioma  (Meningioma tumor  ):  1190
+    pituitary   (Pituitary tumor   ):  1190
+    notumor     (No tumor          ):  1190
+Step4 train:   0%|          | 0/75 [00:00<?, ?batch/s]Step4 train:   1%|▏         | 1/75 [00:00<00:27,  2.68batch/s]Step4 train:   7%|▋         | 5/75 [00:00<00:05, 11.96batch/s]Step4 train:  12%|█▏        | 9/75 [00:00<00:03, 17.93batch/s]Step4 train:  17%|█▋        | 13/75 [00:00<00:02, 21.94batch/s]Step4 train:  23%|██▎       | 17/75 [00:00<00:02, 24.61batch/s]Step4 train:  28%|██▊       | 21/75 [00:01<00:02, 26.46batch/s]Step4 train:  33%|███▎      | 25/75 [00:01<00:01, 27.65batch/s]Step4 train:  39%|███▊      | 29/75 [00:01<00:01, 28.49batch/s]Step4 train:  44%|████▍     | 33/75 [00:01<00:01, 29.07batch/s]Step4 train:  49%|████▉     | 37/75 [00:01<00:01, 29.32batch/s]Step4 train:  55%|█████▍    | 41/75 [00:01<00:01, 29.53batch/s]Step4 train:  59%|█████▊    | 44/75 [00:01<00:01, 29.55batch/s]Step4 train:  64%|██████▍   | 48/75 [00:01<00:00, 29.76batch/s]Step4 train:  69%|██████▉   | 52/75 [00:02<00:00, 29.98batch/s]Step4 train:  75%|███████▍  | 56/75 [00:02<00:00, 30.03batch/s]Step4 train:  80%|████████  | 60/75 [00:02<00:00, 30.10batch/s]Step4 train:  85%|████████▌ | 64/75 [00:02<00:00, 30.09batch/s]Step4 train:  91%|█████████ | 68/75 [00:02<00:00, 30.13batch/s]Step4 train:  96%|█████████▌| 72/75 [00:02<00:00, 30.53batch/s]Step4 train: 100%|██████████| 75/75 [00:02<00:00, 26.06batch/s]
+  train: (4760, 1020)
+
+  Extracting features for val...
+  BrainTumor val: 840 images
+    glioma      (Glioma tumor      ):   210
+    meningioma  (Meningioma tumor  ):   210
+    pituitary   (Pituitary tumor   ):   210
+    notumor     (No tumor          ):   210
+Step4 val:   0%|          | 0/14 [00:00<?, ?batch/s]Step4 val:   7%|▋         | 1/14 [00:00<00:02,  4.78batch/s]Step4 val:  29%|██▊       | 4/14 [00:00<00:00, 14.90batch/s]Step4 val:  50%|█████     | 7/14 [00:00<00:00, 20.40batch/s]Step4 val:  79%|███████▊  | 11/14 [00:00<00:00, 24.84batch/s]Step4 val: 100%|██████████| 14/14 [00:00<00:00, 26.23batch/s]Step4 val: 100%|██████████| 14/14 [00:00<00:00, 19.55batch/s]
+  val: (840, 1020)
+
+  Extracting features for test...
+  BrainTumor test: 1600 images
+    glioma      (Glioma tumor      ):   400
+    meningioma  (Meningioma tumor  ):   400
+    pituitary   (Pituitary tumor   ):   400
+    notumor     (No tumor          ):   400
+Step4 test:   0%|          | 0/25 [00:00<?, ?batch/s]Step4 test:   4%|▍         | 1/25 [00:00<00:05,  4.33batch/s]Step4 test:  16%|█▌        | 4/25 [00:00<00:01, 13.91batch/s]Step4 test:  32%|███▏      | 8/25 [00:00<00:00, 20.78batch/s]Step4 test:  44%|████▍     | 11/25 [00:00<00:00, 23.62batch/s]Step4 test:  60%|██████    | 15/25 [00:00<00:00, 26.15batch/s]Step4 test:  76%|███████▌  | 19/25 [00:00<00:00, 27.77batch/s]Step4 test:  92%|█████████▏| 23/25 [00:00<00:00, 29.00batch/s]Step4 test: 100%|██████████| 25/25 [00:01<00:00, 23.16batch/s]
+  test: (1600, 1020)
+  Features saved: /home/ET/lctan/Symbolic-Learning/Symbolic-Learning-on-Medical-Image-Data/Brain_Tumor_Experiment/outputs/brain_tumor_smoke2/features.npz
+
+======================================================================
+  Pipeline Complete!
+======================================================================
