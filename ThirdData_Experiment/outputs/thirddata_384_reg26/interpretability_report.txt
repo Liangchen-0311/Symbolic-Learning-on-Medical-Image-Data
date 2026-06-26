@@ -1,0 +1,269 @@
+======================================================================
+THIRDDATA (BUSI) SYMBOLIC FEATURE INTERPRETABILITY REPORT
+======================================================================
+
+Total validated formulas: 800
+Feature dimensions: 800 formulas x 312 stats (12 stats x 26 regions) = 249600
+Best classifier method: hgb_sample_weight
+
+TOP-20 FORMULAS BY ANOVA-F QUALITY (step 3):
+--------------------------------------------------
+   1. F= 1118.00  I_GRAY edge_y diag_symmetry edge_mag abs gabor_45 low_freq edge_xx tb_symmetry sqrt_abs normalize
+   2. F=  672.64  I_GRAY log1p_abs flip_h log1p_abs high_freq laplacian pow2 flip_h lbp_like flip_v sqrt_abs
+   3. F=  271.82  I_BLUR laplacian local_var gabor_90 local_var I_LOCALSTD log1p_abs relu flip_h normalize subtract
+   4. F=  245.10  I_LOG blur diag_symmetry closing I_GRAD dilate edge_y downsample_2x edge_orient edge_mag edge_orient edge_x normalize subtract
+   5. F=  221.72  I_GRAY edge_yy I_BLUR local_var edge_y stride_pool_4 edge_xx gabor_90 closing multiply laplacian log1p_abs sigmoid blur_7x7
+   6. F=  162.51  I_LBP edge_y flip_v corner_harris lbp_like dog I_GRAD opening dog subtract local_range stride_pool_4 sigmoid normalize
+   7. F=  158.77  I_BLUR gabor_mag local_contrast sigmoid normalize I_LOCALSTD gabor_0 local_std_5x5 negate abs add
+   8. F=  158.77  I_GRAY dog gabor_mag gabor_0 I_GRAY pow2 add gabor_90 blur_7x7 local_var local_range stride_pool_4 flip_v sigmoid
+   9. F=  153.93  I_LOCALSTD gabor_90 relu flip_h blur_7x7 stride_pool_4 blur gabor_0 opening flip_v sigmoid
+  10. F=  138.21  I_BLUR gabor_90 high_freq texture_entropy blur local_std_5x5 normalize
+  11. F=  138.21  I_BLUR high_freq edge_y edge_yy gabor_0 edge_mag gabor_mag flip_v log1p_abs gabor_0 gabor_45 downsample_4x laplacian normalize
+  12. F=  132.00  I_GRAY local_range dog negate dog flip_v dog pow2 edge_xx blur edge_y edge_yy texture_entropy normalize
+  13. F=  132.00  I_BLUR downsample_2x dilate edge_y edge_mag normalize negate
+  14. F=  116.76  I_LBP corner_harris dog flip_v blur opening abs lbp_like local_range normalize flip_v
+  15. F=  114.98  I_BLUR log1p_abs closing edge_y local_range edge_y normalize
+  16. F=  114.98  I_BLUR gabor_45 local_range closing normalize negate opening
+  17. F=   95.46  I_LRDIFF dog local_std_5x5 dilate pow2 normalize gabor_45 downsample_4x I_BLUR multiply log1p_abs gabor_mag local_std_5x5 normalize
+  18. F=   78.83  I_GRAY low_freq opening stride_pool_4 high_freq sigmoid border_sharp edge_y local_std_5x5 edge_mag lbp_like opening gabor_0 normalize
+  19. F=   75.05  I_LOCALSTD pow2 blur_7x7 downsample_4x downsample_2x corner_harris edge_mag edge_orient pow2 abs texture_entropy negate edge_orient lbp_like
+  20. F=   71.41  I_LBP abs pow2 dilate texture_entropy sigmoid pow2 normalize I_LRDIFF gabor_90 local_range gabor_mag gabor_45 add
+
+CLASSIFIER FEATURE ANALYSIS:
+--------------------------------------------------
+  Method: hgb_sample_weight
+  Feature selection: ANOVA (top-500)
+  Selected 500 features
+  (HistGB has no feature_importances_; using selection scores as ranking)
+  Top-20 features by anova_fscore:
+     1. formula[477].kurtosis (anova_fscore=97.4923)
+     2. formula[69].q90 (anova_fscore=97.1499)
+     3. formula[69].q75 (anova_fscore=95.9464)
+     4. formula[477].q75 (anova_fscore=95.0877)
+     5. formula[67].skew (anova_fscore=94.1247)
+     6. formula[466].skew (anova_fscore=90.9691)
+     7. formula[67].q90 (anova_fscore=90.8312)
+     8. formula[794].median (anova_fscore=89.3353)
+     9. formula[106].q25 (anova_fscore=84.9491)
+    10. formula[24].q90 (anova_fscore=83.1267)
+    11. formula[150].max (anova_fscore=83.1076)
+    12. formula[466].q90 (anova_fscore=81.5919)
+    13. formula[24].mean (anova_fscore=81.4221)
+    14. formula[69].q25 (anova_fscore=81.2121)
+    15. formula[541].max (anova_fscore=80.7027)
+    16. formula[76].skew (anova_fscore=80.5876)
+    17. formula[794].max (anova_fscore=79.9726)
+    18. formula[24].skew (anova_fscore=79.6464)
+    19. formula[24].q75 (anova_fscore=79.3009)
+    20. formula[220].stat_104 (anova_fscore=79.1765)
+
+OPERATOR FREQUENCY ANALYSIS:
+--------------------------------------------------
+  Total operator occurrences: 6940
+  Unique operators: 47
+
+  normalize                :  576 (  8.3%)
+  edge_mag                 :  359 (  5.2%)
+  edge_y                   :  319 (  4.6%)
+  dilate                   :  278 (  4.0%)
+  local_range              :  234 (  3.4%) [BRAIN-MRI]
+  subtract                 :  224 (  3.2%)
+  downsample_2x            :  214 (  3.1%)
+  gabor_mag                :  212 (  3.1%)
+  sqrt_abs                 :  208 (  3.0%)
+  closing                  :  197 (  2.8%)
+  pow2                     :  195 (  2.8%)
+  blur                     :  195 (  2.8%)
+  negate                   :  182 (  2.6%)
+  stride_pool_4            :  175 (  2.5%)
+  texture_entropy          :  171 (  2.5%) [BRAIN-MRI]
+  abs                      :  166 (  2.4%)
+  opening                  :  161 (  2.3%)
+  multiply                 :  151 (  2.2%)
+  flip_h                   :  138 (  2.0%)
+  blur_7x7                 :  135 (  1.9%)
+  gabor_90                 :  129 (  1.9%)
+  border_sharp             :  128 (  1.8%) [BRAIN-MRI]
+  flip_v                   :  127 (  1.8%)
+  high_freq                :  125 (  1.8%)
+  dog                      :  120 (  1.7%)
+  downsample_4x            :  118 (  1.7%)
+  laplacian                :  117 (  1.7%)
+  log1p_abs                :  115 (  1.7%)
+  local_std_5x5            :  112 (  1.6%)
+  sigmoid                  :  104 (  1.5%)
+  low_freq                 :  103 (  1.5%)
+  relu                     :  103 (  1.5%)
+  lbp_like                 :   97 (  1.4%)
+  diag_symmetry            :   96 (  1.4%) [BRAIN-MRI]
+  corner_harris            :   93 (  1.3%)
+  edge_yy                  :   88 (  1.3%)
+  edge_orient              :   85 (  1.2%)
+  edge_x                   :   83 (  1.2%)
+  add                      :   77 (  1.1%)
+  local_var                :   74 (  1.1%) [BRAIN-MRI]
+  local_contrast           :   70 (  1.0%)
+  tb_symmetry              :   67 (  1.0%) [BRAIN-MRI]
+  gabor_0                  :   62 (  0.9%)
+  edge_xx                  :   54 (  0.8%)
+  lr_symmetry              :   52 (  0.7%) [BRAIN-MRI]
+  gabor_45                 :   41 (  0.6%)
+  div                      :   10 (  0.1%)
+
+TERMINAL FREQUENCY ANALYSIS:
+--------------------------------------------------
+  Total terminal occurrences: 1262
+  Unique terminals: 7
+
+  I_LOCALSTD               :  313 ( 24.8%)
+  I_GRAD                   :  295 ( 23.4%)
+  I_BLUR                   :  255 ( 20.2%)
+  I_GRAY                   :  167 ( 13.2%)
+  I_LRDIFF                 :  102 (  8.1%)
+  I_LOG                    :   79 (  6.3%)
+  I_LBP                    :   51 (  4.0%)
+
+ROOT OPERATOR FREQUENCY ANALYSIS:
+--------------------------------------------------
+
+RADIOLOGICAL INTERPRETATION OF TOP FORMULAS:
+--------------------------------------------------
+
+  Formula 1: I_GRAY edge_y diag_symmetry edge_mag abs gabor_45 low_freq edge_xx tb_symmetry sqrt_abs normalize
+  ANOVA-F quality (step 3): 1118.00
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - edge_y: Vertical edge — horizontal borders
+    - diag_symmetry: Diagonal (transpose) asymmetry
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - abs: Absolute value — magnitude features
+    - gabor_45: Gabor filter 45° — directional texture
+    - tb_symmetry: Top-bottom mirror difference — superior/inferior asymmetry
+    - sqrt_abs: Sqrt of absolute — compress dynamic range
+    - normalize: Normalization — standardize intensity range
+
+  Formula 2: I_GRAY log1p_abs flip_h log1p_abs high_freq laplacian pow2 flip_h lbp_like flip_v sqrt_abs
+  ANOVA-F quality (step 3): 672.64
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - flip_h: Horizontal flip — symmetry analysis
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - laplacian: Laplacian — second-derivative edges / ring structures
+    - flip_h: Horizontal flip — symmetry analysis
+    - lbp_like: Local binary pattern — fine texture descriptor
+    - flip_v: Vertical flip — symmetry analysis
+    - sqrt_abs: Sqrt of absolute — compress dynamic range
+
+  Formula 3: I_BLUR laplacian local_var gabor_90 local_var I_LOCALSTD log1p_abs relu flip_h normalize subtract
+  ANOVA-F quality (step 3): 271.82
+  Interpretation:
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - laplacian: Laplacian — second-derivative edges / ring structures
+    - local_var: Local variance — fine texture heterogeneity
+    - gabor_90: Gabor filter 90° — directional texture
+    - local_var: Local variance — fine texture heterogeneity
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - relu: ReLU activation — nonlinear mapping
+    - flip_h: Horizontal flip — symmetry analysis
+    - normalize: Normalization — standardize intensity range
+
+  Formula 4: I_LOG blur diag_symmetry closing I_GRAD dilate edge_y downsample_2x edge_orient edge_mag edge_orient edge_x normalize subtract
+  ANOVA-F quality (step 3): 245.10
+  Interpretation:
+    - I_LOG: Laplacian channel — blob / ring-enhancing structures
+    - blur: Gaussian blur — smoothing for noise reduction
+    - diag_symmetry: Diagonal (transpose) asymmetry
+    - closing: Morphological closing — fill small dark holes
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - dilate: Dilation — expand bright (hyperintense) regions
+    - edge_y: Vertical edge — horizontal borders
+    - downsample_2x: Downsample 2x — multi-scale analysis
+    - edge_mag: Gradient magnitude — detects tumor / ventricle borders
+    - edge_x: Horizontal edge — vertical borders
+    - normalize: Normalization — standardize intensity range
+
+  Formula 5: I_GRAY edge_yy I_BLUR local_var edge_y stride_pool_4 edge_xx gabor_90 closing multiply laplacian log1p_abs sigmoid blur_7x7
+  ANOVA-F quality (step 3): 221.72
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - local_var: Local variance — fine texture heterogeneity
+    - edge_y: Vertical edge — horizontal borders
+    - gabor_90: Gabor filter 90° — directional texture
+    - closing: Morphological closing — fill small dark holes
+    - laplacian: Laplacian — second-derivative edges / ring structures
+    - log1p_abs: Log1p of absolute — compress dynamic range
+    - sigmoid: Sigmoid activation — nonlinear mapping
+
+  Formula 6: I_LBP edge_y flip_v corner_harris lbp_like dog I_GRAD opening dog subtract local_range stride_pool_4 sigmoid normalize
+  ANOVA-F quality (step 3): 162.51
+  Interpretation:
+    - I_LBP: LBP channel — fine texture
+    - edge_y: Vertical edge — horizontal borders
+    - flip_v: Vertical flip — symmetry analysis
+    - lbp_like: Local binary pattern — fine texture descriptor
+    - dog: Difference of Gaussians — blob / lesion detection
+    - I_GRAD: Gradient magnitude channel — borders / mass margins
+    - opening: Morphological opening — remove small bright specks
+    - dog: Difference of Gaussians — blob / lesion detection
+    - local_range: Local intensity range — tissue heterogeneity (necrosis/edema vs. solid)
+    - sigmoid: Sigmoid activation — nonlinear mapping
+    - normalize: Normalization — standardize intensity range
+
+  Formula 7: I_BLUR gabor_mag local_contrast sigmoid normalize I_LOCALSTD gabor_0 local_std_5x5 negate abs add
+  ANOVA-F quality (step 3): 158.77
+  Interpretation:
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - gabor_mag: Gabor magnitude — texture energy
+    - local_contrast: Local contrast — lesion conspicuity
+    - sigmoid: Sigmoid activation — nonlinear mapping
+    - normalize: Normalization — standardize intensity range
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - gabor_0: Gabor filter 0° — directional texture
+    - local_std_5x5: Local std — texture heterogeneity
+    - negate: Negation — invert signal
+    - abs: Absolute value — magnitude features
+
+  Formula 8: I_GRAY dog gabor_mag gabor_0 I_GRAY pow2 add gabor_90 blur_7x7 local_var local_range stride_pool_4 flip_v sigmoid
+  ANOVA-F quality (step 3): 158.77
+  Interpretation:
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - dog: Difference of Gaussians — blob / lesion detection
+    - gabor_mag: Gabor magnitude — texture energy
+    - gabor_0: Gabor filter 0° — directional texture
+    - I_GRAY: Raw intensity — overall signal (hyper/hypointensity)
+    - gabor_90: Gabor filter 90° — directional texture
+    - local_var: Local variance — fine texture heterogeneity
+    - local_range: Local intensity range — tissue heterogeneity (necrosis/edema vs. solid)
+    - flip_v: Vertical flip — symmetry analysis
+    - sigmoid: Sigmoid activation — nonlinear mapping
+
+  Formula 9: I_LOCALSTD gabor_90 relu flip_h blur_7x7 stride_pool_4 blur gabor_0 opening flip_v sigmoid
+  ANOVA-F quality (step 3): 153.93
+  Interpretation:
+    - I_LOCALSTD: Local std channel — texture heterogeneity
+    - gabor_90: Gabor filter 90° — directional texture
+    - relu: ReLU activation — nonlinear mapping
+    - flip_h: Horizontal flip — symmetry analysis
+    - blur: Gaussian blur — smoothing for noise reduction
+    - gabor_0: Gabor filter 0° — directional texture
+    - opening: Morphological opening — remove small bright specks
+    - flip_v: Vertical flip — symmetry analysis
+    - sigmoid: Sigmoid activation — nonlinear mapping
+
+  Formula 10: I_BLUR gabor_90 high_freq texture_entropy blur local_std_5x5 normalize
+  ANOVA-F quality (step 3): 138.21
+  Interpretation:
+    - I_BLUR: Smoothed intensity — coarse anatomy
+    - gabor_90: Gabor filter 90° — directional texture
+    - texture_entropy: Local texture entropy — disordered tumor microstructure
+    - blur: Gaussian blur — smoothing for noise reduction
+    - local_std_5x5: Local std — texture heterogeneity
+    - normalize: Normalization — standardize intensity range
+
+FORMULA STATISTICS:
+--------------------------------------------------
+  Formula length (tokens): min=7, max=14, avg=10.3
+  ANOVA-F quality: min=1.96, max=1118.00, avg=38.78

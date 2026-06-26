@@ -1,0 +1,13 @@
+{
+  "method": "dinov2_linear",
+  "acc": 0.8197777777777778,
+  "bal_acc": 0.8197777777777778,
+  "auc": 0.9483703703703704,
+  "per_class": {
+    "normal": 0.8693,
+    "pneumonia": 0.9093,
+    "covid": 0.6807
+  },
+  "time_seconds": 51.0417275428772,
+  "epochs": 20
+}

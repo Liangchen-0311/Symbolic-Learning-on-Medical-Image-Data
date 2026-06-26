@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "method": "hgb_baseline",
+  "test_accuracy": 0.7833333333333333,
+  "test_balanced_accuracy": 0.7651515151515152,
+  "test_auc": 0.921865635283294,
+  "per_class_test": {
+    "benign": 0.8181818181818182,
+    "malignant": 0.75,
+    "normal": 0.7272727272727273
+  },
+  "all_methods": {
+    "hgb_baseline": {
+      "acc": 0.7833333333333333,
+      "bal_acc": 0.7651515151515152,
+      "auc": 0.921865635283294
+    },
+    "hgb_sample_weight": {
+      "acc": 0.7916666666666666,
+      "bal_acc": 0.7648358585858587,
+      "auc": 0.9250731104029715
+    }
+  },
+  "all_per_class": {
+    "hgb_baseline": {
+      "benign": 0.8181818181818182,
+      "malignant": 0.75,
+      "normal": 0.7272727272727273
+    },
+    "hgb_sample_weight": {
+      "benign": 0.8484848484848485,
+      "malignant": 0.71875,
+      "normal": 0.7272727272727273
+    }
+  },
+  "cv_accs": {
+    "hgb_baseline": 0.7787878787878787,
+    "hgb_sample_weight": 0.7787878787878787
+  },
+  "cv_bal_accs": {
+    "hgb_baseline": 0.7377555364511886,
+    "hgb_sample_weight": 0.7377555364511886
+  }
+}

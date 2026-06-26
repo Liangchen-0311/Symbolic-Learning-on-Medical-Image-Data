@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "method": "hgb_baseline",
+  "test_accuracy": 0.8655555555555555,
+  "test_balanced_accuracy": 0.8655555555555555,
+  "test_auc": 0.9675726666666665,
+  "per_class_test": {
+    "normal": 0.8933333333333333,
+    "pneumonia": 0.8973333333333333,
+    "covid": 0.806
+  },
+  "all_methods": {
+    "hgb_baseline": {
+      "acc": 0.8655555555555555,
+      "bal_acc": 0.8655555555555555,
+      "auc": 0.9675726666666665
+    },
+    "hgb_sample_weight": {
+      "acc": 0.8655555555555555,
+      "bal_acc": 0.8655555555555555,
+      "auc": 0.9675726666666665
+    }
+  },
+  "all_per_class": {
+    "hgb_baseline": {
+      "normal": 0.8933333333333333,
+      "pneumonia": 0.8973333333333333,
+      "covid": 0.806
+    },
+    "hgb_sample_weight": {
+      "normal": 0.8933333333333333,
+      "pneumonia": 0.8973333333333333,
+      "covid": 0.806
+    }
+  },
+  "cv_accs": {
+    "hgb_baseline": 0.9383333333333332,
+    "hgb_sample_weight": 0.9383333333333332
+  },
+  "cv_bal_accs": {
+    "hgb_baseline": 0.9383333333333332,
+    "hgb_sample_weight": 0.9383333333333332
+  }
+}

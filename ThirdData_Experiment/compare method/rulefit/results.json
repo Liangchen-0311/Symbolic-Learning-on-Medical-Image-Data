@@ -1,0 +1,13 @@
+{
+  "method": "rulefit",
+  "acc": 0.6666666666666666,
+  "bal_acc": 0.6543560606060606,
+  "auc": 0.87427477128618,
+  "per_class": {
+    "benign": 0.7727,
+    "malignant": 0.2812,
+    "normal": 0.9091
+  },
+  "time_seconds": 4.524768114089966,
+  "epochs": 30
+}

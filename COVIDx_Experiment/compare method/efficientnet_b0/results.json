@@ -1,0 +1,13 @@
+{
+  "method": "efficientnet_b0",
+  "acc": 0.9355555555555556,
+  "bal_acc": 0.9355555555555556,
+  "auc": 0.9892024074074074,
+  "per_class": {
+    "normal": 0.9347,
+    "pneumonia": 0.956,
+    "covid": 0.916
+  },
+  "time_seconds": 284.13256669044495,
+  "epochs": 20
+}

@@ -1,0 +1,13 @@
+{
+  "method": "dinov2_linear",
+  "acc": 0.7666666666666667,
+  "bal_acc": 0.7544191919191919,
+  "auc": 0.9307251046462356,
+  "per_class": {
+    "benign": 0.803,
+    "malignant": 0.6875,
+    "normal": 0.7727
+  },
+  "time_seconds": 9.18866491317749,
+  "epochs": 30
+}

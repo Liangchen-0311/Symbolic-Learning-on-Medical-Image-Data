@@ -3,9 +3,19 @@
 # step4 from the validated formulas. Far over GitHub's 100MB/file limit.
 *.npz
 
-# Raw datasets (public Kaggle data; see README for source/download).
+# Intermediate feature banks / numeric dumps (regenerable from configs + formulas).
+*.pkl
+*.npy
+
+# Raw datasets (public Kaggle/Kaggle-mirror data; see README for source/download).
+# NOTE: COVIDx_Experiment/data/ (the 15.9k-image balanced *subset* we actually use)
+# IS committed; only the full 63GB COVIDx CT-3A source below is excluded.
 Brain Tumor MRI Dataset/
 datasets/
+COVIDx CT/
+COVIDx/
+COVIDx_CT_subset/
+ThirdData/
 
 # Model checkpoints / weights (regenerable; large binaries).
 *.pth
@@ -20,6 +30,10 @@ best_weights.pth
 
 # Torch/HF caches
 *.cache/
+
+# Run logs.
+logs/
+*.log
 
 # ---- OS / editor cruft ----
 .DS_Store

@@ -1,0 +1,13 @@
+{
+  "method": "swin_tiny",
+  "acc": 0.8416666666666667,
+  "bal_acc": 0.8617424242424243,
+  "auc": 0.9586776507039404,
+  "per_class": {
+    "benign": 0.8182,
+    "malignant": 0.8125,
+    "normal": 0.9545
+  },
+  "time_seconds": 81.13156700134277,
+  "epochs": 30
+}

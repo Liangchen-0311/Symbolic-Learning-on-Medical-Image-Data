@@ -1,0 +1,682 @@
+[
+  {
+    "str": "I_LRDIFF gabor_mag lbp_like stride_pool_4 relu local_std_5x5 downsample_2x patch_histogram_4x4",
+    "tokens": [
+      "I_LRDIFF",
+      "gabor_mag",
+      "lbp_like",
+      "stride_pool_4",
+      "relu",
+      "local_std_5x5",
+      "downsample_2x",
+      "patch_histogram_4x4"
+    ],
+    "length": 8,
+    "accuracy": 0.5822834173838297
+  },
+  {
+    "str": "I_LRDIFF laplacian blur border_sharp local_std_5x5 opening sqrt_abs pool_quad_tr",
+    "tokens": [
+      "I_LRDIFF",
+      "laplacian",
+      "blur",
+      "border_sharp",
+      "local_std_5x5",
+      "opening",
+      "sqrt_abs",
+      "pool_quad_tr"
+    ],
+    "length": 8,
+    "accuracy": 0.41792066022753716
+  },
+  {
+    "str": "I_LRDIFF sigmoid pow2 flip_h pow2 lbp_like edge_xx pool_quad_br",
+    "tokens": [
+      "I_LRDIFF",
+      "sigmoid",
+      "pow2",
+      "flip_h",
+      "pow2",
+      "lbp_like",
+      "edge_xx",
+      "pool_quad_br"
+    ],
+    "length": 8,
+    "accuracy": 0.40311896800994873
+  },
+  {
+    "str": "I_LOG edge_orient negate dilate low_freq stride_pool_4 corner_harris ratio_above_mean",
+    "tokens": [
+      "I_LOG",
+      "edge_orient",
+      "negate",
+      "dilate",
+      "low_freq",
+      "stride_pool_4",
+      "corner_harris",
+      "ratio_above_mean"
+    ],
+    "length": 8,
+    "accuracy": 0.5230880379676819
+  },
+  {
+    "str": "I_LOG gabor_90 dog I_GRAY texture_entropy stride_pool_4 div patch_histogram_4x4",
+    "tokens": [
+      "I_LOG",
+      "gabor_90",
+      "dog",
+      "I_GRAY",
+      "texture_entropy",
+      "stride_pool_4",
+      "div",
+      "patch_histogram_4x4"
+    ],
+    "length": 8,
+    "accuracy": 0.42662232120831806
+  },
+  {
+    "str": "I_GRAD local_range flip_h closing downsample_4x pow2 lbp_like pool_quad_tl",
+    "tokens": [
+      "I_GRAD",
+      "local_range",
+      "flip_h",
+      "closing",
+      "downsample_4x",
+      "pow2",
+      "lbp_like",
+      "pool_quad_tl"
+    ],
+    "length": 8,
+    "accuracy": 0.40165770053863525
+  },
+  {
+    "str": "I_LOCALSTD lbp_like gabor_45 pow2 edge_yy gabor_0 edge_xx ratio_above_mean",
+    "tokens": [
+      "I_LOCALSTD",
+      "lbp_like",
+      "gabor_45",
+      "pow2",
+      "edge_yy",
+      "gabor_0",
+      "edge_xx",
+      "ratio_above_mean"
+    ],
+    "length": 8,
+    "accuracy": 0.40235737959543866
+  },
+  {
+    "str": "I_GRAY edge_mag I_GRAD local_range local_var low_freq subtract pool_right_half",
+    "tokens": [
+      "I_GRAY",
+      "edge_mag",
+      "I_GRAD",
+      "local_range",
+      "local_var",
+      "low_freq",
+      "subtract",
+      "pool_right_half"
+    ],
+    "length": 8,
+    "accuracy": 0.4028985599676768
+  },
+  {
+    "str": "I_GRAD diag_symmetry I_LOG local_std_5x5 local_var high_freq multiply std_top_half",
+    "tokens": [
+      "I_GRAD",
+      "diag_symmetry",
+      "I_LOG",
+      "local_std_5x5",
+      "local_var",
+      "high_freq",
+      "multiply",
+      "std_top_half"
+    ],
+    "length": 8,
+    "accuracy": 0.45251716176668805
+  },
+  {
+    "str": "I_LBP gabor_45 tb_symmetry closing flip_h laplacian blur_7x7 pool_bottom_half",
+    "tokens": [
+      "I_LBP",
+      "gabor_45",
+      "tb_symmetry",
+      "closing",
+      "flip_h",
+      "laplacian",
+      "blur_7x7",
+      "pool_bottom_half"
+    ],
+    "length": 8,
+    "accuracy": 0.4094203216955066
+  },
+  {
+    "str": "I_LBP lbp_like closing blur downsample_4x I_LOG div pool_quad_tr",
+    "tokens": [
+      "I_LBP",
+      "lbp_like",
+      "closing",
+      "blur",
+      "downsample_4x",
+      "I_LOG",
+      "div",
+      "pool_quad_tr"
+    ],
+    "length": 8,
+    "accuracy": 0.40117016434669495
+  },
+  {
+    "str": "I_LOG edge_x high_freq sigmoid edge_y edge_yy gabor_90 global_std_pool",
+    "tokens": [
+      "I_LOG",
+      "edge_x",
+      "high_freq",
+      "sigmoid",
+      "edge_y",
+      "edge_yy",
+      "gabor_90",
+      "global_std_pool"
+    ],
+    "length": 8,
+    "accuracy": 0.4357510209083557
+  },
+  {
+    "str": "I_LOCALSTD downsample_4x edge_xx I_GRAD sigmoid edge_x multiply pool_corners",
+    "tokens": [
+      "I_LOCALSTD",
+      "downsample_4x",
+      "edge_xx",
+      "I_GRAD",
+      "sigmoid",
+      "edge_x",
+      "multiply",
+      "pool_corners"
+    ],
+    "length": 8,
+    "accuracy": 0.4440993865331014
+  },
+  {
+    "str": "I_LOG I_GRAD sigmoid low_freq blur stride_pool_4 div patch_histogram_4x4",
+    "tokens": [
+      "I_LOG",
+      "I_GRAD",
+      "sigmoid",
+      "low_freq",
+      "blur",
+      "stride_pool_4",
+      "div",
+      "patch_histogram_4x4"
+    ],
+    "length": 8,
+    "accuracy": 0.43833646178245544
+  },
+  {
+    "str": "I_BLUR edge_y pow2 local_std_5x5 edge_xx edge_y opening global_std_pool",
+    "tokens": [
+      "I_BLUR",
+      "edge_y",
+      "pow2",
+      "local_std_5x5",
+      "edge_xx",
+      "edge_y",
+      "opening",
+      "global_std_pool"
+    ],
+    "length": 8,
+    "accuracy": 0.5646619697411855
+  },
+  {
+    "str": "I_GRAY stride_pool_4 pow2 diag_symmetry normalize pow2 dilate pool_center",
+    "tokens": [
+      "I_GRAY",
+      "stride_pool_4",
+      "pow2",
+      "diag_symmetry",
+      "normalize",
+      "pow2",
+      "dilate",
+      "pool_center"
+    ],
+    "length": 8,
+    "accuracy": 0.42423510551452637
+  },
+  {
+    "str": "I_LBP edge_x sqrt_abs blur high_freq edge_xx tb_symmetry I_LRDIFF corner_harris subtract gabor_90 gabor_45 edge_x opening pool_left_half",
+    "tokens": [
+      "I_LBP",
+      "edge_x",
+      "sqrt_abs",
+      "blur",
+      "high_freq",
+      "edge_xx",
+      "tb_symmetry",
+      "I_LRDIFF",
+      "corner_harris",
+      "subtract",
+      "gabor_90",
+      "gabor_45",
+      "edge_x",
+      "opening",
+      "pool_left_half"
+    ],
+    "length": 15,
+    "accuracy": 0.42575758695602417
+  },
+  {
+    "str": "I_GRAD I_LOG texture_entropy lbp_like local_contrast flip_h edge_x gabor_90 relu I_BLUR laplacian multiply flip_v div patch_histogram_4x4",
+    "tokens": [
+      "I_GRAD",
+      "I_LOG",
+      "texture_entropy",
+      "lbp_like",
+      "local_contrast",
+      "flip_h",
+      "edge_x",
+      "gabor_90",
+      "relu",
+      "I_BLUR",
+      "laplacian",
+      "multiply",
+      "flip_v",
+      "div",
+      "patch_histogram_4x4"
+    ],
+    "length": 15,
+    "accuracy": 0.5010955234368643
+  },
+  {
+    "str": "I_BLUR corner_harris normalize I_BLUR edge_yy texture_entropy multiply I_GRAD local_std_5x5 closing dilate local_contrast dilate subtract pool_corners",
+    "tokens": [
+      "I_BLUR",
+      "corner_harris",
+      "normalize",
+      "I_BLUR",
+      "edge_yy",
+      "texture_entropy",
+      "multiply",
+      "I_GRAD",
+      "local_std_5x5",
+      "closing",
+      "dilate",
+      "local_contrast",
+      "dilate",
+      "subtract",
+      "pool_corners"
+    ],
+    "length": 15,
+    "accuracy": 0.4495624899864197
+  },
+  {
+    "str": "I_LOCALSTD I_GRAD downsample_4x log1p_abs gabor_0 closing blur_7x7 edge_mag blur dog multiply dilate local_std_5x5 lbp_like pool_top_half",
+    "tokens": [
+      "I_LOCALSTD",
+      "I_GRAD",
+      "downsample_4x",
+      "log1p_abs",
+      "gabor_0",
+      "closing",
+      "blur_7x7",
+      "edge_mag",
+      "blur",
+      "dog",
+      "multiply",
+      "dilate",
+      "local_std_5x5",
+      "lbp_like",
+      "pool_top_half"
+    ],
+    "length": 15,
+    "accuracy": 0.454032043615977
+  },
+  {
+    "str": "I_LBP lr_symmetry low_freq lbp_like pow2 edge_orient dilate blur_7x7 laplacian low_freq normalize I_LBP add low_freq pool_left_half",
+    "tokens": [
+      "I_LBP",
+      "lr_symmetry",
+      "low_freq",
+      "lbp_like",
+      "pow2",
+      "edge_orient",
+      "dilate",
+      "blur_7x7",
+      "laplacian",
+      "low_freq",
+      "normalize",
+      "I_LBP",
+      "add",
+      "low_freq",
+      "pool_left_half"
+    ],
+    "length": 15,
+    "accuracy": 0.4161251212159793
+  },
+  {
+    "str": "I_LOCALSTD flip_v texture_entropy I_LRDIFF dog diag_symmetry high_freq flip_h edge_x downsample_2x flip_v abs flip_h add patch_histogram_4x4",
+    "tokens": [
+      "I_LOCALSTD",
+      "flip_v",
+      "texture_entropy",
+      "I_LRDIFF",
+      "dog",
+      "diag_symmetry",
+      "high_freq",
+      "flip_h",
+      "edge_x",
+      "downsample_2x",
+      "flip_v",
+      "abs",
+      "flip_h",
+      "add",
+      "patch_histogram_4x4"
+    ],
+    "length": 15,
+    "accuracy": 0.6761990984280905
+  },
+  {
+    "str": "I_LOG border_sharp edge_xx I_GRAD corner_harris local_range high_freq laplacian gabor_mag subtract local_var high_freq dog lr_symmetry pool_left_half",
+    "tokens": [
+      "I_LOG",
+      "border_sharp",
+      "edge_xx",
+      "I_GRAD",
+      "corner_harris",
+      "local_range",
+      "high_freq",
+      "laplacian",
+      "gabor_mag",
+      "subtract",
+      "local_var",
+      "high_freq",
+      "dog",
+      "lr_symmetry",
+      "pool_left_half"
+    ],
+    "length": 15,
+    "accuracy": 0.42981399099032086
+  },
+  {
+    "str": "I_LOCALSTD stride_pool_4 sqrt_abs laplacian border_sharp gabor_90 low_freq opening downsample_2x normalize edge_xx gabor_90 laplacian pow2 global_avg_pool",
+    "tokens": [
+      "I_LOCALSTD",
+      "stride_pool_4",
+      "sqrt_abs",
+      "laplacian",
+      "border_sharp",
+      "gabor_90",
+      "low_freq",
+      "opening",
+      "downsample_2x",
+      "normalize",
+      "edge_xx",
+      "gabor_90",
+      "laplacian",
+      "pow2",
+      "global_avg_pool"
+    ],
+    "length": 15,
+    "accuracy": 0.4156537353992462
+  },
+  {
+    "str": "I_LBP texture_entropy I_GRAD local_var laplacian subtract local_std_5x5 lbp_like abs local_var local_std_5x5 tb_symmetry lbp_like dog pool_left_half",
+    "tokens": [
+      "I_LBP",
+      "texture_entropy",
+      "I_GRAD",
+      "local_var",
+      "laplacian",
+      "subtract",
+      "local_std_5x5",
+      "lbp_like",
+      "abs",
+      "local_var",
+      "local_std_5x5",
+      "tb_symmetry",
+      "lbp_like",
+      "dog",
+      "pool_left_half"
+    ],
+    "length": 15,
+    "accuracy": 0.42139212414622307
+  },
+  {
+    "str": "I_LRDIFF low_freq laplacian border_sharp log1p_abs lr_symmetry diag_symmetry gabor_mag I_BLUR dilate edge_x dilate abs div pool_thirds_bot",
+    "tokens": [
+      "I_LRDIFF",
+      "low_freq",
+      "laplacian",
+      "border_sharp",
+      "log1p_abs",
+      "lr_symmetry",
+      "diag_symmetry",
+      "gabor_mag",
+      "I_BLUR",
+      "dilate",
+      "edge_x",
+      "dilate",
+      "abs",
+      "div",
+      "pool_thirds_bot"
+    ],
+    "length": 15,
+    "accuracy": 0.4476689100265503
+  },
+  {
+    "str": "I_LRDIFF local_range sigmoid closing texture_entropy downsample_2x I_LOG sqrt_abs relu add low_freq I_GRAD local_contrast multiply pool_left_half",
+    "tokens": [
+      "I_LRDIFF",
+      "local_range",
+      "sigmoid",
+      "closing",
+      "texture_entropy",
+      "downsample_2x",
+      "I_LOG",
+      "sqrt_abs",
+      "relu",
+      "add",
+      "low_freq",
+      "I_GRAD",
+      "local_contrast",
+      "multiply",
+      "pool_left_half"
+    ],
+    "length": 15,
+    "accuracy": 0.4250342051188151
+  },
+  {
+    "str": "I_GRAD log1p_abs I_GRAY relu I_BLUR texture_entropy flip_h gabor_0 subtract gabor_0 abs blur lbp_like add patch_histogram_4x4",
+    "tokens": [
+      "I_GRAD",
+      "log1p_abs",
+      "I_GRAY",
+      "relu",
+      "I_BLUR",
+      "texture_entropy",
+      "flip_h",
+      "gabor_0",
+      "subtract",
+      "gabor_0",
+      "abs",
+      "blur",
+      "lbp_like",
+      "add",
+      "patch_histogram_4x4"
+    ],
+    "length": 15,
+    "accuracy": 0.5635111331939697
+  },
+  {
+    "str": "I_LOCALSTD pow2 high_freq local_var pow2 dog edge_orient edge_x sqrt_abs gabor_0 local_range flip_v edge_yy dilate pool_center",
+    "tokens": [
+      "I_LOCALSTD",
+      "pow2",
+      "high_freq",
+      "local_var",
+      "pow2",
+      "dog",
+      "edge_orient",
+      "edge_x",
+      "sqrt_abs",
+      "gabor_0",
+      "local_range",
+      "flip_v",
+      "edge_yy",
+      "dilate",
+      "pool_center"
+    ],
+    "length": 15,
+    "accuracy": 0.4006752173105876
+  },
+  {
+    "str": "I_BLUR edge_orient local_std_5x5 lr_symmetry edge_x lbp_like diag_symmetry texture_entropy flip_v laplacian edge_xx dilate gabor_45 edge_mag pool_corners",
+    "tokens": [
+      "I_BLUR",
+      "edge_orient",
+      "local_std_5x5",
+      "lr_symmetry",
+      "edge_x",
+      "lbp_like",
+      "diag_symmetry",
+      "texture_entropy",
+      "flip_v",
+      "laplacian",
+      "edge_xx",
+      "dilate",
+      "gabor_45",
+      "edge_mag",
+      "pool_corners"
+    ],
+    "length": 15,
+    "accuracy": 0.42101385196050006
+  },
+  {
+    "str": "I_LOCALSTD opening closing texture_entropy low_freq gabor_0 high_freq blur edge_xx tb_symmetry opening diag_symmetry opening pow2 pool_quad_br",
+    "tokens": [
+      "I_LOCALSTD",
+      "opening",
+      "closing",
+      "texture_entropy",
+      "low_freq",
+      "gabor_0",
+      "high_freq",
+      "blur",
+      "edge_xx",
+      "tb_symmetry",
+      "opening",
+      "diag_symmetry",
+      "opening",
+      "pow2",
+      "pool_quad_br"
+    ],
+    "length": 15,
+    "accuracy": 0.4435185194015503
+  },
+  {
+    "str": "I_LRDIFF edge_yy I_BLUR opening lr_symmetry normalize lbp_like local_contrast laplacian local_std_5x5 gabor_45 opening edge_mag subtract pool_right_half",
+    "tokens": [
+      "I_LRDIFF",
+      "edge_yy",
+      "I_BLUR",
+      "opening",
+      "lr_symmetry",
+      "normalize",
+      "lbp_like",
+      "local_contrast",
+      "laplacian",
+      "local_std_5x5",
+      "gabor_45",
+      "opening",
+      "edge_mag",
+      "subtract",
+      "pool_right_half"
+    ],
+    "length": 15,
+    "accuracy": 0.43704518179098767
+  },
+  {
+    "str": "I_GRAD local_contrast blur local_contrast gabor_45 log1p_abs gabor_mag edge_x dilate log1p_abs lbp_like dog lbp_like opening pool_corners",
+    "tokens": [
+      "I_GRAD",
+      "local_contrast",
+      "blur",
+      "local_contrast",
+      "gabor_45",
+      "log1p_abs",
+      "gabor_mag",
+      "edge_x",
+      "dilate",
+      "log1p_abs",
+      "lbp_like",
+      "dog",
+      "lbp_like",
+      "opening",
+      "pool_corners"
+    ],
+    "length": 15,
+    "accuracy": 0.47318007548650104
+  },
+  {
+    "str": "I_BLUR dilate opening corner_harris edge_xx tb_symmetry border_sharp lbp_like I_GRAD edge_yy dilate subtract blur lbp_like patch_histogram_4x4",
+    "tokens": [
+      "I_BLUR",
+      "dilate",
+      "opening",
+      "corner_harris",
+      "edge_xx",
+      "tb_symmetry",
+      "border_sharp",
+      "lbp_like",
+      "I_GRAD",
+      "edge_yy",
+      "dilate",
+      "subtract",
+      "blur",
+      "lbp_like",
+      "patch_histogram_4x4"
+    ],
+    "length": 15,
+    "accuracy": 0.519653449455897
+  },
+  {
+    "str": "I_LRDIFF dilate stride_pool_4 I_LOG edge_x gabor_0 lbp_like log1p_abs blur subtract log1p_abs flip_h blur gabor_0 pool_top_half",
+    "tokens": [
+      "I_LRDIFF",
+      "dilate",
+      "stride_pool_4",
+      "I_LOG",
+      "edge_x",
+      "gabor_0",
+      "lbp_like",
+      "log1p_abs",
+      "blur",
+      "subtract",
+      "log1p_abs",
+      "flip_h",
+      "blur",
+      "gabor_0",
+      "pool_top_half"
+    ],
+    "length": 15,
+    "accuracy": 0.4360610842704773
+  },
+  {
+    "str": "I_BLUR edge_mag corner_harris laplacian normalize I_LRDIFF negate high_freq blur local_std_5x5 blur laplacian low_freq subtract patch_histogram_4x4",
+    "tokens": [
+      "I_BLUR",
+      "edge_mag",
+      "corner_harris",
+      "laplacian",
+      "normalize",
+      "I_LRDIFF",
+      "negate",
+      "high_freq",
+      "blur",
+      "local_std_5x5",
+      "blur",
+      "laplacian",
+      "low_freq",
+      "subtract",
+      "patch_histogram_4x4"
+    ],
+    "length": 15,
+    "accuracy": 0.5021848777929941
+  }
+]

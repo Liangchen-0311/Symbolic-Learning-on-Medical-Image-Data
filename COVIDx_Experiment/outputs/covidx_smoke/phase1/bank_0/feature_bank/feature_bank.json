@@ -1,0 +1,256 @@
+{
+  "formulas": [
+    {
+      "str": "I_LRDIFF gabor_mag lbp_like stride_pool_4 relu local_std_5x5 downsample_2x patch_histogram_4x4",
+      "tokens": [
+        "I_LRDIFF",
+        "gabor_mag",
+        "lbp_like",
+        "stride_pool_4",
+        "relu",
+        "local_std_5x5",
+        "downsample_2x",
+        "patch_histogram_4x4"
+      ],
+      "length": 8,
+      "accuracy": 0.5822834173838297
+    },
+    {
+      "str": "I_LRDIFF laplacian blur border_sharp local_std_5x5 opening sqrt_abs pool_quad_tr",
+      "tokens": [
+        "I_LRDIFF",
+        "laplacian",
+        "blur",
+        "border_sharp",
+        "local_std_5x5",
+        "opening",
+        "sqrt_abs",
+        "pool_quad_tr"
+      ],
+      "length": 8,
+      "accuracy": 0.41792066022753716
+    },
+    {
+      "str": "I_LRDIFF sigmoid pow2 flip_h pow2 lbp_like edge_xx pool_quad_br",
+      "tokens": [
+        "I_LRDIFF",
+        "sigmoid",
+        "pow2",
+        "flip_h",
+        "pow2",
+        "lbp_like",
+        "edge_xx",
+        "pool_quad_br"
+      ],
+      "length": 8,
+      "accuracy": 0.40311896800994873
+    },
+    {
+      "str": "I_LOG edge_orient negate dilate low_freq stride_pool_4 corner_harris ratio_above_mean",
+      "tokens": [
+        "I_LOG",
+        "edge_orient",
+        "negate",
+        "dilate",
+        "low_freq",
+        "stride_pool_4",
+        "corner_harris",
+        "ratio_above_mean"
+      ],
+      "length": 8,
+      "accuracy": 0.5230880379676819
+    },
+    {
+      "str": "I_LOG gabor_90 dog I_GRAY texture_entropy stride_pool_4 div patch_histogram_4x4",
+      "tokens": [
+        "I_LOG",
+        "gabor_90",
+        "dog",
+        "I_GRAY",
+        "texture_entropy",
+        "stride_pool_4",
+        "div",
+        "patch_histogram_4x4"
+      ],
+      "length": 8,
+      "accuracy": 0.42662232120831806
+    },
+    {
+      "str": "I_GRAD local_range flip_h closing downsample_4x pow2 lbp_like pool_quad_tl",
+      "tokens": [
+        "I_GRAD",
+        "local_range",
+        "flip_h",
+        "closing",
+        "downsample_4x",
+        "pow2",
+        "lbp_like",
+        "pool_quad_tl"
+      ],
+      "length": 8,
+      "accuracy": 0.40165770053863525
+    },
+    {
+      "str": "I_LOCALSTD lbp_like gabor_45 pow2 edge_yy gabor_0 edge_xx ratio_above_mean",
+      "tokens": [
+        "I_LOCALSTD",
+        "lbp_like",
+        "gabor_45",
+        "pow2",
+        "edge_yy",
+        "gabor_0",
+        "edge_xx",
+        "ratio_above_mean"
+      ],
+      "length": 8,
+      "accuracy": 0.40235737959543866
+    },
+    {
+      "str": "I_GRAY edge_mag I_GRAD local_range local_var low_freq subtract pool_right_half",
+      "tokens": [
+        "I_GRAY",
+        "edge_mag",
+        "I_GRAD",
+        "local_range",
+        "local_var",
+        "low_freq",
+        "subtract",
+        "pool_right_half"
+      ],
+      "length": 8,
+      "accuracy": 0.4028985599676768
+    },
+    {
+      "str": "I_GRAD diag_symmetry I_LOG local_std_5x5 local_var high_freq multiply std_top_half",
+      "tokens": [
+        "I_GRAD",
+        "diag_symmetry",
+        "I_LOG",
+        "local_std_5x5",
+        "local_var",
+        "high_freq",
+        "multiply",
+        "std_top_half"
+      ],
+      "length": 8,
+      "accuracy": 0.45251716176668805
+    },
+    {
+      "str": "I_LBP gabor_45 tb_symmetry closing flip_h laplacian blur_7x7 pool_bottom_half",
+      "tokens": [
+        "I_LBP",
+        "gabor_45",
+        "tb_symmetry",
+        "closing",
+        "flip_h",
+        "laplacian",
+        "blur_7x7",
+        "pool_bottom_half"
+      ],
+      "length": 8,
+      "accuracy": 0.4094203216955066
+    },
+    {
+      "str": "I_LBP lbp_like closing blur downsample_4x I_LOG div pool_quad_tr",
+      "tokens": [
+        "I_LBP",
+        "lbp_like",
+        "closing",
+        "blur",
+        "downsample_4x",
+        "I_LOG",
+        "div",
+        "pool_quad_tr"
+      ],
+      "length": 8,
+      "accuracy": 0.40117016434669495
+    },
+    {
+      "str": "I_LOG edge_x high_freq sigmoid edge_y edge_yy gabor_90 global_std_pool",
+      "tokens": [
+        "I_LOG",
+        "edge_x",
+        "high_freq",
+        "sigmoid",
+        "edge_y",
+        "edge_yy",
+        "gabor_90",
+        "global_std_pool"
+      ],
+      "length": 8,
+      "accuracy": 0.4357510209083557
+    },
+    {
+      "str": "I_LOCALSTD downsample_4x edge_xx I_GRAD sigmoid edge_x multiply pool_corners",
+      "tokens": [
+        "I_LOCALSTD",
+        "downsample_4x",
+        "edge_xx",
+        "I_GRAD",
+        "sigmoid",
+        "edge_x",
+        "multiply",
+        "pool_corners"
+      ],
+      "length": 8,
+      "accuracy": 0.4440993865331014
+    },
+    {
+      "str": "I_LOG I_GRAD sigmoid low_freq blur stride_pool_4 div patch_histogram_4x4",
+      "tokens": [
+        "I_LOG",
+        "I_GRAD",
+        "sigmoid",
+        "low_freq",
+        "blur",
+        "stride_pool_4",
+        "div",
+        "patch_histogram_4x4"
+      ],
+      "length": 8,
+      "accuracy": 0.43833646178245544
+    },
+    {
+      "str": "I_BLUR edge_y pow2 local_std_5x5 edge_xx edge_y opening global_std_pool",
+      "tokens": [
+        "I_BLUR",
+        "edge_y",
+        "pow2",
+        "local_std_5x5",
+        "edge_xx",
+        "edge_y",
+        "opening",
+        "global_std_pool"
+      ],
+      "length": 8,
+      "accuracy": 0.5646619697411855
+    },
+    {
+      "str": "I_GRAY stride_pool_4 pow2 diag_symmetry normalize pow2 dilate pool_center",
+      "tokens": [
+        "I_GRAY",
+        "stride_pool_4",
+        "pow2",
+        "diag_symmetry",
+        "normalize",
+        "pow2",
+        "dilate",
+        "pool_center"
+      ],
+      "length": 8,
+      "accuracy": 0.42423510551452637
+    }
+  ],
+  "max_size": 60,
+  "min_accuracy": 0.4,
+  "correlation_threshold": 0.9,
+  "total_added": 16,
+  "total_replaced": 0,
+  "total_rejected": 84,
+  "early_stop_patience": 0,
+  "early_stop_min_delta": 0.001,
+  "_es_best_min_acc": 0.0,
+  "_es_patience_counter": 0,
+  "_es_triggered": false,
+  "_iters_since_last_accept": 0
+}

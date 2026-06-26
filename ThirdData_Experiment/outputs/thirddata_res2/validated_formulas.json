@@ -1,0 +1,3602 @@
+[
+  {
+    "str": "I_LOCALSTD opening local_contrast local_var high_freq normalize pow2",
+    "body": "I_LOCALSTD opening local_contrast local_var high_freq normalize pow2",
+    "root_op": "",
+    "quality_anova_f": 11094.000041808933,
+    "quality_pair": 2.5732847036587096,
+    "rank_score": 14.915822407242,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD lr_symmetry I_GRAD diag_symmetry low_freq subtract dog I_LRDIFF dilate subtract sigmoid corner_harris sigmoid log1p_abs",
+    "body": "I_LOCALSTD lr_symmetry I_GRAD diag_symmetry low_freq subtract dog I_LRDIFF dilate subtract sigmoid corner_harris sigmoid log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 2676.7500104522333,
+    "quality_pair": 31.315217432467836,
+    "rank_score": 4.332850882077965,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD pow2 edge_mag normalize log1p_abs pow2 normalize",
+    "body": "I_LOCALSTD pow2 edge_mag normalize log1p_abs pow2 normalize",
+    "root_op": "",
+    "quality_anova_f": 41.90862944566424,
+    "quality_pair": 121.41176486662413,
+    "rank_score": 3.997307172326027,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR downsample_2x closing lr_symmetry border_sharp laplacian normalize",
+    "body": "I_BLUR downsample_2x closing lr_symmetry border_sharp laplacian normalize",
+    "root_op": "",
+    "quality_anova_f": 22.124468033384915,
+    "quality_pair": 110.33962283003909,
+    "rank_score": 3.5634849385929876,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF log1p_abs edge_orient low_freq edge_y gabor_90 normalize",
+    "body": "I_LRDIFF log1p_abs edge_orient low_freq edge_y gabor_90 normalize",
+    "root_op": "",
+    "quality_anova_f": 2.167463221432576,
+    "quality_pair": 93.63313606539762,
+    "rank_score": 2.9225821823308498,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD sqrt_abs dilate laplacian opening normalize pow2",
+    "body": "I_GRAD sqrt_abs dilate laplacian opening normalize pow2",
+    "root_op": "",
+    "quality_anova_f": 59.09497208661196,
+    "quality_pair": 78.23411383084749,
+    "rank_score": 2.43598193516596,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs opening flip_h lbp_like low_freq downsample_2x",
+    "body": "I_BLUR sqrt_abs opening flip_h lbp_like low_freq downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 43.66153845906456,
+    "quality_pair": 59.10424709759899,
+    "rank_score": 1.712369375541295,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize relu edge_yy normalize low_freq downsample_4x",
+    "body": "I_LOCALSTD normalize relu edge_yy normalize low_freq downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 48.71376285671976,
+    "quality_pair": 58.09835213517291,
+    "rank_score": 1.6824275831016253,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR local_range flip_h gabor_90 local_std_5x5 abs sqrt_abs edge_x downsample_2x edge_mag closing edge_orient stride_pool_4 lbp_like",
+    "body": "I_BLUR local_range flip_h gabor_90 local_std_5x5 abs sqrt_abs edge_x downsample_2x edge_mag closing edge_orient stride_pool_4 lbp_like",
+    "root_op": "",
+    "quality_anova_f": 54.98360659108487,
+    "quality_pair": 54.72727273687074,
+    "rank_score": 1.5673414194781747,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y closing I_LOCALSTD tb_symmetry blur_7x7 multiply",
+    "body": "I_LRDIFF edge_y closing I_LOCALSTD tb_symmetry blur_7x7 multiply",
+    "root_op": "",
+    "quality_anova_f": 39.490511368293554,
+    "quality_pair": 51.90993313315927,
+    "rank_score": 1.4424929791265821,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD dilate I_GRAD blur_7x7 abs negate flip_h texture_entropy gabor_90 edge_x texture_entropy gabor_90 gabor_0 multiply",
+    "body": "I_LOCALSTD dilate I_GRAD blur_7x7 abs negate flip_h texture_entropy gabor_90 edge_x texture_entropy gabor_90 gabor_0 multiply",
+    "root_op": "",
+    "quality_anova_f": 34.943588315860005,
+    "quality_pair": 51.59488632981454,
+    "rank_score": 1.424640541747201,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD closing I_LRDIFF local_std_5x5 dilate dog subtract",
+    "body": "I_GRAD closing I_LRDIFF local_std_5x5 dilate dog subtract",
+    "root_op": "",
+    "quality_anova_f": 50.134082095836085,
+    "quality_pair": 50.21253444279148,
+    "rank_score": 1.394896378290392,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG low_freq downsample_2x stride_pool_4 dilate low_freq edge_y",
+    "body": "I_LOG low_freq downsample_2x stride_pool_4 dilate low_freq edge_y",
+    "root_op": "",
+    "quality_anova_f": 38.700487189369504,
+    "quality_pair": 49.43621488100221,
+    "rank_score": 1.3505883715092886,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_std_5x5 gabor_90 edge_mag pow2 high_freq log1p_abs",
+    "body": "I_LOCALSTD local_std_5x5 gabor_90 edge_mag pow2 high_freq log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 32.988661063724315,
+    "quality_pair": 48.55131167260966,
+    "rank_score": 1.3102053721128282,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD opening edge_y gabor_0 dog flip_v blur_7x7",
+    "body": "I_GRAD opening edge_y gabor_0 dog flip_v blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 31.46072111300042,
+    "quality_pair": 48.22897218886975,
+    "rank_score": 1.2962594117556951,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG blur corner_harris dog laplacian border_sharp opening blur_7x7 flip_h negate texture_entropy downsample_2x dilate stride_pool_4",
+    "body": "I_LOG blur corner_harris dog laplacian border_sharp opening blur_7x7 flip_h negate texture_entropy downsample_2x dilate stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 34.08785254543424,
+    "quality_pair": 47.69354585866946,
+    "rank_score": 1.280235863893043,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_0 edge_y edge_mag dog diag_symmetry high_freq",
+    "body": "I_LOCALSTD gabor_0 edge_y edge_mag dog diag_symmetry high_freq",
+    "root_op": "",
+    "quality_anova_f": 48.489857069995395,
+    "quality_pair": 46.3205995561542,
+    "rank_score": 1.2497467825720958,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs abs sqrt_abs sigmoid lr_symmetry gabor_mag opening tb_symmetry log1p_abs edge_y closing sigmoid closing",
+    "body": "I_BLUR sqrt_abs abs sqrt_abs sigmoid lr_symmetry gabor_mag opening tb_symmetry log1p_abs edge_y closing sigmoid closing",
+    "root_op": "",
+    "quality_anova_f": 17.880428311432976,
+    "quality_pair": 47.41348971929134,
+    "rank_score": 1.2475455694607556,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD flip_v edge_yy corner_harris sigmoid dog downsample_2x",
+    "body": "I_GRAD flip_v edge_yy corner_harris sigmoid dog downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 35.911947445191366,
+    "quality_pair": 46.58756007390763,
+    "rank_score": 1.242156279302876,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_std_5x5 lbp_like local_range gabor_mag relu log1p_abs",
+    "body": "I_GRAD local_std_5x5 lbp_like local_range gabor_mag relu log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 30.73039887132646,
+    "quality_pair": 46.760218088863894,
+    "rank_score": 1.2413304315024196,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y I_LRDIFF edge_y closing local_std_5x5 add",
+    "body": "I_LRDIFF edge_y I_LRDIFF edge_y closing local_std_5x5 add",
+    "root_op": "",
+    "quality_anova_f": 33.412465760659444,
+    "quality_pair": 46.34602839301466,
+    "rank_score": 1.2298335391182527,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR diag_symmetry sqrt_abs laplacian stride_pool_4 edge_x tb_symmetry",
+    "body": "I_BLUR diag_symmetry sqrt_abs laplacian stride_pool_4 edge_x tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 26.2308765101211,
+    "quality_pair": 45.11877183305768,
+    "rank_score": 1.1748502916172654,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG blur_7x7 negate tb_symmetry I_GRAY laplacian abs log1p_abs opening local_range blur_7x7 closing edge_xx subtract",
+    "body": "I_LOG blur_7x7 negate tb_symmetry I_GRAY laplacian abs log1p_abs opening local_range blur_7x7 closing edge_xx subtract",
+    "root_op": "",
+    "quality_anova_f": 34.834025138985396,
+    "quality_pair": 44.66448277980401,
+    "rank_score": 1.1700681026499218,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR dilate downsample_2x local_var edge_mag local_var laplacian flip_h texture_entropy lbp_like normalize gabor_mag local_std_5x5 edge_x",
+    "body": "I_BLUR dilate downsample_2x local_var edge_mag local_var laplacian flip_h texture_entropy lbp_like normalize gabor_mag local_std_5x5 edge_x",
+    "root_op": "",
+    "quality_anova_f": 22.9494201760359,
+    "quality_pair": 44.303424815484355,
+    "rank_score": 1.1403811097462555,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_mag local_range gabor_mag abs flip_h edge_yy",
+    "body": "I_LOCALSTD edge_mag local_range gabor_mag abs flip_h edge_yy",
+    "root_op": "",
+    "quality_anova_f": 33.53173912242635,
+    "quality_pair": 43.75343924067202,
+    "rank_score": 1.1348223210225195,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAD laplacian negate diag_symmetry local_var closing pow2 normalize edge_orient abs downsample_2x closing div",
+    "body": "I_GRAD I_GRAD laplacian negate diag_symmetry local_var closing pow2 normalize edge_orient abs downsample_2x closing div",
+    "root_op": "",
+    "quality_anova_f": 32.37862880749154,
+    "quality_pair": 43.69041641030415,
+    "rank_score": 1.13091435167894,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD diag_symmetry edge_y log1p_abs opening tb_symmetry edge_x",
+    "body": "I_LOCALSTD diag_symmetry edge_y log1p_abs opening tb_symmetry edge_x",
+    "root_op": "",
+    "quality_anova_f": 31.8238251525314,
+    "quality_pair": 43.57305769254768,
+    "rank_score": 1.125838914941954,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD laplacian opening blur gabor_90 downsample_4x local_var",
+    "body": "I_GRAD laplacian opening blur gabor_90 downsample_4x local_var",
+    "root_op": "",
+    "quality_anova_f": 25.21750329705869,
+    "quality_pair": 43.51433503125409,
+    "rank_score": 1.114548924630027,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD sqrt_abs texture_entropy I_LBP border_sharp lr_symmetry add",
+    "body": "I_GRAD sqrt_abs texture_entropy I_LBP border_sharp lr_symmetry add",
+    "root_op": "",
+    "quality_anova_f": 29.852457090705904,
+    "quality_pair": 43.258093579476345,
+    "rank_score": 1.1115506047062973,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD downsample_2x edge_y gabor_mag edge_y texture_entropy blur_7x7",
+    "body": "I_LOCALSTD downsample_2x edge_y gabor_mag edge_y texture_entropy blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 38.251207481100636,
+    "quality_pair": 42.74537486551436,
+    "rank_score": 1.1043408024244543,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD I_LOG flip_v lbp_like abs pow2 flip_h normalize local_std_5x5 edge_xx div edge_mag local_var gabor_0",
+    "body": "I_LOCALSTD I_LOG flip_v lbp_like abs pow2 flip_h normalize local_std_5x5 edge_xx div edge_mag local_var gabor_0",
+    "root_op": "",
+    "quality_anova_f": 31.04099997508415,
+    "quality_pair": 42.420104565706914,
+    "rank_score": 1.0824306612090744,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize tb_symmetry border_sharp closing local_std_5x5 lr_symmetry",
+    "body": "I_GRAD normalize tb_symmetry border_sharp closing local_std_5x5 lr_symmetry",
+    "root_op": "",
+    "quality_anova_f": 36.09586767545133,
+    "quality_pair": 41.882004520245125,
+    "rank_score": 1.0696656689411084,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD high_freq edge_y lbp_like laplacian blur_7x7 gabor_0 relu edge_mag blur negate flip_h diag_symmetry negate",
+    "body": "I_LOCALSTD high_freq edge_y lbp_like laplacian blur_7x7 gabor_0 relu edge_mag blur negate flip_h diag_symmetry negate",
+    "root_op": "",
+    "quality_anova_f": 39.37910323787636,
+    "quality_pair": 41.45284223971488,
+    "rank_score": 1.0584503263231302,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs edge_mag edge_y corner_harris dog closing",
+    "body": "I_BLUR sqrt_abs edge_mag edge_y corner_harris dog closing",
+    "root_op": "",
+    "quality_anova_f": 24.772327392641564,
+    "quality_pair": 41.96858770380698,
+    "rank_score": 1.0571877157769232,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF sqrt_abs opening gabor_90 local_var dilate gabor_mag",
+    "body": "I_LRDIFF sqrt_abs opening gabor_90 local_var dilate gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 42.73018466754441,
+    "quality_pair": 41.18484828112596,
+    "rank_score": 1.0532454156490152,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_mag blur_7x7 negate gabor_90 sigmoid gabor_mag lr_symmetry flip_h I_LOG pow2 gabor_0 high_freq add",
+    "body": "I_GRAY gabor_mag blur_7x7 negate gabor_90 sigmoid gabor_mag lr_symmetry flip_h I_LOG pow2 gabor_0 high_freq add",
+    "root_op": "",
+    "quality_anova_f": 30.912426284589483,
+    "quality_pair": 41.25485030742553,
+    "rank_score": 1.0394754235018675,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_LOCALSTD downsample_2x local_range negate subtract normalize opening abs edge_y I_LRDIFF texture_entropy low_freq add",
+    "body": "I_LOG I_LOCALSTD downsample_2x local_range negate subtract normalize opening abs edge_y I_LRDIFF texture_entropy low_freq add",
+    "root_op": "",
+    "quality_anova_f": 39.65034867844252,
+    "quality_pair": 40.7672423846334,
+    "rank_score": 1.0336564157378938,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF opening local_range flip_h log1p_abs local_range local_std_5x5",
+    "body": "I_LRDIFF opening local_range flip_h log1p_abs local_range local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 23.71992228339022,
+    "quality_pair": 40.650674839394114,
+    "rank_score": 1.0073509164028034,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY normalize edge_y tb_symmetry edge_y local_std_5x5 local_range",
+    "body": "I_GRAY normalize edge_y tb_symmetry edge_y local_std_5x5 local_range",
+    "root_op": "",
+    "quality_anova_f": 34.12088856611381,
+    "quality_pair": 40.086167501118716,
+    "rank_score": 1.0010082742221398,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LOCALSTD gabor_90 closing log1p_abs abs multiply",
+    "body": "I_LRDIFF I_LOCALSTD gabor_90 closing log1p_abs abs multiply",
+    "root_op": "",
+    "quality_anova_f": 26.841767782871372,
+    "quality_pair": 40.155150893837174,
+    "rank_score": 0.993476235171629,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize closing opening local_var sigmoid blur_7x7",
+    "body": "I_LOG normalize closing opening local_var sigmoid blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 47.181911030115145,
+    "quality_pair": 39.285714286041156,
+    "rank_score": 0.9896817872739956,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD flip_h closing downsample_4x high_freq lr_symmetry flip_v I_LBP edge_y gabor_0 local_std_5x5 downsample_2x edge_mag multiply",
+    "body": "I_GRAD flip_h closing downsample_4x high_freq lr_symmetry flip_v I_LBP edge_y gabor_0 local_std_5x5 downsample_2x edge_mag multiply",
+    "root_op": "",
+    "quality_anova_f": 27.304318916165023,
+    "quality_pair": 39.81511707181156,
+    "rank_score": 0.981632853564096,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LBP normalize dilate edge_y edge_x multiply",
+    "body": "I_GRAD I_LBP normalize dilate edge_y edge_x multiply",
+    "root_op": "",
+    "quality_anova_f": 25.089470225926007,
+    "quality_pair": 39.03354253204757,
+    "rank_score": 0.9498782330258803,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD downsample_4x pow2 border_sharp flip_h border_sharp laplacian",
+    "body": "I_GRAD downsample_4x pow2 border_sharp flip_h border_sharp laplacian",
+    "root_op": "",
+    "quality_anova_f": 23.16293096159123,
+    "quality_pair": 38.88362183200074,
+    "rank_score": 0.9417107880364779,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY normalize opening pow2 closing dog pow2",
+    "body": "I_GRAY normalize opening pow2 closing dog pow2",
+    "root_op": "",
+    "quality_anova_f": 46.41921995249542,
+    "quality_pair": 37.95017953820308,
+    "rank_score": 0.9395986468685974,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_mag gabor_mag high_freq flip_h gabor_90 texture_entropy",
+    "body": "I_LRDIFF edge_mag gabor_mag high_freq flip_h gabor_90 texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 26.596950740577885,
+    "quality_pair": 38.38298687339358,
+    "rank_score": 0.928080105028219,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG edge_x log1p_abs I_GRAY div downsample_4x normalize",
+    "body": "I_LOG edge_x log1p_abs I_GRAY div downsample_4x normalize",
+    "root_op": "",
+    "quality_anova_f": 3.888082114409276,
+    "quality_pair": 38.760563203347765,
+    "rank_score": 0.9105428293309348,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_mag negate sigmoid high_freq negate gabor_mag opening flip_v stride_pool_4 high_freq log1p_abs edge_x edge_mag",
+    "body": "I_GRAD edge_mag negate sigmoid high_freq negate gabor_mag opening flip_v stride_pool_4 high_freq log1p_abs edge_x edge_mag",
+    "root_op": "",
+    "quality_anova_f": 45.121217250409444,
+    "quality_pair": 37.15710794932418,
+    "rank_score": 0.9086896372239989,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD lbp_like high_freq abs low_freq lbp_like negate normalize edge_orient negate normalize gabor_90 downsample_2x normalize",
+    "body": "I_GRAD lbp_like high_freq abs low_freq lbp_like negate normalize edge_orient negate normalize gabor_90 downsample_2x normalize",
+    "root_op": "",
+    "quality_anova_f": 78.8333334838799,
+    "quality_pair": 35.83333340591829,
+    "rank_score": 0.9067048215966962,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD sqrt_abs local_std_5x5 local_var gabor_90 dilate downsample_4x",
+    "body": "I_GRAD sqrt_abs local_std_5x5 local_var gabor_90 dilate downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 26.55192309047632,
+    "quality_pair": 37.610668264802165,
+    "rank_score": 0.8996653809227952,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_std_5x5 log1p_abs pow2 dilate tb_symmetry dog",
+    "body": "I_GRAD local_std_5x5 log1p_abs pow2 dilate tb_symmetry dog",
+    "root_op": "",
+    "quality_anova_f": 32.5571126258028,
+    "quality_pair": 37.20240128828677,
+    "rank_score": 0.8929806326046817,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF relu sqrt_abs abs blur downsample_2x gabor_45 blur closing low_freq negate local_var I_GRAD subtract",
+    "body": "I_LRDIFF relu sqrt_abs abs blur downsample_2x gabor_45 blur closing low_freq negate local_var I_GRAD subtract",
+    "root_op": "",
+    "quality_anova_f": 36.4069094080938,
+    "quality_pair": 36.87796939200002,
+    "rank_score": 0.886393386563003,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD diag_symmetry low_freq laplacian local_range laplacian high_freq",
+    "body": "I_GRAD diag_symmetry low_freq laplacian local_range laplacian high_freq",
+    "root_op": "",
+    "quality_anova_f": 30.720857913871292,
+    "quality_pair": 36.75192738393776,
+    "rank_score": 0.8739044582906897,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_mag blur flip_h gabor_mag local_var high_freq",
+    "body": "I_LOCALSTD edge_mag blur flip_h gabor_mag local_var high_freq",
+    "root_op": "",
+    "quality_anova_f": 28.89643276825304,
+    "quality_pair": 36.80430944387262,
+    "rank_score": 0.8733049061149949,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur closing edge_x edge_y sqrt_abs pow2",
+    "body": "I_GRAD blur closing edge_x edge_y sqrt_abs pow2",
+    "root_op": "",
+    "quality_anova_f": 43.14933485511475,
+    "quality_pair": 36.214422449783285,
+    "rank_score": 0.871356435040378,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_yy gabor_0 local_std_5x5 dilate local_range log1p_abs",
+    "body": "I_LOCALSTD edge_yy gabor_0 local_std_5x5 dilate local_range log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 27.14372822390271,
+    "quality_pair": 36.58866053327228,
+    "rank_score": 0.862964875758652,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG gabor_mag normalize high_freq closing gabor_90 high_freq",
+    "body": "I_LOG gabor_mag normalize high_freq closing gabor_90 high_freq",
+    "root_op": "",
+    "quality_anova_f": 27.610056019169217,
+    "quality_pair": 36.51552850403957,
+    "rank_score": 0.8609249055687136,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_BLUR opening local_var opening edge_mag multiply",
+    "body": "I_GRAY I_BLUR opening local_var opening edge_mag multiply",
+    "root_op": "",
+    "quality_anova_f": 19.673926002207942,
+    "quality_pair": 36.79596475791806,
+    "rank_score": 0.8602470652299514,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR flip_v edge_y flip_v relu edge_y downsample_2x corner_harris border_sharp tb_symmetry local_range gabor_mag sqrt_abs local_std_5x5",
+    "body": "I_BLUR flip_v edge_y flip_v relu edge_y downsample_2x corner_harris border_sharp tb_symmetry local_range gabor_mag sqrt_abs local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 28.60096754105134,
+    "quality_pair": 36.05733265344437,
+    "rank_score": 0.8454742339433616,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY relu edge_y normalize downsample_2x relu high_freq",
+    "body": "I_GRAY relu edge_y normalize downsample_2x relu high_freq",
+    "root_op": "",
+    "quality_anova_f": 31.890154107474597,
+    "quality_pair": 35.750710678983374,
+    "rank_score": 0.838765677329147,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize blur tb_symmetry normalize dilate gabor_90",
+    "body": "I_GRAD normalize blur tb_symmetry normalize dilate gabor_90",
+    "root_op": "",
+    "quality_anova_f": 36.495581606351536,
+    "quality_pair": 35.50040527228641,
+    "rank_score": 0.8359444500839297,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_y sqrt_abs corner_harris stride_pool_4 pow2 edge_xx closing negate edge_yy high_freq edge_y lbp_like blur_7x7",
+    "body": "I_BLUR edge_y sqrt_abs corner_harris stride_pool_4 pow2 edge_xx closing negate edge_yy high_freq edge_y lbp_like blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 21.25434984839437,
+    "quality_pair": 36.047468354515935,
+    "rank_score": 0.8349543051094332,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD negate I_GRAD relu local_var flip_h add",
+    "body": "I_LOCALSTD negate I_GRAD relu local_var flip_h add",
+    "root_op": "",
+    "quality_anova_f": 34.20853987303219,
+    "quality_pair": 35.29177742763873,
+    "rank_score": 0.8251233675736662,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY high_freq I_LOG low_freq downsample_2x high_freq edge_yy downsample_2x gabor_45 flip_h gabor_90 abs high_freq multiply",
+    "body": "I_GRAY high_freq I_LOG low_freq downsample_2x high_freq edge_yy downsample_2x gabor_45 flip_h gabor_90 abs high_freq multiply",
+    "root_op": "",
+    "quality_anova_f": 37.27437982946211,
+    "quality_pair": 34.827149018408925,
+    "rank_score": 0.8123054514303368,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_var edge_yy abs laplacian tb_symmetry dilate",
+    "body": "I_LRDIFF local_var edge_yy abs laplacian tb_symmetry dilate",
+    "root_op": "",
+    "quality_anova_f": 37.550041523013185,
+    "quality_pair": 34.524366077294054,
+    "rank_score": 0.8015711783227826,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF blur border_sharp blur_7x7 negate sigmoid flip_v",
+    "body": "I_LRDIFF blur border_sharp blur_7x7 negate sigmoid flip_v",
+    "root_op": "",
+    "quality_anova_f": 21.651268282118497,
+    "quality_pair": 35.07203906952738,
+    "rank_score": 0.7996942738230991,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD gabor_0 pow2 sqrt_abs edge_x edge_orient low_freq",
+    "body": "I_GRAD gabor_0 pow2 sqrt_abs edge_x edge_orient low_freq",
+    "root_op": "",
+    "quality_anova_f": 24.341407185630334,
+    "quality_pair": 34.91010508935663,
+    "rank_score": 0.7974690619991911,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD lbp_like I_LOG texture_entropy lr_symmetry lbp_like high_freq tb_symmetry dilate edge_xx normalize low_freq normalize subtract",
+    "body": "I_GRAD lbp_like I_LOG texture_entropy lr_symmetry lbp_like high_freq tb_symmetry dilate edge_xx normalize low_freq normalize subtract",
+    "root_op": "",
+    "quality_anova_f": 25.46865218122991,
+    "quality_pair": 34.829307567585,
+    "rank_score": 0.7960615023930986,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF relu diag_symmetry log1p_abs gabor_90 edge_mag tb_symmetry",
+    "body": "I_LRDIFF relu diag_symmetry log1p_abs gabor_90 edge_mag tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 33.07203110544112,
+    "quality_pair": 34.4549375054462,
+    "rank_score": 0.7928308751626234,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_range gabor_mag pow2 edge_y texture_entropy closing",
+    "body": "I_GRAD local_range gabor_mag pow2 edge_y texture_entropy closing",
+    "root_op": "",
+    "quality_anova_f": 26.038890831598067,
+    "quality_pair": 34.685337570418625,
+    "rank_score": 0.7915646830962142,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LOG abs laplacian high_freq blur_7x7 subtract dilate pow2 I_GRAY dog downsample_2x border_sharp subtract",
+    "body": "I_GRAD I_LOG abs laplacian high_freq blur_7x7 subtract dilate pow2 I_GRAY dog downsample_2x border_sharp subtract",
+    "root_op": "",
+    "quality_anova_f": 29.50441377043128,
+    "quality_pair": 34.47153151764527,
+    "rank_score": 0.7885072886558401,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_LOG subtract normalize low_freq downsample_4x local_std_5x5",
+    "body": "I_BLUR I_LOG subtract normalize low_freq downsample_4x local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 16.898063208794134,
+    "quality_pair": 34.895474454868705,
+    "rank_score": 0.7866404183602768,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize closing flip_v pow2 abs high_freq",
+    "body": "I_LOG normalize closing flip_v pow2 abs high_freq",
+    "root_op": "",
+    "quality_anova_f": 27.5236312186608,
+    "quality_pair": 34.22903567850363,
+    "rank_score": 0.776866332847586,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD negate local_range edge_y gabor_mag dilate dog",
+    "body": "I_GRAD negate local_range edge_y gabor_mag dilate dog",
+    "root_op": "",
+    "quality_anova_f": 24.85294698413415,
+    "quality_pair": 34.007649064251474,
+    "rank_score": 0.765046421794058,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR flip_h gabor_90 normalize tb_symmetry high_freq stride_pool_4",
+    "body": "I_BLUR flip_h gabor_90 normalize tb_symmetry high_freq stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 22.525135321053273,
+    "quality_pair": 33.756900693879935,
+    "rank_score": 0.7526226887580322,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y sqrt_abs closing corner_harris gabor_0 blur_7x7",
+    "body": "I_LRDIFF edge_y sqrt_abs closing corner_harris gabor_0 blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 19.680015564245736,
+    "quality_pair": 33.8082321635124,
+    "rank_score": 0.7505733049622535,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD laplacian opening closing edge_y dilate sigmoid",
+    "body": "I_GRAD laplacian opening closing edge_y dilate sigmoid",
+    "root_op": "",
+    "quality_anova_f": 23.55679715372348,
+    "quality_pair": 33.60126110904802,
+    "rank_score": 0.748335455904881,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize low_freq laplacian gabor_mag tb_symmetry laplacian",
+    "body": "I_GRAD normalize low_freq laplacian gabor_mag tb_symmetry laplacian",
+    "root_op": "",
+    "quality_anova_f": 34.516475962545805,
+    "quality_pair": 33.02201217958548,
+    "rank_score": 0.7422241414577845,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize edge_y downsample_2x edge_yy local_var opening",
+    "body": "I_GRAD normalize edge_y downsample_2x edge_yy local_var opening",
+    "root_op": "",
+    "quality_anova_f": 49.43847896649684,
+    "quality_pair": 32.26966216549015,
+    "rank_score": 0.7352366485705055,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_BLUR opening abs edge_y normalize abs local_var high_freq stride_pool_4 local_var abs closing multiply",
+    "body": "I_BLUR I_BLUR opening abs edge_y normalize abs local_var high_freq stride_pool_4 local_var abs closing multiply",
+    "root_op": "",
+    "quality_anova_f": 27.55183016943385,
+    "quality_pair": 33.039187125636516,
+    "rank_score": 0.7332249795884218,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD tb_symmetry closing opening border_sharp negate pow2",
+    "body": "I_GRAD tb_symmetry closing opening border_sharp negate pow2",
+    "root_op": "",
+    "quality_anova_f": 25.10822616187775,
+    "quality_pair": 33.06236399796365,
+    "rank_score": 0.7306971726260022,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR lbp_like negate edge_y blur gabor_90 pow2 downsample_2x flip_h flip_v laplacian opening pow2 gabor_0",
+    "body": "I_BLUR lbp_like negate edge_y blur gabor_90 pow2 downsample_2x flip_h flip_v laplacian opening pow2 gabor_0",
+    "root_op": "",
+    "quality_anova_f": 24.63277736425742,
+    "quality_pair": 32.967650596707635,
+    "rank_score": 0.726562784537115,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_90 flip_h gabor_mag I_LOCALSTD relu add",
+    "body": "I_LOCALSTD gabor_90 flip_h gabor_mag I_LOCALSTD relu add",
+    "root_op": "",
+    "quality_anova_f": 25.865591987843942,
+    "quality_pair": 32.90933037673469,
+    "rank_score": 0.7261263514746776,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF negate I_LOG tb_symmetry blur_7x7 laplacian gabor_0 add negate downsample_2x edge_mag gabor_mag blur negate",
+    "body": "I_LRDIFF negate I_LOG tb_symmetry blur_7x7 laplacian gabor_0 add negate downsample_2x edge_mag gabor_mag blur negate",
+    "root_op": "",
+    "quality_anova_f": 22.47355389080694,
+    "quality_pair": 32.85715939476421,
+    "rank_score": 0.7195211087747063,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs stride_pool_4 laplacian stride_pool_4 blur edge_yy",
+    "body": "I_BLUR sqrt_abs stride_pool_4 laplacian stride_pool_4 blur edge_yy",
+    "root_op": "",
+    "quality_anova_f": 20.141253997533326,
+    "quality_pair": 32.71041165477687,
+    "rank_score": 0.7109091208239351,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LOCALSTD log1p_abs edge_mag abs relu multiply",
+    "body": "I_LRDIFF I_LOCALSTD log1p_abs edge_mag abs relu multiply",
+    "root_op": "",
+    "quality_anova_f": 19.07914736185279,
+    "quality_pair": 32.687444505642134,
+    "rank_score": 0.7085974555273803,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_yy normalize local_var edge_orient I_LRDIFF edge_y edge_mag stride_pool_4 lbp_like gabor_mag add lbp_like flip_h",
+    "body": "I_LRDIFF edge_yy normalize local_var edge_orient I_LRDIFF edge_y edge_mag stride_pool_4 lbp_like gabor_mag add lbp_like flip_h",
+    "root_op": "",
+    "quality_anova_f": 5.651799037962346,
+    "quality_pair": 32.98630122341276,
+    "rank_score": 0.7010034120745089,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize flip_v gabor_90 local_var negate tb_symmetry",
+    "body": "I_LOCALSTD normalize flip_v gabor_90 local_var negate tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 42.43966137786033,
+    "quality_pair": 31.526269353320266,
+    "rank_score": 0.6982691560591873,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_45 gabor_90 tb_symmetry gabor_45 normalize gabor_90 flip_h abs I_LRDIFF lr_symmetry gabor_mag negate div",
+    "body": "I_GRAY gabor_45 gabor_90 tb_symmetry gabor_45 normalize gabor_90 flip_h abs I_LRDIFF lr_symmetry gabor_mag negate div",
+    "root_op": "",
+    "quality_anova_f": 45.68742528558826,
+    "quality_pair": 31.33227834012297,
+    "rank_score": 0.6956381038524377,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_GRAY closing laplacian edge_y gabor_mag subtract",
+    "body": "I_BLUR I_GRAY closing laplacian edge_y gabor_mag subtract",
+    "root_op": "",
+    "quality_anova_f": 22.748350994028115,
+    "quality_pair": 32.17741797850476,
+    "rank_score": 0.694947177119912,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY corner_harris texture_entropy local_range edge_y blur opening",
+    "body": "I_GRAY corner_harris texture_entropy local_range edge_y blur opening",
+    "root_op": "",
+    "quality_anova_f": 18.654496159632767,
+    "quality_pair": 32.247260498275516,
+    "rank_score": 0.6918507858138548,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_mag abs closing pow2 edge_mag local_range flip_h negate stride_pool_4 lr_symmetry normalize edge_y pow2",
+    "body": "I_LOCALSTD gabor_mag abs closing pow2 edge_mag local_range flip_h negate stride_pool_4 lr_symmetry normalize edge_y pow2",
+    "root_op": "",
+    "quality_anova_f": 24.80378685743344,
+    "quality_pair": 31.608907080201,
+    "rank_score": 0.676918611927505,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD blur corner_harris opening local_std_5x5 I_LRDIFF multiply",
+    "body": "I_LOCALSTD blur corner_harris opening local_std_5x5 I_LRDIFF multiply",
+    "root_op": "",
+    "quality_anova_f": 17.06519534000813,
+    "quality_pair": 31.657987777495045,
+    "rank_score": 0.6680206408815168,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAY normalize multiply relu lr_symmetry downsample_2x",
+    "body": "I_GRAD I_GRAY normalize multiply relu lr_symmetry downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 19.645707299184068,
+    "quality_pair": 31.466334965239465,
+    "rank_score": 0.6645528499887754,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP sqrt_abs I_GRAD multiply laplacian sqrt_abs low_freq",
+    "body": "I_LBP sqrt_abs I_GRAD multiply laplacian sqrt_abs low_freq",
+    "root_op": "",
+    "quality_anova_f": 25.105541147926413,
+    "quality_pair": 31.228885757393556,
+    "rank_score": 0.6633849297061513,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_4x edge_mag border_sharp pow2 edge_y abs",
+    "body": "I_LRDIFF downsample_4x edge_mag border_sharp pow2 edge_y abs",
+    "root_op": "",
+    "quality_anova_f": 17.208520485545755,
+    "quality_pair": 31.427626399215168,
+    "rank_score": 0.6597620491947525,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD I_BLUR opening low_freq edge_orient local_std_5x5 multiply",
+    "body": "I_LOCALSTD I_BLUR opening low_freq edge_orient local_std_5x5 multiply",
+    "root_op": "",
+    "quality_anova_f": 30.633420859367206,
+    "quality_pair": 30.626707253321456,
+    "rank_score": 0.6489215733833366,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR abs edge_y laplacian sigmoid laplacian downsample_4x edge_mag normalize local_std_5x5 edge_y local_var local_range sqrt_abs",
+    "body": "I_BLUR abs edge_y laplacian sigmoid laplacian downsample_4x edge_mag normalize local_std_5x5 edge_y local_var local_range sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 19.86149328339224,
+    "quality_pair": 30.910191903009654,
+    "rank_score": 0.6444347262798961,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF pow2 edge_yy blur_7x7 laplacian local_var sqrt_abs",
+    "body": "I_LRDIFF pow2 edge_yy blur_7x7 laplacian local_var sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 17.157441608674358,
+    "quality_pair": 30.982627830462,
+    "rank_score": 0.6433551527121791,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP stride_pool_4 laplacian downsample_2x log1p_abs diag_symmetry abs",
+    "body": "I_LBP stride_pool_4 laplacian downsample_2x log1p_abs diag_symmetry abs",
+    "root_op": "",
+    "quality_anova_f": 25.082786206384007,
+    "quality_pair": 30.339320718937003,
+    "rank_score": 0.630696785771881,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_mag pow2 flip_h gabor_mag edge_x dog",
+    "body": "I_LRDIFF edge_mag pow2 flip_h gabor_mag edge_x dog",
+    "root_op": "",
+    "quality_anova_f": 20.787316741439973,
+    "quality_pair": 30.489772720973274,
+    "rank_score": 0.6302808739535535,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD blur_7x7 local_var sqrt_abs gabor_45 normalize sqrt_abs",
+    "body": "I_LOCALSTD blur_7x7 local_var sqrt_abs gabor_45 normalize sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 34.53236382412713,
+    "quality_pair": 29.94574018763902,
+    "rank_score": 0.6293135729531857,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_mag I_BLUR border_sharp downsample_4x abs local_var lr_symmetry log1p_abs negate downsample_4x local_contrast border_sharp subtract",
+    "body": "I_LOCALSTD edge_mag I_BLUR border_sharp downsample_4x abs local_var lr_symmetry log1p_abs negate downsample_4x local_contrast border_sharp subtract",
+    "root_op": "",
+    "quality_anova_f": 14.767686376279615,
+    "quality_pair": 30.485046023676418,
+    "rank_score": 0.6217843100404776,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_4x edge_yy sqrt_abs high_freq opening flip_h closing negate relu edge_x corner_harris gabor_0 local_range",
+    "body": "I_LRDIFF downsample_4x edge_yy sqrt_abs high_freq opening flip_h closing negate relu edge_x corner_harris gabor_0 local_range",
+    "root_op": "",
+    "quality_anova_f": 17.314674550220214,
+    "quality_pair": 30.16115713751001,
+    "rank_score": 0.6134156698297794,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD gabor_mag gabor_90 corner_harris local_range lbp_like border_sharp downsample_2x opening dilate gabor_90 opening I_LOG subtract",
+    "body": "I_GRAD gabor_mag gabor_90 corner_harris local_range lbp_like border_sharp downsample_2x opening dilate gabor_90 opening I_LOG subtract",
+    "root_op": "",
+    "quality_anova_f": 21.05628355273311,
+    "quality_pair": 29.98436240802288,
+    "rank_score": 0.612098722680073,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_4x opening gabor_mag blur gabor_mag gabor_90",
+    "body": "I_GRAY downsample_4x opening gabor_mag blur gabor_mag gabor_90",
+    "root_op": "",
+    "quality_anova_f": 16.163735633727068,
+    "quality_pair": 30.15611379868497,
+    "rank_score": 0.6116391787392003,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize blur flip_h dilate border_sharp relu",
+    "body": "I_LOG normalize blur flip_h dilate border_sharp relu",
+    "root_op": "",
+    "quality_anova_f": 40.51138989898177,
+    "quality_pair": 29.056268637247904,
+    "rank_score": 0.6049272245138345,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD closing I_GRAD flip_v gabor_90 negate edge_yy local_contrast edge_mag local_var lr_symmetry edge_mag gabor_0 add",
+    "body": "I_GRAD closing I_GRAD flip_v gabor_90 negate edge_yy local_contrast edge_mag local_var lr_symmetry edge_mag gabor_0 add",
+    "root_op": "",
+    "quality_anova_f": 18.49800186361558,
+    "quality_pair": 29.679137264191496,
+    "rank_score": 0.5973564419886226,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR high_freq gabor_mag local_contrast edge_x closing negate gabor_mag local_var downsample_2x stride_pool_4 flip_h opening abs",
+    "body": "I_BLUR high_freq gabor_mag local_contrast edge_x closing negate gabor_mag local_var downsample_2x stride_pool_4 flip_h opening abs",
+    "root_op": "",
+    "quality_anova_f": 26.750438406017413,
+    "quality_pair": 29.33412249542225,
+    "rank_score": 0.5961008919208649,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG laplacian flip_v blur_7x7 log1p_abs downsample_2x edge_x gabor_45 local_range flip_h I_GRAY gabor_mag laplacian subtract",
+    "body": "I_LOG laplacian flip_v blur_7x7 log1p_abs downsample_2x edge_x gabor_45 local_range flip_h I_GRAY gabor_mag laplacian subtract",
+    "root_op": "",
+    "quality_anova_f": 23.302717496707647,
+    "quality_pair": 29.165139787021246,
+    "rank_score": 0.5851304025080886,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_std_5x5 downsample_4x local_std_5x5 opening local_var edge_y",
+    "body": "I_LRDIFF local_std_5x5 downsample_4x local_std_5x5 opening local_var edge_y",
+    "root_op": "",
+    "quality_anova_f": 15.258435248800197,
+    "quality_pair": 29.413117187369394,
+    "rank_score": 0.5831114336181069,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y stride_pool_4 relu laplacian gabor_90 tb_symmetry",
+    "body": "I_LRDIFF edge_y stride_pool_4 relu laplacian gabor_90 tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 34.35422818627002,
+    "quality_pair": 28.65156876362033,
+    "rank_score": 0.5815571506750749,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_y local_range local_std_5x5 normalize edge_mag blur_7x7",
+    "body": "I_GRAD edge_y local_range local_std_5x5 normalize edge_mag blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 22.20668194739134,
+    "quality_pair": 28.91847021369452,
+    "rank_score": 0.5745595209850526,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD blur relu low_freq opening edge_x negate",
+    "body": "I_LOCALSTD blur relu low_freq opening edge_x negate",
+    "root_op": "",
+    "quality_anova_f": 15.045732833233197,
+    "quality_pair": 29.174197509676354,
+    "rank_score": 0.5740463979879977,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY normalize laplacian closing relu abs border_sharp",
+    "body": "I_GRAY normalize laplacian closing relu abs border_sharp",
+    "root_op": "",
+    "quality_anova_f": 24.550063588404374,
+    "quality_pair": 28.700166188738006,
+    "rank_score": 0.5697854733548678,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG edge_yy blur I_LOG low_freq downsample_2x add",
+    "body": "I_LOG edge_yy blur I_LOG low_freq downsample_2x add",
+    "root_op": "",
+    "quality_anova_f": 23.82626664594702,
+    "quality_pair": 28.725060344146428,
+    "rank_score": 0.5696986008106825,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG diag_symmetry opening normalize downsample_4x edge_y high_freq gabor_0 flip_h edge_y normalize edge_xx edge_y sqrt_abs",
+    "body": "I_LOG diag_symmetry opening normalize downsample_4x edge_y high_freq gabor_0 flip_h edge_y normalize edge_xx edge_y sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 17.451833308577534,
+    "quality_pair": 28.601245315977796,
+    "rank_score": 0.5563396355819284,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY diag_symmetry tb_symmetry opening local_contrast I_LOCALSTD subtract",
+    "body": "I_GRAY diag_symmetry tb_symmetry opening local_contrast I_LOCALSTD subtract",
+    "root_op": "",
+    "quality_anova_f": 21.72704107723388,
+    "quality_pair": 28.36120468433443,
+    "rank_score": 0.5534386585124919,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD diag_symmetry gabor_mag normalize stride_pool_4 dilate edge_yy",
+    "body": "I_LOCALSTD diag_symmetry gabor_mag normalize stride_pool_4 dilate edge_yy",
+    "root_op": "",
+    "quality_anova_f": 18.442443932546727,
+    "quality_pair": 28.408147806795334,
+    "rank_score": 0.5506205313162028,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD I_LOCALSTD pow2 normalize opening local_contrast subtract",
+    "body": "I_LOCALSTD I_LOCALSTD pow2 normalize opening local_contrast subtract",
+    "root_op": "",
+    "quality_anova_f": 13.594034067542973,
+    "quality_pair": 28.45686049320421,
+    "rank_score": 0.5457051603983972,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR flip_h edge_mag local_range pow2 flip_v lbp_like sqrt_abs edge_xx edge_mag abs local_std_5x5 abs relu",
+    "body": "I_BLUR flip_h edge_mag local_range pow2 flip_v lbp_like sqrt_abs edge_xx edge_mag abs local_std_5x5 abs relu",
+    "root_op": "",
+    "quality_anova_f": 15.619687678421844,
+    "quality_pair": 28.379745143488115,
+    "rank_score": 0.5456749612434947,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAD add blur_7x7 gabor_90 lr_symmetry edge_y local_range flip_v closing negate closing gabor_0 pow2",
+    "body": "I_GRAD I_GRAD add blur_7x7 gabor_90 lr_symmetry edge_y local_range flip_v closing negate closing gabor_0 pow2",
+    "root_op": "",
+    "quality_anova_f": 20.152442479818813,
+    "quality_pair": 28.181366691145158,
+    "rank_score": 0.544659535312204,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD abs I_LBP normalize stride_pool_4 tb_symmetry subtract",
+    "body": "I_GRAD abs I_LBP normalize stride_pool_4 tb_symmetry subtract",
+    "root_op": "",
+    "quality_anova_f": 34.09844012507059,
+    "quality_pair": 27.513971346800766,
+    "rank_score": 0.5394413259425792,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF sqrt_abs blur diag_symmetry edge_yy blur gabor_90",
+    "body": "I_LRDIFF sqrt_abs blur diag_symmetry edge_yy blur gabor_90",
+    "root_op": "",
+    "quality_anova_f": 25.500377821846524,
+    "quality_pair": 27.814961549313068,
+    "rank_score": 0.5386028175899826,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG local_std_5x5 high_freq local_range negate edge_mag edge_y gabor_90 edge_y flip_v I_LRDIFF local_var local_range subtract",
+    "body": "I_LOG local_std_5x5 high_freq local_range negate edge_mag edge_y gabor_90 edge_y flip_v I_LRDIFF local_var local_range subtract",
+    "root_op": "",
+    "quality_anova_f": 15.212294065930454,
+    "quality_pair": 28.13849847736744,
+    "rank_score": 0.5362553100941211,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_range I_GRAD sigmoid local_contrast edge_mag add",
+    "body": "I_GRAD local_range I_GRAD sigmoid local_contrast edge_mag add",
+    "root_op": "",
+    "quality_anova_f": 34.975935511679275,
+    "quality_pair": 27.317239230924894,
+    "rank_score": 0.5334323934030543,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD flip_v local_range sqrt_abs low_freq texture_entropy downsample_4x",
+    "body": "I_GRAD flip_v local_range sqrt_abs low_freq texture_entropy downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 13.277199994190704,
+    "quality_pair": 28.071134726969028,
+    "rank_score": 0.5311067719552884,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_BLUR normalize gabor_0 edge_mag relu multiply",
+    "body": "I_GRAY I_BLUR normalize gabor_0 edge_mag relu multiply",
+    "root_op": "",
+    "quality_anova_f": 16.496050118349228,
+    "quality_pair": 27.94170625690525,
+    "rank_score": 0.5308058874382915,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD corner_harris local_std_5x5 normalize sqrt_abs border_sharp flip_v laplacian negate normalize dilate closing border_sharp laplacian",
+    "body": "I_LOCALSTD corner_harris local_std_5x5 normalize sqrt_abs border_sharp flip_v laplacian negate normalize dilate closing border_sharp laplacian",
+    "root_op": "",
+    "quality_anova_f": 27.031942181124517,
+    "quality_pair": 27.422246841351956,
+    "rank_score": 0.5263035475940983,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF gabor_90 I_LBP edge_yy local_std_5x5 border_sharp add",
+    "body": "I_LRDIFF gabor_90 I_LBP edge_yy local_std_5x5 border_sharp add",
+    "root_op": "",
+    "quality_anova_f": 20.365512259166916,
+    "quality_pair": 27.57915783769854,
+    "rank_score": 0.5228465420470985,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize tb_symmetry laplacian gabor_mag downsample_2x dilate",
+    "body": "I_LOCALSTD normalize tb_symmetry laplacian gabor_mag downsample_2x dilate",
+    "root_op": "",
+    "quality_anova_f": 30.515321365070516,
+    "quality_pair": 27.073926268349307,
+    "rank_score": 0.5183327007594297,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF stride_pool_4 blur sqrt_abs local_var flip_h negate",
+    "body": "I_LRDIFF stride_pool_4 blur sqrt_abs local_var flip_h negate",
+    "root_op": "",
+    "quality_anova_f": 19.499908238987256,
+    "quality_pair": 27.480485876059543,
+    "rank_score": 0.5180273836923662,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR tb_symmetry stride_pool_4 lr_symmetry dilate I_BLUR gabor_mag edge_y gabor_90 downsample_2x abs laplacian edge_x add",
+    "body": "I_BLUR tb_symmetry stride_pool_4 lr_symmetry dilate I_BLUR gabor_mag edge_y gabor_90 downsample_2x abs laplacian edge_x add",
+    "root_op": "",
+    "quality_anova_f": 24.812461702830333,
+    "quality_pair": 27.203635479893258,
+    "rank_score": 0.5152093753528614,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY low_freq edge_x border_sharp blur_7x7 gabor_90 edge_mag local_range dilate high_freq edge_xx flip_v log1p_abs gabor_90",
+    "body": "I_GRAY low_freq edge_x border_sharp blur_7x7 gabor_90 edge_mag local_range dilate high_freq edge_xx flip_v log1p_abs gabor_90",
+    "root_op": "",
+    "quality_anova_f": 13.169700235955212,
+    "quality_pair": 27.605230392752656,
+    "rank_score": 0.5138543968738574,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP stride_pool_4 gabor_90 flip_h local_std_5x5 dilate log1p_abs",
+    "body": "I_LBP stride_pool_4 gabor_90 flip_h local_std_5x5 dilate log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 26.97434597325767,
+    "quality_pair": 27.040797006000123,
+    "rank_score": 0.5122205674507981,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_4x normalize local_var flip_v texture_entropy negate",
+    "body": "I_GRAY downsample_4x normalize local_var flip_v texture_entropy negate",
+    "root_op": "",
+    "quality_anova_f": 15.858804618586587,
+    "quality_pair": 27.240204336656898,
+    "rank_score": 0.5041720735050461,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LOG edge_x gabor_90 flip_h stride_pool_4 blur_7x7 gabor_45 negate gabor_mag downsample_4x normalize edge_mag add",
+    "body": "I_GRAD I_LOG edge_x gabor_90 flip_h stride_pool_4 blur_7x7 gabor_45 negate gabor_mag downsample_4x normalize edge_mag add",
+    "root_op": "",
+    "quality_anova_f": 14.791425459670336,
+    "quality_pair": 27.1087207370685,
+    "rank_score": 0.4978693878577042,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY corner_harris local_std_5x5 sigmoid gabor_45 negate gabor_45 edge_mag stride_pool_4 downsample_4x edge_orient flip_v flip_h texture_entropy",
+    "body": "I_GRAY corner_harris local_std_5x5 sigmoid gabor_45 negate gabor_45 edge_mag stride_pool_4 downsample_4x edge_orient flip_v flip_h texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 16.351754144110036,
+    "quality_pair": 27.014194843370444,
+    "rank_score": 0.4965566513859804,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD tb_symmetry downsample_4x flip_h dog local_std_5x5 downsample_2x",
+    "body": "I_LOCALSTD tb_symmetry downsample_4x flip_h dog local_std_5x5 downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 18.39404882490308,
+    "quality_pair": 26.707620426783187,
+    "rank_score": 0.48812582539896293,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_var gabor_mag local_std_5x5 edge_x I_BLUR gabor_0 edge_x negate tb_symmetry gabor_mag blur flip_h multiply",
+    "body": "I_LRDIFF local_var gabor_mag local_std_5x5 edge_x I_BLUR gabor_0 edge_x negate tb_symmetry gabor_mag blur flip_h multiply",
+    "root_op": "",
+    "quality_anova_f": 16.01017627910958,
+    "quality_pair": 26.70042823531865,
+    "rank_score": 0.4845657322409987,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG dog blur gabor_mag tb_symmetry closing downsample_4x",
+    "body": "I_LOG dog blur gabor_mag tb_symmetry closing downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 19.02313619631423,
+    "quality_pair": 26.54393980945886,
+    "rank_score": 0.48298677982796057,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_std_5x5 blur_7x7 edge_y laplacian corner_harris edge_y negate blur_7x7 flip_v negate gabor_0 I_GRAD multiply",
+    "body": "I_LRDIFF local_std_5x5 blur_7x7 edge_y laplacian corner_harris edge_y negate blur_7x7 flip_v negate gabor_0 I_GRAD multiply",
+    "root_op": "",
+    "quality_anova_f": 16.631400269223818,
+    "quality_pair": 26.626400870137235,
+    "rank_score": 0.48270706076251974,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD stride_pool_4 texture_entropy pow2 I_LBP div blur",
+    "body": "I_LOCALSTD stride_pool_4 texture_entropy pow2 I_LBP div blur",
+    "root_op": "",
+    "quality_anova_f": 14.070393631772793,
+    "quality_pair": 26.493968376524837,
+    "rank_score": 0.4743043761474731,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_mag pow2 low_freq negate local_var closing",
+    "body": "I_LOCALSTD gabor_mag pow2 low_freq negate local_var closing",
+    "root_op": "",
+    "quality_anova_f": 13.878159456355865,
+    "quality_pair": 26.376504751187696,
+    "rank_score": 0.46972639491293844,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR pow2 flip_h edge_yy gabor_90 log1p_abs blur_7x7",
+    "body": "I_BLUR pow2 flip_h edge_yy gabor_90 log1p_abs blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 17.60917050891716,
+    "quality_pair": 26.22247776888315,
+    "rank_score": 0.46923061768159635,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR gabor_45 low_freq gabor_0 border_sharp opening edge_y",
+    "body": "I_BLUR gabor_45 low_freq gabor_0 border_sharp opening edge_y",
+    "root_op": "",
+    "quality_anova_f": 18.443795928791726,
+    "quality_pair": 26.14198612763242,
+    "rank_score": 0.46742969670451195,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR tb_symmetry edge_x laplacian I_GRAD I_LBP multiply edge_mag local_contrast pow2 dilate subtract pow2 edge_mag",
+    "body": "I_BLUR tb_symmetry edge_x laplacian I_GRAD I_LBP multiply edge_mag local_contrast pow2 dilate subtract pow2 edge_mag",
+    "root_op": "",
+    "quality_anova_f": 17.57976667462315,
+    "quality_pair": 26.172575127642943,
+    "rank_score": 0.46735799447432125,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF stride_pool_4 edge_x edge_y downsample_4x flip_h flip_v",
+    "body": "I_LRDIFF stride_pool_4 edge_x edge_y downsample_4x flip_h flip_v",
+    "root_op": "",
+    "quality_anova_f": 24.886323847364743,
+    "quality_pair": 25.892308306059807,
+    "rank_score": 0.46717157582295665,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_mag local_range abs gabor_mag edge_xx negate border_sharp gabor_90 flip_h downsample_4x log1p_abs gabor_mag stride_pool_4",
+    "body": "I_GRAD edge_mag local_range abs gabor_mag edge_xx negate border_sharp gabor_90 flip_h downsample_4x log1p_abs gabor_mag stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 20.762567711297425,
+    "quality_pair": 25.95088828910659,
+    "rank_score": 0.4636203842682533,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD closing pow2 closing abs edge_x normalize",
+    "body": "I_LOCALSTD closing pow2 closing abs edge_x normalize",
+    "root_op": "",
+    "quality_anova_f": 49.635971853604296,
+    "quality_pair": 24.836784804031907,
+    "rank_score": 0.4626425237544601,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY normalize edge_x normalize local_range sqrt_abs edge_y",
+    "body": "I_GRAY normalize edge_x normalize local_range sqrt_abs edge_y",
+    "root_op": "",
+    "quality_anova_f": 18.571213090127767,
+    "quality_pair": 25.844137142268792,
+    "rank_score": 0.45667158294242394,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur edge_mag normalize relu dog gabor_90",
+    "body": "I_GRAD blur edge_mag normalize relu dog gabor_90",
+    "root_op": "",
+    "quality_anova_f": 49.9434478586445,
+    "quality_pair": 24.592358901819363,
+    "rank_score": 0.45409457475987025,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_mag local_range low_freq laplacian lr_symmetry local_range",
+    "body": "I_GRAD edge_mag local_range low_freq laplacian lr_symmetry local_range",
+    "root_op": "",
+    "quality_anova_f": 19.388494510858603,
+    "quality_pair": 25.61865297091025,
+    "rank_score": 0.44952388337987403,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF stride_pool_4 normalize flip_v downsample_2x edge_orient normalize",
+    "body": "I_LRDIFF stride_pool_4 normalize flip_v downsample_2x edge_orient normalize",
+    "root_op": "",
+    "quality_anova_f": 3.0376160664862275,
+    "quality_pair": 26.19867549057659,
+    "rank_score": 0.44820945394819134,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize local_range edge_xx edge_x flip_h local_var",
+    "body": "I_LOG normalize local_range edge_xx edge_x flip_h local_var",
+    "root_op": "",
+    "quality_anova_f": 41.56654000478291,
+    "quality_pair": 24.744060269641444,
+    "rank_score": 0.44808132677942125,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD dog flip_h edge_y edge_orient abs sqrt_abs",
+    "body": "I_LOCALSTD dog flip_h edge_y edge_orient abs sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 31.583215033685825,
+    "quality_pair": 25.099270823839372,
+    "rank_score": 0.44731795955877485,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LRDIFF multiply closing edge_y flip_v pow2",
+    "body": "I_LRDIFF I_LRDIFF multiply closing edge_y flip_v pow2",
+    "root_op": "",
+    "quality_anova_f": 20.635069204323894,
+    "quality_pair": 25.48892650501611,
+    "rank_score": 0.44648509224951544,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize gabor_mag blur_7x7 lbp_like sqrt_abs log1p_abs",
+    "body": "I_LOCALSTD normalize gabor_mag blur_7x7 lbp_like sqrt_abs log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 22.59347754382731,
+    "quality_pair": 25.39988596057188,
+    "rank_score": 0.44592413246689794,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY stride_pool_4 dog dilate normalize edge_yy log1p_abs",
+    "body": "I_GRAY stride_pool_4 dog dilate normalize edge_yy log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 22.165408515955335,
+    "quality_pair": 25.102665958369077,
+    "rank_score": 0.43442106613925974,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD downsample_4x edge_x tb_symmetry blur dilate edge_y",
+    "body": "I_LOCALSTD downsample_4x edge_x tb_symmetry blur dilate edge_y",
+    "root_op": "",
+    "quality_anova_f": 15.580136112971312,
+    "quality_pair": 25.322054149405464,
+    "rank_score": 0.43336986348805745,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG high_freq log1p_abs pow2 sqrt_abs negate opening",
+    "body": "I_LOG high_freq log1p_abs pow2 sqrt_abs negate opening",
+    "root_op": "",
+    "quality_anova_f": 33.37269421831597,
+    "quality_pair": 24.61858479168586,
+    "rank_score": 0.43214579413063503,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD low_freq abs corner_harris high_freq gabor_mag laplacian",
+    "body": "I_GRAD low_freq abs corner_harris high_freq gabor_mag laplacian",
+    "root_op": "",
+    "quality_anova_f": 14.145701355242538,
+    "quality_pair": 24.962670625730915,
+    "rank_score": 0.4181932701938936,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_mag stride_pool_4 edge_xx gabor_mag corner_harris edge_y",
+    "body": "I_GRAD edge_mag stride_pool_4 edge_xx gabor_mag corner_harris edge_y",
+    "root_op": "",
+    "quality_anova_f": 13.887800243897038,
+    "quality_pair": 24.93647523137571,
+    "rank_score": 0.41687502819137023,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP flip_v sqrt_abs dog laplacian local_std_5x5 I_LBP edge_mag edge_orient negate dog edge_yy corner_harris multiply",
+    "body": "I_LBP flip_v sqrt_abs dog laplacian local_std_5x5 I_LBP edge_mag edge_orient negate dog edge_yy corner_harris multiply",
+    "root_op": "",
+    "quality_anova_f": 13.868630742447094,
+    "quality_pair": 24.92325955971574,
+    "rank_score": 0.4163633650394378,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD sqrt_abs opening laplacian relu edge_x sqrt_abs",
+    "body": "I_GRAD sqrt_abs opening laplacian relu edge_x sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 13.951400980053815,
+    "quality_pair": 24.842467807821965,
+    "rank_score": 0.4135118740614827,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LBP stride_pool_4 gabor_90 high_freq flip_h subtract",
+    "body": "I_GRAD I_LBP stride_pool_4 gabor_90 high_freq flip_h subtract",
+    "root_op": "",
+    "quality_anova_f": 35.40691494113485,
+    "quality_pair": 24.024077528737365,
+    "rank_score": 0.41313354737882657,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR gabor_mag flip_v edge_xx texture_entropy opening edge_yy",
+    "body": "I_BLUR gabor_mag flip_v edge_xx texture_entropy opening edge_yy",
+    "root_op": "",
+    "quality_anova_f": 25.041546799546087,
+    "quality_pair": 24.323360044554352,
+    "rank_score": 0.40978878271305696,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_BLUR lbp_like sqrt_abs div stride_pool_4 edge_x",
+    "body": "I_LOG I_BLUR lbp_like sqrt_abs div stride_pool_4 edge_x",
+    "root_op": "",
+    "quality_anova_f": 21.81857758012343,
+    "quality_pair": 24.327887282174554,
+    "rank_score": 0.4054987425194642,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_std_5x5 normalize gabor_90 edge_y dilate downsample_4x",
+    "body": "I_GRAD local_std_5x5 normalize gabor_90 edge_y dilate downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 18.64909324824669,
+    "quality_pair": 24.320092822954948,
+    "rank_score": 0.4008303133449591,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY local_range opening pow2 laplacian edge_x opening",
+    "body": "I_GRAY local_range opening pow2 laplacian edge_x opening",
+    "root_op": "",
+    "quality_anova_f": 13.815300489864489,
+    "quality_pair": 24.38527874023348,
+    "rank_score": 0.3965398989519721,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y diag_symmetry gabor_mag laplacian blur local_range dilate downsample_2x edge_y pow2 diag_symmetry blur_7x7 downsample_2x",
+    "body": "I_LRDIFF edge_y diag_symmetry gabor_mag laplacian blur local_range dilate downsample_2x edge_y pow2 diag_symmetry blur_7x7 downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 17.9428751001293,
+    "quality_pair": 24.09651996390363,
+    "rank_score": 0.3916463127477888,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF closing diag_symmetry I_LOCALSTD dilate downsample_2x multiply",
+    "body": "I_LRDIFF closing diag_symmetry I_LOCALSTD dilate downsample_2x multiply",
+    "root_op": "",
+    "quality_anova_f": 13.827678480186101,
+    "quality_pair": 24.20823699722697,
+    "rank_score": 0.3900576618805062,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY blur_7x7 edge_y local_var normalize closing gabor_mag normalize low_freq high_freq lbp_like gabor_90 downsample_2x laplacian",
+    "body": "I_GRAY blur_7x7 edge_y local_var normalize closing gabor_mag normalize low_freq high_freq lbp_like gabor_90 downsample_2x laplacian",
+    "root_op": "",
+    "quality_anova_f": 16.662919670765948,
+    "quality_pair": 24.008967551839454,
+    "rank_score": 0.38666245938226457,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize gabor_45 local_contrast pow2 closing relu",
+    "body": "I_BLUR normalize gabor_45 local_contrast pow2 closing relu",
+    "root_op": "",
+    "quality_anova_f": 12.591284643201545,
+    "quality_pair": 24.073328782833048,
+    "rank_score": 0.38339556756792365,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur closing gabor_90 high_freq downsample_2x local_contrast negate I_LOG high_freq dilate high_freq blur_7x7 div",
+    "body": "I_GRAD blur closing gabor_90 high_freq downsample_2x local_contrast negate I_LOG high_freq dilate high_freq blur_7x7 div",
+    "root_op": "",
+    "quality_anova_f": 24.90917702299673,
+    "quality_pair": 23.388168839107564,
+    "rank_score": 0.37527410479035866,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD lr_symmetry local_range closing edge_mag blur_7x7 corner_harris I_GRAY gabor_mag lr_symmetry gabor_mag lbp_like flip_h div",
+    "body": "I_LOCALSTD lr_symmetry local_range closing edge_mag blur_7x7 corner_harris I_GRAY gabor_mag lr_symmetry gabor_mag lbp_like flip_h div",
+    "root_op": "",
+    "quality_anova_f": 13.546584825537309,
+    "quality_pair": 23.516781598669713,
+    "rank_score": 0.36428509762521016,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_x pow2 border_sharp relu I_LOCALSTD add",
+    "body": "I_GRAD edge_x pow2 border_sharp relu I_LOCALSTD add",
+    "root_op": "",
+    "quality_anova_f": 14.750774412287113,
+    "quality_pair": 23.449637187662066,
+    "rank_score": 0.3634851426658876,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_range pow2 edge_mag normalize local_range dilate",
+    "body": "I_LOCALSTD local_range pow2 edge_mag normalize local_range dilate",
+    "root_op": "",
+    "quality_anova_f": 27.23575656106322,
+    "quality_pair": 22.927336189558712,
+    "rank_score": 0.3615733956478581,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY flip_h gabor_90 flip_h local_var edge_yy local_var",
+    "body": "I_GRAY flip_h gabor_90 flip_h local_var edge_yy local_var",
+    "root_op": "",
+    "quality_anova_f": 15.419521785010346,
+    "quality_pair": 23.36881123073566,
+    "rank_score": 0.36144259737070045,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_x flip_h corner_harris lr_symmetry texture_entropy local_std_5x5",
+    "body": "I_LOCALSTD edge_x flip_h corner_harris lr_symmetry texture_entropy local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 13.21305163516779,
+    "quality_pair": 23.4361026289374,
+    "rank_score": 0.36086214497501823,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_GRAD blur_7x7 downsample_2x local_std_5x5 laplacian local_range edge_orient tb_symmetry normalize I_LBP dilate multiply subtract",
+    "body": "I_LOG I_GRAD blur_7x7 downsample_2x local_std_5x5 laplacian local_range edge_orient tb_symmetry normalize I_LBP dilate multiply subtract",
+    "root_op": "",
+    "quality_anova_f": 29.08260926555174,
+    "quality_pair": 22.672233336915756,
+    "rank_score": 0.35476190624653037,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY normalize edge_mag negate log1p_abs gabor_90 diag_symmetry",
+    "body": "I_GRAY normalize edge_mag negate log1p_abs gabor_90 diag_symmetry",
+    "root_op": "",
+    "quality_anova_f": 23.269172441429532,
+    "quality_pair": 22.865725990043803,
+    "rank_score": 0.35382723517271675,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_x normalize flip_h normalize lr_symmetry edge_y",
+    "body": "I_GRAD edge_x normalize flip_h normalize lr_symmetry edge_y",
+    "root_op": "",
+    "quality_anova_f": 37.859508355988304,
+    "quality_pair": 22.300757712475274,
+    "rank_score": 0.35326010410483427,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize border_sharp normalize opening tb_symmetry edge_yy",
+    "body": "I_BLUR normalize border_sharp normalize opening tb_symmetry edge_yy",
+    "root_op": "",
+    "quality_anova_f": 46.28924968294118,
+    "quality_pair": 21.780727153692265,
+    "rank_score": 0.34582472746442644,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_GRAD low_freq flip_h gabor_45 local_range normalize lbp_like add log1p_abs flip_v local_std_5x5 flip_h blur_7x7",
+    "body": "I_LOG I_GRAD low_freq flip_h gabor_45 local_range normalize lbp_like add log1p_abs flip_v local_std_5x5 flip_h blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 14.190574454229948,
+    "quality_pair": 22.96548258614101,
+    "rank_score": 0.3449368588974387,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR lr_symmetry flip_h flip_v stride_pool_4 gabor_45 dog",
+    "body": "I_BLUR lr_symmetry flip_h flip_v stride_pool_4 gabor_45 dog",
+    "root_op": "",
+    "quality_anova_f": 14.479015274046528,
+    "quality_pair": 22.942163865071777,
+    "rank_score": 0.34447962175148733,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG sqrt_abs blur laplacian local_range local_var sqrt_abs",
+    "body": "I_LOG sqrt_abs blur laplacian local_range local_var sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 25.74851782929001,
+    "quality_pair": 22.51619084068817,
+    "rank_score": 0.3444235727305596,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD texture_entropy normalize texture_entropy flip_h edge_yy dog",
+    "body": "I_LOCALSTD texture_entropy normalize texture_entropy flip_h edge_yy dog",
+    "root_op": "",
+    "quality_anova_f": 15.97917310013337,
+    "quality_pair": 22.826138983077687,
+    "rank_score": 0.3422944440647868,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF pow2 local_range border_sharp edge_x negate opening",
+    "body": "I_LRDIFF pow2 local_range border_sharp edge_x negate opening",
+    "root_op": "",
+    "quality_anova_f": 12.70991448724559,
+    "quality_pair": 22.938105695564833,
+    "rank_score": 0.3418845954488326,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY edge_yy edge_x local_contrast dilate log1p_abs blur_7x7",
+    "body": "I_GRAY edge_yy edge_x local_contrast dilate log1p_abs blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 10.291207304779677,
+    "quality_pair": 23.000473148848265,
+    "rank_score": 0.3408299313212914,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY opening local_range local_contrast laplacian abs corner_harris",
+    "body": "I_GRAY opening local_range local_contrast laplacian abs corner_harris",
+    "root_op": "",
+    "quality_anova_f": 8.164294446522447,
+    "quality_pair": 23.02354432585758,
+    "rank_score": 0.3387361172622776,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_var edge_mag relu local_var local_range low_freq",
+    "body": "I_LRDIFF local_var edge_mag relu local_var local_range low_freq",
+    "root_op": "",
+    "quality_anova_f": 16.433150696354033,
+    "quality_pair": 22.680833389540016,
+    "rank_score": 0.3375878455353258,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_y gabor_45 normalize gabor_0 low_freq opening",
+    "body": "I_LOCALSTD edge_y gabor_45 normalize gabor_0 low_freq opening",
+    "root_op": "",
+    "quality_anova_f": 22.709949025412634,
+    "quality_pair": 22.229973715536186,
+    "rank_score": 0.32971502335960506,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize stride_pool_4 laplacian opening normalize dog",
+    "body": "I_GRAD normalize stride_pool_4 laplacian opening normalize dog",
+    "root_op": "",
+    "quality_anova_f": 20.485336487561188,
+    "quality_pair": 22.297788033225068,
+    "rank_score": 0.32912868320308913,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP log1p_abs diag_symmetry high_freq gabor_90 gabor_45 negate closing high_freq edge_x flip_h edge_mag blur downsample_2x",
+    "body": "I_LBP log1p_abs diag_symmetry high_freq gabor_90 gabor_45 negate closing high_freq edge_x flip_h edge_mag blur downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 11.37052550650137,
+    "quality_pair": 22.555088561985173,
+    "rank_score": 0.32597180748784665,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_mag low_freq normalize edge_x downsample_2x edge_x",
+    "body": "I_LOCALSTD edge_mag low_freq normalize edge_x downsample_2x edge_x",
+    "root_op": "",
+    "quality_anova_f": 13.665932774062625,
+    "quality_pair": 22.403198527869694,
+    "rank_score": 0.32356954162455775,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_mag blur_7x7 edge_x sqrt_abs corner_harris I_LOG flip_h downsample_2x gabor_90 opening local_range local_var subtract",
+    "body": "I_BLUR edge_mag blur_7x7 edge_x sqrt_abs corner_harris I_LOG flip_h downsample_2x gabor_90 opening local_range local_var subtract",
+    "root_op": "",
+    "quality_anova_f": 12.056138366629988,
+    "quality_pair": 22.447342236035187,
+    "rank_score": 0.322964311840556,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP gabor_90 flip_h local_std_5x5 sigmoid closing blur laplacian flip_h gabor_45 blur_7x7 I_LBP edge_x multiply",
+    "body": "I_LBP gabor_90 flip_h local_std_5x5 sigmoid closing blur laplacian flip_h gabor_45 blur_7x7 I_LBP edge_x multiply",
+    "root_op": "",
+    "quality_anova_f": 12.951909864553787,
+    "quality_pair": 22.11347115850133,
+    "rank_score": 0.3119461619794865,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_2x edge_mag edge_orient normalize edge_x texture_entropy",
+    "body": "I_GRAY downsample_2x edge_mag edge_orient normalize edge_x texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 31.22933820152521,
+    "quality_pair": 21.419697559579397,
+    "rank_score": 0.3117484379961823,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_std_5x5 blur downsample_2x gabor_90 gabor_45 I_BLUR blur_7x7 subtract gabor_0 lr_symmetry downsample_2x pow2 edge_orient",
+    "body": "I_LOCALSTD local_std_5x5 blur downsample_2x gabor_90 gabor_45 I_BLUR blur_7x7 subtract gabor_0 lr_symmetry downsample_2x pow2 edge_orient",
+    "root_op": "",
+    "quality_anova_f": 17.938319823058603,
+    "quality_pair": 21.751230578372905,
+    "rank_score": 0.30554246569649873,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_contrast edge_y tb_symmetry gabor_mag diag_symmetry pow2",
+    "body": "I_GRAD local_contrast edge_y tb_symmetry gabor_mag diag_symmetry pow2",
+    "root_op": "",
+    "quality_anova_f": 35.609381801886116,
+    "quality_pair": 21.03483375309348,
+    "rank_score": 0.30367583147811006,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP normalize pow2 gabor_mag pow2 flip_h gabor_90",
+    "body": "I_LBP normalize pow2 gabor_mag pow2 flip_h gabor_90",
+    "root_op": "",
+    "quality_anova_f": 19.648261270461866,
+    "quality_pair": 21.606355265710473,
+    "rank_score": 0.30258822175738426,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG high_freq opening downsample_4x sqrt_abs edge_xx edge_x",
+    "body": "I_LOG high_freq opening downsample_4x sqrt_abs edge_xx edge_x",
+    "root_op": "",
+    "quality_anova_f": 16.535606845193822,
+    "quality_pair": 21.69879547265953,
+    "rank_score": 0.30167806748136694,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD high_freq pow2 edge_xx local_contrast flip_h texture_entropy",
+    "body": "I_LOCALSTD high_freq pow2 edge_xx local_contrast flip_h texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 18.778897564840086,
+    "quality_pair": 21.290807945103158,
+    "rank_score": 0.28980218797884827,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD abs gabor_mag diag_symmetry I_BLUR blur_7x7 multiply",
+    "body": "I_LOCALSTD abs gabor_mag diag_symmetry I_BLUR blur_7x7 multiply",
+    "root_op": "",
+    "quality_anova_f": 19.231606899889563,
+    "quality_pair": 21.059098633996495,
+    "rank_score": 0.2819218826411406,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF abs local_std_5x5 local_var log1p_abs negate abs gabor_mag edge_mag sigmoid downsample_2x diag_symmetry dog closing",
+    "body": "I_LRDIFF abs local_std_5x5 local_var log1p_abs negate abs gabor_mag edge_mag sigmoid downsample_2x diag_symmetry dog closing",
+    "root_op": "",
+    "quality_anova_f": 16.567259790469542,
+    "quality_pair": 21.15740269500228,
+    "rank_score": 0.2818468475674538,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_4x closing normalize gabor_mag texture_entropy gabor_0",
+    "body": "I_GRAY downsample_4x closing normalize gabor_mag texture_entropy gabor_0",
+    "root_op": "",
+    "quality_anova_f": 26.581998047008753,
+    "quality_pair": 20.766031240607916,
+    "rank_score": 0.28132615126892097,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP high_freq edge_x I_LBP corner_harris gabor_mag multiply",
+    "body": "I_LBP high_freq edge_x I_LBP corner_harris gabor_mag multiply",
+    "root_op": "",
+    "quality_anova_f": 8.303238955948231,
+    "quality_pair": 21.3859506701373,
+    "rank_score": 0.2788107865217314,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_y normalize edge_y corner_harris high_freq local_var",
+    "body": "I_BLUR edge_y normalize edge_y corner_harris high_freq local_var",
+    "root_op": "",
+    "quality_anova_f": 16.285585436288436,
+    "quality_pair": 21.070386507871504,
+    "rank_score": 0.27826295295698955,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR closing blur flip_v edge_mag negate gabor_0",
+    "body": "I_BLUR closing blur flip_v edge_mag negate gabor_0",
+    "root_op": "",
+    "quality_anova_f": 11.302881763481066,
+    "quality_pair": 21.08783449265237,
+    "rank_score": 0.27201414715472383,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF normalize blur normalize edge_yy dog opening",
+    "body": "I_LRDIFF normalize blur normalize edge_yy dog opening",
+    "root_op": "",
+    "quality_anova_f": 44.76671677685551,
+    "quality_pair": 19.82641210437125,
+    "rank_score": 0.27197504559091557,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY diag_symmetry low_freq opening gabor_90 local_range abs",
+    "body": "I_GRAY diag_symmetry low_freq opening gabor_90 local_range abs",
+    "root_op": "",
+    "quality_anova_f": 12.91567115249213,
+    "quality_pair": 21.022995872620672,
+    "rank_score": 0.27186379030528046,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAY gabor_90 opening gabor_90 flip_v blur local_std_5x5 abs lbp_like local_var downsample_4x stride_pool_4 multiply",
+    "body": "I_GRAD I_GRAY gabor_90 opening gabor_90 flip_v blur local_std_5x5 abs lbp_like local_var downsample_4x stride_pool_4 multiply",
+    "root_op": "",
+    "quality_anova_f": 19.26144161971219,
+    "quality_pair": 20.73507829028028,
+    "rank_score": 0.2700680738925689,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD corner_harris normalize laplacian edge_mag normalize dog",
+    "body": "I_GRAD corner_harris normalize laplacian edge_mag normalize dog",
+    "root_op": "",
+    "quality_anova_f": 31.65338477775588,
+    "quality_pair": 20.21652629925385,
+    "rank_score": 0.2681653157067726,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP sqrt_abs log1p_abs border_sharp gabor_45 gabor_mag gabor_45 lr_symmetry local_range edge_y negate local_range lr_symmetry closing",
+    "body": "I_LBP sqrt_abs log1p_abs border_sharp gabor_45 gabor_mag gabor_45 lr_symmetry local_range edge_y negate local_range lr_symmetry closing",
+    "root_op": "",
+    "quality_anova_f": 9.613810926444774,
+    "quality_pair": 21.03425437029587,
+    "rank_score": 0.26771178167505044,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize local_range local_var high_freq pow2 edge_yy",
+    "body": "I_GRAD normalize local_range local_var high_freq pow2 edge_yy",
+    "root_op": "",
+    "quality_anova_f": 20.398326751805595,
+    "quality_pair": 20.524140928208933,
+    "rank_score": 0.26389630007315557,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY stride_pool_4 closing dilate downsample_2x flip_h local_var",
+    "body": "I_GRAY stride_pool_4 closing dilate downsample_2x flip_h local_var",
+    "root_op": "",
+    "quality_anova_f": 18.958109024652863,
+    "quality_pair": 20.5760888016818,
+    "rank_score": 0.2638120329945037,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG local_var local_range edge_y normalize flip_h high_freq",
+    "body": "I_LOG local_var local_range edge_y normalize flip_h high_freq",
+    "root_op": "",
+    "quality_anova_f": 35.15213056538167,
+    "quality_pair": 19.96411847157476,
+    "rank_score": 0.26373675317383105,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LOG opening edge_mag normalize gabor_0 div",
+    "body": "I_GRAD I_LOG opening edge_mag normalize gabor_0 div",
+    "root_op": "",
+    "quality_anova_f": 12.355443389671095,
+    "quality_pair": 20.809128406204778,
+    "rank_score": 0.2632379364755285,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_LOCALSTD lbp_like diag_symmetry local_range edge_mag relu negate stride_pool_4 flip_h gabor_90 edge_xx edge_mag multiply",
+    "body": "I_BLUR I_LOCALSTD lbp_like diag_symmetry local_range edge_mag relu negate stride_pool_4 flip_h gabor_90 edge_xx edge_mag multiply",
+    "root_op": "",
+    "quality_anova_f": 12.115081654498868,
+    "quality_pair": 20.767501051260627,
+    "rank_score": 0.26137742502322653,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP local_range texture_entropy gabor_45 gabor_90 edge_y blur_7x7",
+    "body": "I_LBP local_range texture_entropy gabor_45 gabor_90 edge_y blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 15.120067751009746,
+    "quality_pair": 20.65179205319306,
+    "rank_score": 0.2612844947470632,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG edge_yy blur_7x7 low_freq I_LOCALSTD edge_yy tb_symmetry subtract downsample_2x local_range edge_mag gabor_mag local_range pow2",
+    "body": "I_LOG edge_yy blur_7x7 low_freq I_LOCALSTD edge_yy tb_symmetry subtract downsample_2x local_range edge_mag gabor_mag local_range pow2",
+    "root_op": "",
+    "quality_anova_f": 17.618909138537205,
+    "quality_pair": 20.545888479672726,
+    "rank_score": 0.2608517088030531,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize edge_mag laplacian local_range normalize edge_mag relu gabor_90 local_range log1p_abs normalize dilate stride_pool_4",
+    "body": "I_BLUR normalize edge_mag laplacian local_range normalize edge_mag relu gabor_90 local_range log1p_abs normalize dilate stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 14.871049043375635,
+    "quality_pair": 20.63382928277459,
+    "rank_score": 0.26028076056019717,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG corner_harris normalize blur edge_xx I_LOG subtract",
+    "body": "I_LOG corner_harris normalize blur edge_xx I_LOG subtract",
+    "root_op": "",
+    "quality_anova_f": 19.902704068733748,
+    "quality_pair": 20.37932701404219,
+    "rank_score": 0.2578947865315316,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs tb_symmetry pow2 negate normalize edge_y sqrt_abs negate gabor_45 laplacian downsample_2x opening dog",
+    "body": "I_BLUR sqrt_abs tb_symmetry pow2 negate normalize edge_y sqrt_abs negate gabor_45 laplacian downsample_2x opening dog",
+    "root_op": "",
+    "quality_anova_f": 11.303157715104172,
+    "quality_pair": 20.656166801526048,
+    "rank_score": 0.25616764417967725,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY stride_pool_4 gabor_90 tb_symmetry flip_h gabor_mag stride_pool_4",
+    "body": "I_GRAY stride_pool_4 gabor_90 tb_symmetry flip_h gabor_mag stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 10.01692274598662,
+    "quality_pair": 20.691900212043436,
+    "rank_score": 0.25570103479375694,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY local_range edge_mag laplacian local_var local_contrast edge_yy",
+    "body": "I_GRAY local_range edge_mag laplacian local_var local_contrast edge_yy",
+    "root_op": "",
+    "quality_anova_f": 24.54686411387228,
+    "quality_pair": 20.1272066164143,
+    "rank_score": 0.2550604830017375,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD dilate I_GRAD closing local_std_5x5 normalize laplacian edge_mag negate abs sigmoid edge_orient pow2 div",
+    "body": "I_GRAD dilate I_GRAD closing local_std_5x5 normalize laplacian edge_mag negate abs sigmoid edge_orient pow2 div",
+    "root_op": "",
+    "quality_anova_f": 17.490677415602853,
+    "quality_pair": 20.333196438154694,
+    "rank_score": 0.2528663052040309,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_x stride_pool_4 high_freq flip_h relu abs",
+    "body": "I_GRAD edge_x stride_pool_4 high_freq flip_h relu abs",
+    "root_op": "",
+    "quality_anova_f": 14.56201102956144,
+    "quality_pair": 20.31105687763744,
+    "rank_score": 0.24800422224932614,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD closing normalize blur_7x7 I_BLUR gabor_0 gabor_90 edge_xx add tb_symmetry closing edge_x I_GRAY subtract",
+    "body": "I_LOCALSTD closing normalize blur_7x7 I_BLUR gabor_0 gabor_90 edge_xx add tb_symmetry closing edge_x I_GRAY subtract",
+    "root_op": "",
+    "quality_anova_f": 20.625094558019168,
+    "quality_pair": 20.06978832213459,
+    "rank_score": 0.24753017376215533,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR high_freq lbp_like tb_symmetry border_sharp closing local_std_5x5",
+    "body": "I_BLUR high_freq lbp_like tb_symmetry border_sharp closing local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 12.400096318564257,
+    "quality_pair": 20.29875061630145,
+    "rank_score": 0.2445632773142836,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs border_sharp laplacian normalize pow2 blur_7x7",
+    "body": "I_BLUR sqrt_abs border_sharp laplacian normalize pow2 blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 14.302502737247401,
+    "quality_pair": 20.209021956830252,
+    "rank_score": 0.24389962518479302,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD relu border_sharp gabor_mag laplacian normalize local_var",
+    "body": "I_LOCALSTD relu border_sharp gabor_mag laplacian normalize local_var",
+    "root_op": "",
+    "quality_anova_f": 15.42885290599796,
+    "quality_pair": 20.154287828891682,
+    "rank_score": 0.24344763748609838,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_GRAY stride_pool_4 laplacian gabor_45 gabor_mag add",
+    "body": "I_LRDIFF I_GRAY stride_pool_4 laplacian gabor_45 gabor_mag add",
+    "root_op": "",
+    "quality_anova_f": 10.586609102110874,
+    "quality_pair": 20.30678376557909,
+    "rank_score": 0.24235076260433674,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY relu blur edge_yy local_std_5x5 laplacian downsample_4x high_freq gabor_0 edge_xx edge_x diag_symmetry abs edge_x",
+    "body": "I_GRAY relu blur edge_yy local_std_5x5 laplacian downsample_4x high_freq gabor_0 edge_xx edge_x diag_symmetry abs edge_x",
+    "root_op": "",
+    "quality_anova_f": 12.057986828160278,
+    "quality_pair": 20.068376781624274,
+    "rank_score": 0.2356330420667053,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG laplacian normalize laplacian gabor_mag stride_pool_4 normalize",
+    "body": "I_LOG laplacian normalize laplacian gabor_mag stride_pool_4 normalize",
+    "root_op": "",
+    "quality_anova_f": 17.598716991716106,
+    "quality_pair": 19.846153763690467,
+    "rank_score": 0.23513593934267385,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_LRDIFF local_var log1p_abs stride_pool_4 I_LOG closing edge_y relu normalize subtract blur border_sharp subtract",
+    "body": "I_LOG I_LRDIFF local_var log1p_abs stride_pool_4 I_LOG closing edge_y relu normalize subtract blur border_sharp subtract",
+    "root_op": "",
+    "quality_anova_f": 14.681742368600007,
+    "quality_pair": 19.907917952245793,
+    "rank_score": 0.23337019930342282,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF laplacian opening normalize pow2 sqrt_abs abs",
+    "body": "I_LRDIFF laplacian opening normalize pow2 sqrt_abs abs",
+    "root_op": "",
+    "quality_anova_f": 33.575147265008994,
+    "quality_pair": 19.169356422020844,
+    "rank_score": 0.2323799527257986,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LRDIFF normalize subtract blur dilate flip_v",
+    "body": "I_LRDIFF I_LRDIFF normalize subtract blur dilate flip_v",
+    "root_op": "",
+    "quality_anova_f": 27.622186055954682,
+    "quality_pair": 19.36260594357005,
+    "rank_score": 0.23124344267410385,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LRDIFF flip_h gabor_mag flip_h gabor_0 subtract I_GRAY downsample_4x edge_y normalize edge_mag local_var subtract",
+    "body": "I_GRAD I_LRDIFF flip_h gabor_mag flip_h gabor_0 subtract I_GRAY downsample_4x edge_y normalize edge_mag local_var subtract",
+    "root_op": "",
+    "quality_anova_f": 14.713470681959285,
+    "quality_pair": 19.83780188244807,
+    "rank_score": 0.23084004848234713,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY high_freq gabor_0 blur_7x7 flip_v gabor_90 stride_pool_4 corner_harris local_range edge_mag sqrt_abs diag_symmetry edge_yy edge_orient",
+    "body": "I_GRAY high_freq gabor_0 blur_7x7 flip_v gabor_90 stride_pool_4 corner_harris local_range edge_mag sqrt_abs diag_symmetry edge_yy edge_orient",
+    "root_op": "",
+    "quality_anova_f": 8.892862806350214,
+    "quality_pair": 20.03950913391751,
+    "rank_score": 0.23019702717704055,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_LRDIFF normalize gabor_mag local_std_5x5 edge_orient I_LRDIFF subtract edge_orient gabor_90 gabor_0 closing edge_orient multiply",
+    "body": "I_LOG I_LRDIFF normalize gabor_mag local_std_5x5 edge_orient I_LRDIFF subtract edge_orient gabor_90 gabor_0 closing edge_orient multiply",
+    "root_op": "",
+    "quality_anova_f": 21.12840852194842,
+    "quality_pair": 19.55762629600952,
+    "rank_score": 0.22942418153887267,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_90 local_var texture_entropy edge_xx relu negate",
+    "body": "I_GRAY gabor_90 local_var texture_entropy edge_xx relu negate",
+    "root_op": "",
+    "quality_anova_f": 17.115510665728056,
+    "quality_pair": 19.683744058501762,
+    "rank_score": 0.22850563697040527,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF gabor_mag flip_h I_LOG dilate negate multiply",
+    "body": "I_LRDIFF gabor_mag flip_h I_LOG dilate negate multiply",
+    "root_op": "",
+    "quality_anova_f": 14.813555737141433,
+    "quality_pair": 19.762130518699283,
+    "rank_score": 0.22820047160116813,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_xx local_contrast edge_y downsample_4x edge_x pow2",
+    "body": "I_LOCALSTD edge_xx local_contrast edge_y downsample_4x edge_x pow2",
+    "root_op": "",
+    "quality_anova_f": 16.403555699722954,
+    "quality_pair": 19.63156301821353,
+    "rank_score": 0.22560564238510783,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_GRAY edge_yy add blur_7x7 edge_yy gabor_0 blur high_freq downsample_4x laplacian downsample_4x gabor_mag downsample_2x",
+    "body": "I_BLUR I_GRAY edge_yy add blur_7x7 edge_yy gabor_0 blur high_freq downsample_4x laplacian downsample_4x gabor_mag downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 18.089539131551565,
+    "quality_pair": 19.35510212146208,
+    "rank_score": 0.21778765527021027,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize gabor_mag I_GRAD downsample_2x tb_symmetry multiply",
+    "body": "I_LOG normalize gabor_mag I_GRAD downsample_2x tb_symmetry multiply",
+    "root_op": "",
+    "quality_anova_f": 22.937870985738304,
+    "quality_pair": 19.147408142064897,
+    "rank_score": 0.21686658115645382,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_mag pow2 sqrt_abs relu closing edge_yy lbp_like gabor_mag local_std_5x5 lr_symmetry local_range gabor_mag flip_h",
+    "body": "I_GRAD edge_mag pow2 sqrt_abs relu closing edge_yy lbp_like gabor_mag local_std_5x5 lr_symmetry local_range gabor_mag flip_h",
+    "root_op": "",
+    "quality_anova_f": 18.85054967211625,
+    "quality_pair": 19.16784817942554,
+    "rank_score": 0.2119656166846942,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize abs sqrt_abs edge_y local_var pow2",
+    "body": "I_LOCALSTD normalize abs sqrt_abs edge_y local_var pow2",
+    "root_op": "",
+    "quality_anova_f": 28.886525705546795,
+    "quality_pair": 18.73619322501532,
+    "rank_score": 0.2099954435867887,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_LRDIFF edge_yy laplacian div texture_entropy downsample_2x",
+    "body": "I_GRAY I_LRDIFF edge_yy laplacian div texture_entropy downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 12.591676154961885,
+    "quality_pair": 19.266361891198603,
+    "rank_score": 0.2069283055624496,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR high_freq corner_harris downsample_2x log1p_abs edge_y edge_orient negate abs local_var negate edge_orient local_std_5x5 normalize",
+    "body": "I_BLUR high_freq corner_harris downsample_2x log1p_abs edge_y edge_orient negate abs local_var negate edge_orient local_std_5x5 normalize",
+    "root_op": "",
+    "quality_anova_f": 30.19148936012491,
+    "quality_pair": 18.587570762104907,
+    "rank_score": 0.2063436959968314,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_LOCALSTD tb_symmetry laplacian low_freq normalize multiply",
+    "body": "I_GRAY I_LOCALSTD tb_symmetry laplacian low_freq normalize multiply",
+    "root_op": "",
+    "quality_anova_f": 15.917988376773248,
+    "quality_pair": 19.08156481600558,
+    "rank_score": 0.20474337540242527,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD downsample_4x negate gabor_mag I_GRAD lbp_like low_freq local_std_5x5 gabor_0 local_std_5x5 stride_pool_4 add closing corner_harris",
+    "body": "I_GRAD downsample_4x negate gabor_mag I_GRAD lbp_like low_freq local_std_5x5 gabor_0 local_std_5x5 stride_pool_4 add closing corner_harris",
+    "root_op": "",
+    "quality_anova_f": 14.451222136932769,
+    "quality_pair": 19.101179780057922,
+    "rank_score": 0.20343543268082884,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_LRDIFF relu closing edge_y laplacian downsample_2x texture_entropy negate sqrt_abs log1p_abs local_std_5x5 flip_h subtract",
+    "body": "I_BLUR I_LRDIFF relu closing edge_y laplacian downsample_2x texture_entropy negate sqrt_abs log1p_abs local_std_5x5 flip_h subtract",
+    "root_op": "",
+    "quality_anova_f": 23.20119611513467,
+    "quality_pair": 18.60033940438734,
+    "rank_score": 0.197147313551464,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR pow2 closing abs relu gabor_mag blur pow2 lbp_like normalize edge_xx stride_pool_4 sqrt_abs edge_yy",
+    "body": "I_BLUR pow2 closing abs relu gabor_mag blur pow2 lbp_like normalize edge_xx stride_pool_4 sqrt_abs edge_yy",
+    "root_op": "",
+    "quality_anova_f": 13.402687953813764,
+    "quality_pair": 18.852139809569064,
+    "rank_score": 0.19284320965293725,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR corner_harris opening dog border_sharp local_range edge_y normalize stride_pool_4 relu log1p_abs abs relu edge_mag",
+    "body": "I_BLUR corner_harris opening dog border_sharp local_range edge_y normalize stride_pool_4 relu log1p_abs abs relu edge_mag",
+    "root_op": "",
+    "quality_anova_f": 8.051513122236894,
+    "quality_pair": 19.04415927080521,
+    "rank_score": 0.19249360308088437,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY tb_symmetry sqrt_abs laplacian texture_entropy flip_v dilate",
+    "body": "I_GRAY tb_symmetry sqrt_abs laplacian texture_entropy flip_v dilate",
+    "root_op": "",
+    "quality_anova_f": 10.86189762495312,
+    "quality_pair": 18.736930480414273,
+    "rank_score": 0.18510075399385104,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_contrast edge_x laplacian normalize dilate downsample_2x",
+    "body": "I_GRAD local_contrast edge_x laplacian normalize dilate downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 19.85512750948747,
+    "quality_pair": 18.264999070645377,
+    "rank_score": 0.18021024516900358,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD high_freq opening normalize edge_y edge_x border_sharp",
+    "body": "I_LOCALSTD high_freq opening normalize edge_y edge_x border_sharp",
+    "root_op": "",
+    "quality_anova_f": 22.052353843850444,
+    "quality_pair": 18.161657992247513,
+    "rank_score": 0.17945450247839048,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize laplacian dog pow2 texture_entropy dog",
+    "body": "I_BLUR normalize laplacian dog pow2 texture_entropy dog",
+    "root_op": "",
+    "quality_anova_f": 23.942093608612076,
+    "quality_pair": 17.974521041427867,
+    "rank_score": 0.17519739637891338,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG closing negate lr_symmetry gabor_0 closing normalize flip_h local_var negate downsample_2x edge_y blur_7x7 edge_mag",
+    "body": "I_LOG closing negate lr_symmetry gabor_0 closing normalize flip_h local_var negate downsample_2x edge_y blur_7x7 edge_mag",
+    "root_op": "",
+    "quality_anova_f": 13.539213057722048,
+    "quality_pair": 18.359716361544503,
+    "rank_score": 0.1749546965816464,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_orient I_BLUR dilate normalize edge_x multiply",
+    "body": "I_GRAD edge_orient I_BLUR dilate normalize edge_x multiply",
+    "root_op": "",
+    "quality_anova_f": 11.83993412424681,
+    "quality_pair": 18.40345776569252,
+    "rank_score": 0.17421097208426473,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_mag high_freq sqrt_abs local_range gabor_mag edge_x edge_y edge_mag high_freq local_var downsample_2x negate texture_entropy",
+    "body": "I_BLUR edge_mag high_freq sqrt_abs local_range gabor_mag edge_x edge_y edge_mag high_freq local_var downsample_2x negate texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 11.716429889214115,
+    "quality_pair": 18.400449026961667,
+    "rank_score": 0.17392975560124674,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF sqrt_abs flip_h laplacian corner_harris local_std_5x5 blur_7x7",
+    "body": "I_LRDIFF sqrt_abs flip_h laplacian corner_harris local_std_5x5 blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 17.403867789439076,
+    "quality_pair": 18.098924878844297,
+    "rank_score": 0.17072428707090662,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_4x gabor_mag edge_mag low_freq dilate edge_mag",
+    "body": "I_LRDIFF downsample_4x gabor_mag edge_mag low_freq dilate edge_mag",
+    "root_op": "",
+    "quality_anova_f": 14.891427743853505,
+    "quality_pair": 18.168244908222437,
+    "rank_score": 0.16979525810972818,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF sqrt_abs laplacian sqrt_abs relu gabor_90 sqrt_abs",
+    "body": "I_LRDIFF sqrt_abs laplacian sqrt_abs relu gabor_90 sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 23.013006632151377,
+    "quality_pair": 17.8256544211635,
+    "rank_score": 0.1684477751093483,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY opening edge_x flip_v sigmoid laplacian texture_entropy",
+    "body": "I_GRAY opening edge_x flip_v sigmoid laplacian texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 11.26372431979672,
+    "quality_pair": 18.240794611586594,
+    "rank_score": 0.16744277411460415,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_mag laplacian texture_entropy I_GRAD gabor_90 abs edge_orient edge_x downsample_2x texture_entropy high_freq log1p_abs subtract",
+    "body": "I_BLUR edge_mag laplacian texture_entropy I_GRAD gabor_90 abs edge_orient edge_x downsample_2x texture_entropy high_freq log1p_abs subtract",
+    "root_op": "",
+    "quality_anova_f": 22.585113004847933,
+    "quality_pair": 17.772428007753316,
+    "rank_score": 0.16590216145103906,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD sqrt_abs log1p_abs edge_yy normalize laplacian opening",
+    "body": "I_LOCALSTD sqrt_abs log1p_abs edge_yy normalize laplacian opening",
+    "root_op": "",
+    "quality_anova_f": 21.18974736140582,
+    "quality_pair": 17.80248378468613,
+    "rank_score": 0.16507623181008646,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD gabor_mag closing gabor_mag edge_mag gabor_mag tb_symmetry",
+    "body": "I_GRAD gabor_mag closing gabor_mag edge_mag gabor_mag tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 14.685286258487729,
+    "quality_pair": 17.965485973007056,
+    "rank_score": 0.1620667852640601,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_2x gabor_mag flip_h gabor_mag edge_x texture_entropy",
+    "body": "I_LRDIFF downsample_2x gabor_mag flip_h gabor_mag edge_x texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 8.742267732328107,
+    "quality_pair": 18.12260921755959,
+    "rank_score": 0.15961779640801146,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY edge_yy flip_h sqrt_abs edge_orient blur_7x7 local_std_5x5",
+    "body": "I_GRAY edge_yy flip_h sqrt_abs edge_orient blur_7x7 local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 13.0414878397711,
+    "quality_pair": 17.890069310833244,
+    "rank_score": 0.1570253779318847,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP sigmoid stride_pool_4 edge_xx lr_symmetry sigmoid blur_7x7",
+    "body": "I_LBP sigmoid stride_pool_4 edge_xx lr_symmetry sigmoid blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 9.737769591415624,
+    "quality_pair": 17.993916147908706,
+    "rank_score": 0.1562697962300686,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP border_sharp pow2 edge_y blur negate blur_7x7 normalize opening dilate I_BLUR gabor_mag flip_h subtract",
+    "body": "I_LBP border_sharp pow2 edge_y blur negate blur_7x7 normalize opening dilate I_BLUR gabor_mag flip_h subtract",
+    "root_op": "",
+    "quality_anova_f": 12.9655460704736,
+    "quality_pair": 17.702428453039815,
+    "rank_score": 0.15003192309976082,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY laplacian pow2 opening edge_x pow2 lr_symmetry I_LRDIFF multiply flip_v log1p_abs low_freq diag_symmetry high_freq",
+    "body": "I_GRAY laplacian pow2 opening edge_x pow2 lr_symmetry I_LRDIFF multiply flip_v log1p_abs low_freq diag_symmetry high_freq",
+    "root_op": "",
+    "quality_anova_f": 12.811443171221113,
+    "quality_pair": 17.611819164666638,
+    "rank_score": 0.14649250940863207,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP tb_symmetry blur_7x7 pow2 gabor_0 negate dilate",
+    "body": "I_LBP tb_symmetry blur_7x7 pow2 gabor_0 negate dilate",
+    "root_op": "",
+    "quality_anova_f": 6.683013649568631,
+    "quality_pair": 17.78528368066642,
+    "rank_score": 0.14438706384891137,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD stride_pool_4 pow2 edge_x downsample_2x opening normalize",
+    "body": "I_LOCALSTD stride_pool_4 pow2 edge_x downsample_2x opening normalize",
+    "root_op": "",
+    "quality_anova_f": 22.662162195755897,
+    "quality_pair": 17.17902890454805,
+    "rank_score": 0.14422451264936478,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR laplacian dog gabor_90 edge_orient stride_pool_4 gabor_90",
+    "body": "I_BLUR laplacian dog gabor_90 edge_orient stride_pool_4 gabor_90",
+    "root_op": "",
+    "quality_anova_f": 30.658003434152466,
+    "quality_pair": 16.78222222920464,
+    "rank_score": 0.1407128565312181,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_y edge_yy abs lbp_like low_freq dilate",
+    "body": "I_GRAD edge_y edge_yy abs lbp_like low_freq dilate",
+    "root_op": "",
+    "quality_anova_f": 22.252334530586296,
+    "quality_pair": 17.091403956716128,
+    "rank_score": 0.1404410787251653,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF log1p_abs laplacian log1p_abs edge_x local_var border_sharp",
+    "body": "I_LRDIFF log1p_abs laplacian log1p_abs edge_x local_var border_sharp",
+    "root_op": "",
+    "quality_anova_f": 13.185841371985516,
+    "quality_pair": 17.278615211048933,
+    "rank_score": 0.13477797335683847,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAD tb_symmetry closing high_freq relu edge_xx blur relu normalize closing texture_entropy div downsample_2x",
+    "body": "I_GRAD I_GRAD tb_symmetry closing high_freq relu edge_xx blur relu normalize closing texture_entropy div downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 41.27287087053853,
+    "quality_pair": 16.21469278169388,
+    "rank_score": 0.1345550206389705,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG negate edge_yy relu negate flip_v lr_symmetry",
+    "body": "I_LOG negate edge_yy relu negate flip_v lr_symmetry",
+    "root_op": "",
+    "quality_anova_f": 17.6142810574769,
+    "quality_pair": 16.96988756769793,
+    "rank_score": 0.1295673043689749,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP sqrt_abs normalize closing flip_h corner_harris edge_xx",
+    "body": "I_LBP sqrt_abs normalize closing flip_h corner_harris edge_xx",
+    "root_op": "",
+    "quality_anova_f": 12.866367795200784,
+    "quality_pair": 17.096274899183182,
+    "rank_score": 0.1276423867381339,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_GRAY border_sharp gabor_mag stride_pool_4 texture_entropy subtract",
+    "body": "I_GRAY I_GRAY border_sharp gabor_mag stride_pool_4 texture_entropy subtract",
+    "root_op": "",
+    "quality_anova_f": 12.271788238625495,
+    "quality_pair": 17.105362501546995,
+    "rank_score": 0.12715390475736113,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_BLUR edge_mag subtract downsample_2x negate local_var edge_y blur_7x7 normalize high_freq downsample_4x edge_y downsample_4x",
+    "body": "I_LOG I_BLUR edge_mag subtract downsample_2x negate local_var edge_y blur_7x7 normalize high_freq downsample_4x edge_y downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 10.869763597973325,
+    "quality_pair": 17.114489207343347,
+    "rank_score": 0.12555044422363296,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY local_std_5x5 edge_orient border_sharp corner_harris local_range border_sharp",
+    "body": "I_GRAY local_std_5x5 edge_orient border_sharp corner_harris local_range border_sharp",
+    "root_op": "",
+    "quality_anova_f": 16.27268338617195,
+    "quality_pair": 16.856457765293612,
+    "rank_score": 0.12354824055291119,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY local_range stride_pool_4 I_GRAY gabor_90 local_contrast blur_7x7 high_freq gabor_90 edge_orient flip_h texture_entropy edge_orient subtract",
+    "body": "I_GRAY local_range stride_pool_4 I_GRAY gabor_90 local_contrast blur_7x7 high_freq gabor_90 edge_orient flip_h texture_entropy edge_orient subtract",
+    "root_op": "",
+    "quality_anova_f": 9.714874682903009,
+    "quality_pair": 17.003238511388105,
+    "rank_score": 0.11986953013196588,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize edge_y flip_v tb_symmetry opening edge_x",
+    "body": "I_GRAD normalize edge_y flip_v tb_symmetry opening edge_x",
+    "root_op": "",
+    "quality_anova_f": 32.36929384034735,
+    "quality_pair": 16.08734928077553,
+    "rank_score": 0.11756960127773367,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP pow2 sqrt_abs corner_harris edge_y relu diag_symmetry",
+    "body": "I_LBP pow2 sqrt_abs corner_harris edge_y relu diag_symmetry",
+    "root_op": "",
+    "quality_anova_f": 7.430103598124652,
+    "quality_pair": 17.024336845975537,
+    "rank_score": 0.11748502866418302,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF blur_7x7 dilate gabor_45 negate edge_xx closing pow2 edge_yy stride_pool_4 opening dog abs tb_symmetry",
+    "body": "I_LRDIFF blur_7x7 dilate gabor_45 negate edge_xx closing pow2 edge_yy stride_pool_4 opening dog abs tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 10.072162915936474,
+    "quality_pair": 16.822984155433783,
+    "rank_score": 0.11374624553482249,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR dilate normalize flip_h abs local_contrast dog",
+    "body": "I_BLUR dilate normalize flip_h abs local_contrast dog",
+    "root_op": "",
+    "quality_anova_f": 25.408747818718933,
+    "quality_pair": 16.154828894975694,
+    "rank_score": 0.11042283469564805,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG blur_7x7 border_sharp lr_symmetry edge_mag low_freq diag_symmetry",
+    "body": "I_LOG blur_7x7 border_sharp lr_symmetry edge_mag low_freq diag_symmetry",
+    "root_op": "",
+    "quality_anova_f": 19.424881429551775,
+    "quality_pair": 16.32225016261345,
+    "rank_score": 0.10829541663648438,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY sqrt_abs negate normalize gabor_90 blur_7x7 high_freq blur_7x7 stride_pool_4 I_GRAD edge_xx downsample_2x lr_symmetry add",
+    "body": "I_GRAY sqrt_abs negate normalize gabor_90 blur_7x7 high_freq blur_7x7 stride_pool_4 I_GRAD edge_xx downsample_2x lr_symmetry add",
+    "root_op": "",
+    "quality_anova_f": 10.85483847883775,
+    "quality_pair": 16.625505094107517,
+    "rank_score": 0.10757878935447808,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur local_range edge_xx high_freq diag_symmetry opening",
+    "body": "I_GRAD blur local_range edge_xx high_freq diag_symmetry opening",
+    "root_op": "",
+    "quality_anova_f": 9.559165352854526,
+    "quality_pair": 16.641503121548535,
+    "rank_score": 0.10637462776433299,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD laplacian edge_yy laplacian edge_x flip_h dog normalize dog blur_7x7 closing texture_entropy local_range edge_yy",
+    "body": "I_LOCALSTD laplacian edge_yy laplacian edge_x flip_h dog normalize dog blur_7x7 closing texture_entropy local_range edge_yy",
+    "root_op": "",
+    "quality_anova_f": 10.466081962404205,
+    "quality_pair": 16.525624805451223,
+    "rank_score": 0.1033745855735025,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF local_contrast abs gabor_mag stride_pool_4 negate tb_symmetry",
+    "body": "I_LRDIFF local_contrast abs gabor_mag stride_pool_4 negate tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 14.318847267354855,
+    "quality_pair": 16.337575782842418,
+    "rank_score": 0.10179817412331245,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_GRAD log1p_abs laplacian gabor_45 log1p_abs negate edge_x normalize flip_h abs edge_mag laplacian multiply",
+    "body": "I_LOG I_GRAD log1p_abs laplacian gabor_45 log1p_abs negate edge_x normalize flip_h abs edge_mag laplacian multiply",
+    "root_op": "",
+    "quality_anova_f": 12.923663164260558,
+    "quality_pair": 16.183952779235685,
+    "rank_score": 0.09422949274943475,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY sqrt_abs gabor_45 flip_h edge_x lbp_like blur_7x7 edge_yy I_GRAY flip_v flip_h high_freq negate multiply",
+    "body": "I_GRAY sqrt_abs gabor_45 flip_h edge_x lbp_like blur_7x7 edge_yy I_GRAY flip_v flip_h high_freq negate multiply",
+    "root_op": "",
+    "quality_anova_f": 20.10297476332298,
+    "quality_pair": 15.908270641942657,
+    "rank_score": 0.09403544560735214,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAY pow2 corner_harris downsample_4x opening div",
+    "body": "I_GRAD I_GRAY pow2 corner_harris downsample_4x opening div",
+    "root_op": "",
+    "quality_anova_f": 9.18806737911762,
+    "quality_pair": 16.128192186159833,
+    "rank_score": 0.08701745231071625,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_orient gabor_0 tb_symmetry relu edge_yy gabor_90",
+    "body": "I_BLUR edge_orient gabor_0 tb_symmetry relu edge_yy gabor_90",
+    "root_op": "",
+    "quality_anova_f": 12.005060907156333,
+    "quality_pair": 15.993232314132834,
+    "rank_score": 0.08595787828271545,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_GRAY edge_orient subtract opening blur_7x7 relu closing gabor_0 downsample_2x gabor_90 edge_y blur_7x7 lr_symmetry",
+    "body": "I_GRAY I_GRAY edge_orient subtract opening blur_7x7 relu closing gabor_0 downsample_2x gabor_90 edge_y blur_7x7 lr_symmetry",
+    "root_op": "",
+    "quality_anova_f": 26.76178453488267,
+    "quality_pair": 15.351755600087095,
+    "rank_score": 0.0828121140692818,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_BLUR flip_h flip_v edge_yy sqrt_abs subtract",
+    "body": "I_LRDIFF I_BLUR flip_h flip_v edge_yy sqrt_abs subtract",
+    "root_op": "",
+    "quality_anova_f": 11.118512481229896,
+    "quality_pair": 15.81418590014398,
+    "rank_score": 0.07815914729976486,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP local_range edge_mag corner_harris local_std_5x5 edge_yy edge_orient",
+    "body": "I_LBP local_range edge_mag corner_harris local_std_5x5 edge_yy edge_orient",
+    "root_op": "",
+    "quality_anova_f": 8.286406067707784,
+    "quality_pair": 15.867894527603688,
+    "rank_score": 0.07621502387116663,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_BLUR edge_y flip_v edge_xx multiply downsample_4x downsample_2x gabor_0 tb_symmetry downsample_4x blur flip_h edge_yy",
+    "body": "I_LRDIFF I_BLUR edge_y flip_v edge_xx multiply downsample_4x downsample_2x gabor_0 tb_symmetry downsample_4x blur flip_h edge_yy",
+    "root_op": "",
+    "quality_anova_f": 7.423948587248347,
+    "quality_pair": 15.851709606836167,
+    "rank_score": 0.07442838482636975,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD gabor_mag flip_h normalize gabor_mag dilate gabor_mag",
+    "body": "I_GRAD gabor_mag flip_h normalize gabor_mag dilate gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 11.104459398424785,
+    "quality_pair": 15.696273289243614,
+    "rank_score": 0.07381104554285307,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize dilate closing pow2 edge_xx opening",
+    "body": "I_LOG normalize dilate closing pow2 edge_xx opening",
+    "root_op": "",
+    "quality_anova_f": 31.15659786953836,
+    "quality_pair": 14.907441186775555,
+    "rank_score": 0.07257744707696072,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG diag_symmetry flip_v I_BLUR normalize stride_pool_4 lr_symmetry negate gabor_45 edge_xx tb_symmetry multiply log1p_abs gabor_90",
+    "body": "I_LOG diag_symmetry flip_v I_BLUR normalize stride_pool_4 lr_symmetry negate gabor_45 edge_xx tb_symmetry multiply log1p_abs gabor_90",
+    "root_op": "",
+    "quality_anova_f": 10.401045232783245,
+    "quality_pair": 15.669962066772614,
+    "rank_score": 0.07187256269782463,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_45 laplacian corner_harris normalize gabor_90 normalize",
+    "body": "I_GRAY gabor_45 laplacian corner_harris normalize gabor_90 normalize",
+    "root_op": "",
+    "quality_anova_f": 13.063291143929861,
+    "quality_pair": 15.518797005612067,
+    "rank_score": 0.07000412071076413,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD normalize downsample_2x normalize laplacian normalize sigmoid",
+    "body": "I_LOCALSTD normalize downsample_2x normalize laplacian normalize sigmoid",
+    "root_op": "",
+    "quality_anova_f": 20.659692064818728,
+    "quality_pair": 15.17329025230845,
+    "rank_score": 0.0678234417207729,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_y high_freq gabor_45 gabor_mag high_freq edge_yy edge_orient normalize edge_yy edge_orient high_freq log1p_abs edge_x",
+    "body": "I_LRDIFF edge_y high_freq gabor_45 gabor_mag high_freq edge_yy edge_orient normalize edge_yy edge_orient high_freq log1p_abs edge_x",
+    "root_op": "",
+    "quality_anova_f": 7.395096363149881,
+    "quality_pair": 15.552904869909261,
+    "rank_score": 0.06341911872897069,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD gabor_90 edge_mag downsample_4x downsample_2x local_var opening lr_symmetry flip_h diag_symmetry negate flip_v tb_symmetry flip_h",
+    "body": "I_GRAD gabor_90 edge_mag downsample_4x downsample_2x local_var opening lr_symmetry flip_h diag_symmetry negate flip_v tb_symmetry flip_h",
+    "root_op": "",
+    "quality_anova_f": 10.905359626113542,
+    "quality_pair": 15.409042237236626,
+    "rank_score": 0.06299126636756927,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize stride_pool_4 dilate closing dog gabor_90",
+    "body": "I_GRAD normalize stride_pool_4 dilate closing dog gabor_90",
+    "root_op": "",
+    "quality_anova_f": 8.137461985950734,
+    "quality_pair": 15.236019736840937,
+    "rank_score": 0.05281243053844484,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_90 blur_7x7 laplacian edge_x texture_entropy gabor_90 blur_7x7 normalize negate blur gabor_90 downsample_2x edge_mag",
+    "body": "I_GRAY gabor_90 blur_7x7 laplacian edge_x texture_entropy gabor_90 blur_7x7 normalize negate blur gabor_90 downsample_2x edge_mag",
+    "root_op": "",
+    "quality_anova_f": 7.1321227595099534,
+    "quality_pair": 15.27354192880384,
+    "rank_score": 0.05279986936894884,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR downsample_4x abs normalize gabor_90 laplacian stride_pool_4 local_std_5x5 normalize high_freq edge_mag abs gabor_45 local_range",
+    "body": "I_BLUR downsample_4x abs normalize gabor_90 laplacian stride_pool_4 local_std_5x5 normalize high_freq edge_mag abs gabor_45 local_range",
+    "root_op": "",
+    "quality_anova_f": 9.94629196364254,
+    "quality_pair": 15.070636814463413,
+    "rank_score": 0.04924206321586482,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_GRAY flip_h texture_entropy sqrt_abs closing add",
+    "body": "I_GRAY I_GRAY flip_h texture_entropy sqrt_abs closing add",
+    "root_op": "",
+    "quality_anova_f": 17.71131946031222,
+    "quality_pair": 14.772580211141799,
+    "rank_score": 0.04903647075889747,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD normalize edge_mag relu edge_x sqrt_abs flip_v",
+    "body": "I_GRAD normalize edge_mag relu edge_x sqrt_abs flip_v",
+    "root_op": "",
+    "quality_anova_f": 29.924926570723922,
+    "quality_pair": 14.30038708354043,
+    "rank_score": 0.048589009131461636,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize laplacian normalize corner_harris edge_y tb_symmetry",
+    "body": "I_BLUR normalize laplacian normalize corner_harris edge_y tb_symmetry",
+    "root_op": "",
+    "quality_anova_f": 8.506263189171975,
+    "quality_pair": 15.028624667485715,
+    "rank_score": 0.045708705902742744,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY flip_h I_LOG normalize high_freq edge_orient add",
+    "body": "I_GRAY flip_h I_LOG normalize high_freq edge_orient add",
+    "root_op": "",
+    "quality_anova_f": 8.447892076072296,
+    "quality_pair": 14.960552971357618,
+    "rank_score": 0.04312902977477276,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF stride_pool_4 opening gabor_0 laplacian dilate sqrt_abs",
+    "body": "I_LRDIFF stride_pool_4 opening gabor_0 laplacian dilate sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 7.901151015829209,
+    "quality_pair": 14.82254851468935,
+    "rank_score": 0.03730681832102046,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD texture_entropy edge_yy laplacian normalize dilate local_std_5x5",
+    "body": "I_GRAD texture_entropy edge_yy laplacian normalize dilate local_std_5x5",
+    "root_op": "",
+    "quality_anova_f": 6.30425370260434,
+    "quality_pair": 14.77631984207621,
+    "rank_score": 0.033401774490531916,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD stride_pool_4 normalize dog border_sharp gabor_90 edge_y",
+    "body": "I_GRAD stride_pool_4 normalize dog border_sharp gabor_90 edge_y",
+    "root_op": "",
+    "quality_anova_f": 8.5137467597196,
+    "quality_pair": 14.677993881547202,
+    "rank_score": 0.03284710158708898,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG pow2 relu flip_h lr_symmetry gabor_mag border_sharp",
+    "body": "I_LOG pow2 relu flip_h lr_symmetry gabor_mag border_sharp",
+    "root_op": "",
+    "quality_anova_f": 21.394170935222547,
+    "quality_pair": 14.050018235823943,
+    "rank_score": 0.027602707229580352,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF high_freq edge_x local_var flip_h relu downsample_2x",
+    "body": "I_LRDIFF high_freq edge_x local_var flip_h relu downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 11.25827336961949,
+    "quality_pair": 14.428820660934408,
+    "rank_score": 0.027494462938860674,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_LOCALSTD downsample_2x normalize dilate local_range add",
+    "body": "I_LOG I_LOCALSTD downsample_2x normalize dilate local_range add",
+    "root_op": "",
+    "quality_anova_f": 40.3748992051645,
+    "quality_pair": 13.294461229884611,
+    "rank_score": 0.026109280099989404,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF normalize low_freq stride_pool_4 local_var edge_mag gabor_45 gabor_mag lbp_like border_sharp edge_y I_LOG gabor_90 add",
+    "body": "I_LRDIFF normalize low_freq stride_pool_4 local_var edge_mag gabor_45 gabor_mag lbp_like border_sharp edge_y I_LOG gabor_90 add",
+    "root_op": "",
+    "quality_anova_f": 8.67788217252892,
+    "quality_pair": 14.44382460536701,
+    "rank_score": 0.024477492080473708,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD texture_entropy gabor_mag normalize abs local_std_5x5 dilate",
+    "body": "I_LOCALSTD texture_entropy gabor_mag normalize abs local_std_5x5 dilate",
+    "root_op": "",
+    "quality_anova_f": 8.602113935808045,
+    "quality_pair": 14.428400252625243,
+    "rank_score": 0.023806490135482365,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP gabor_45 edge_mag edge_orient local_var normalize edge_mag blur_7x7 I_LOG edge_x relu log1p_abs opening div",
+    "body": "I_LBP gabor_45 edge_mag edge_orient local_var normalize edge_mag blur_7x7 I_LOG edge_x relu log1p_abs opening div",
+    "root_op": "",
+    "quality_anova_f": 7.028219111697193,
+    "quality_pair": 14.372909499911016,
+    "rank_score": 0.01959323193856487,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF normalize opening local_range border_sharp pow2 gabor_mag",
+    "body": "I_LRDIFF normalize opening local_range border_sharp pow2 gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 38.118150714916226,
+    "quality_pair": 13.17977958387639,
+    "rank_score": 0.018778926626636664,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP edge_orient opening blur_7x7 lr_symmetry edge_xx pow2 gabor_45 local_var flip_h gabor_0 lr_symmetry negate gabor_0",
+    "body": "I_LBP edge_orient opening blur_7x7 lr_symmetry edge_xx pow2 gabor_45 local_var flip_h gabor_0 lr_symmetry negate gabor_0",
+    "root_op": "",
+    "quality_anova_f": 16.259826206686512,
+    "quality_pair": 13.952691540405162,
+    "rank_score": 0.01693075971692215,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR local_contrast opening tb_symmetry I_GRAY edge_y div",
+    "body": "I_BLUR local_contrast opening tb_symmetry I_GRAY edge_y div",
+    "root_op": "",
+    "quality_anova_f": 7.4688834526408,
+    "quality_pair": 14.269240323311788,
+    "rank_score": 0.016396733769278863,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP flip_h sqrt_abs edge_xx dilate relu stride_pool_4",
+    "body": "I_LBP flip_h sqrt_abs edge_xx dilate relu stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 6.829478693943573,
+    "quality_pair": 14.244078259236225,
+    "rank_score": 0.014588940113453294,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG gabor_90 border_sharp downsample_4x closing high_freq dilate normalize flip_h gabor_45 relu dilate diag_symmetry lbp_like",
+    "body": "I_LOG gabor_90 border_sharp downsample_4x closing high_freq dilate normalize flip_h gabor_45 relu dilate diag_symmetry lbp_like",
+    "root_op": "",
+    "quality_anova_f": 8.999110495024588,
+    "quality_pair": 14.114267280738861,
+    "rank_score": 0.012823311509735237,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD downsample_4x normalize relu normalize blur_7x7 gabor_mag",
+    "body": "I_LOCALSTD downsample_4x normalize relu normalize blur_7x7 gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 13.312433619549807,
+    "quality_pair": 13.910711248286292,
+    "rank_score": 0.011314415009079908,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_var local_range gabor_0 diag_symmetry normalize edge_x",
+    "body": "I_LOCALSTD local_var local_range gabor_0 diag_symmetry normalize edge_x",
+    "root_op": "",
+    "quality_anova_f": 22.005831059312857,
+    "quality_pair": 13.516038241705466,
+    "rank_score": 0.008845563860202459,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_yy gabor_0 edge_y texture_entropy border_sharp laplacian dog normalize edge_y local_contrast sigmoid edge_y local_range",
+    "body": "I_LOCALSTD edge_yy gabor_0 edge_y texture_entropy border_sharp laplacian dog normalize edge_y local_contrast sigmoid edge_y local_range",
+    "root_op": "",
+    "quality_anova_f": 29.568916366404192,
+    "quality_pair": 13.18760195702294,
+    "rank_score": 0.007245492312466732,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_4x diag_symmetry edge_orient local_var high_freq dog",
+    "body": "I_GRAY downsample_4x diag_symmetry edge_orient local_var high_freq dog",
+    "root_op": "",
+    "quality_anova_f": 9.362259354493995,
+    "quality_pair": 13.879727221625583,
+    "rank_score": 0.004715256222774439,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP edge_yy local_std_5x5 gabor_0 gabor_mag sigmoid pow2",
+    "body": "I_LBP edge_yy local_std_5x5 gabor_0 gabor_mag sigmoid pow2",
+    "root_op": "",
+    "quality_anova_f": 7.239774586042191,
+    "quality_pair": 13.941939752927015,
+    "rank_score": 0.004064476746263979,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD abs corner_harris downsample_4x border_sharp gabor_45 edge_x corner_harris flip_h gabor_90 gabor_mag gabor_90 closing normalize",
+    "body": "I_GRAD abs corner_harris downsample_4x border_sharp gabor_45 edge_x corner_harris flip_h gabor_90 gabor_mag gabor_90 closing normalize",
+    "root_op": "",
+    "quality_anova_f": 6.736749586946888,
+    "quality_pair": 13.926193025913388,
+    "rank_score": 0.0027908935403177654,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_45 local_contrast corner_harris local_var edge_xx opening",
+    "body": "I_GRAY gabor_45 local_contrast corner_harris local_var edge_xx opening",
+    "root_op": "",
+    "quality_anova_f": 6.498807593274653,
+    "quality_pair": 13.907185810340708,
+    "rank_score": 0.001764132112448618,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_4x relu closing laplacian local_range gabor_mag",
+    "body": "I_LRDIFF downsample_4x relu closing laplacian local_range gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 7.019088357525557,
+    "quality_pair": 13.870831566217442,
+    "rank_score": 0.001148903471578245,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY tb_symmetry texture_entropy laplacian low_freq gabor_mag local_range",
+    "body": "I_GRAY tb_symmetry texture_entropy laplacian low_freq gabor_mag local_range",
+    "root_op": "",
+    "quality_anova_f": 12.189579733876792,
+    "quality_pair": 13.66757011329699,
+    "rank_score": 0.0008359850522938785,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG sqrt_abs gabor_mag edge_y local_var border_sharp stride_pool_4 edge_yy edge_y gabor_mag dilate local_var flip_h edge_y",
+    "body": "I_LOG sqrt_abs gabor_mag edge_y local_var border_sharp stride_pool_4 edge_yy edge_y gabor_mag dilate local_var flip_h edge_y",
+    "root_op": "",
+    "quality_anova_f": 10.637975793955935,
+    "quality_pair": 13.689846518217063,
+    "rank_score": -0.0004915547928130148,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_contrast I_LOG opening normalize dilate subtract",
+    "body": "I_LOCALSTD local_contrast I_LOG opening normalize dilate subtract",
+    "root_op": "",
+    "quality_anova_f": 17.626934351775276,
+    "quality_pair": 13.391976743801074,
+    "rank_score": -0.0017633204440467912,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_0 normalize gabor_0 edge_orient closing edge_mag",
+    "body": "I_LOCALSTD gabor_0 normalize gabor_0 edge_orient closing edge_mag",
+    "root_op": "",
+    "quality_anova_f": 8.611298136093879,
+    "quality_pair": 13.667094246106693,
+    "rank_score": -0.00412899604883139,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD flip_v normalize gabor_0 downsample_4x local_range blur gabor_90 pow2 local_var local_std_5x5 log1p_abs edge_x local_range",
+    "body": "I_LOCALSTD flip_v normalize gabor_0 downsample_4x local_range blur gabor_90 pow2 local_var local_std_5x5 log1p_abs edge_x local_range",
+    "root_op": "",
+    "quality_anova_f": 20.845659216209416,
+    "quality_pair": 13.194478639718405,
+    "rank_score": -0.004563271748888301,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP sqrt_abs opening flip_v dilate log1p_abs abs",
+    "body": "I_LBP sqrt_abs opening flip_v dilate log1p_abs abs",
+    "root_op": "",
+    "quality_anova_f": 10.080439685063764,
+    "quality_pair": 13.580980777045033,
+    "rank_score": -0.005258985233911887,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF blur edge_mag local_contrast downsample_2x edge_x laplacian closing gabor_45 stride_pool_4 diag_symmetry high_freq gabor_0 normalize",
+    "body": "I_LRDIFF blur edge_mag local_contrast downsample_2x edge_x laplacian closing gabor_45 stride_pool_4 diag_symmetry high_freq gabor_0 normalize",
+    "root_op": "",
+    "quality_anova_f": 4.194906843258999,
+    "quality_pair": 13.799426936080678,
+    "rank_score": -0.005377275658630602,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR local_contrast gabor_0 downsample_2x sqrt_abs border_sharp stride_pool_4 normalize I_GRAY blur_7x7 stride_pool_4 flip_h local_std_5x5 multiply",
+    "body": "I_BLUR local_contrast gabor_0 downsample_2x sqrt_abs border_sharp stride_pool_4 normalize I_GRAY blur_7x7 stride_pool_4 flip_h local_std_5x5 multiply",
+    "root_op": "",
+    "quality_anova_f": 7.939220297490401,
+    "quality_pair": 13.64872663346192,
+    "rank_score": -0.0057325351089953375,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF closing diag_symmetry local_std_5x5 gabor_mag I_LRDIFF subtract",
+    "body": "I_LRDIFF closing diag_symmetry local_std_5x5 gabor_mag I_LRDIFF subtract",
+    "root_op": "",
+    "quality_anova_f": 9.993726943172973,
+    "quality_pair": 13.559222631808804,
+    "rank_score": -0.006177638457903298,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF downsample_4x local_std_5x5 low_freq opening local_var gabor_mag",
+    "body": "I_LRDIFF downsample_4x local_std_5x5 low_freq opening local_var gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 12.212924505766976,
+    "quality_pair": 13.46483050851117,
+    "rank_score": -0.006574478947219825,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP gabor_0 downsample_4x normalize local_var pow2 negate",
+    "body": "I_LBP gabor_0 downsample_4x normalize local_var pow2 negate",
+    "root_op": "",
+    "quality_anova_f": 10.41408560710579,
+    "quality_pair": 13.525616529014396,
+    "rank_score": -0.006830137823700233,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_y high_freq negate dilate gabor_0 stride_pool_4 laplacian negate sigmoid normalize gabor_mag opening pow2",
+    "body": "I_GRAD edge_y high_freq negate dilate gabor_0 stride_pool_4 laplacian negate sigmoid normalize gabor_mag opening pow2",
+    "root_op": "",
+    "quality_anova_f": 7.615479736692172,
+    "quality_pair": 13.594726275898942,
+    "rank_score": -0.008162553655182345,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY sqrt_abs opening abs blur negate gabor_mag downsample_4x blur_7x7 diag_symmetry flip_h lbp_like lr_symmetry log1p_abs",
+    "body": "I_GRAY sqrt_abs opening abs blur negate gabor_mag downsample_4x blur_7x7 diag_symmetry flip_h lbp_like lr_symmetry log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 10.351039285147923,
+    "quality_pair": 13.444739279604097,
+    "rank_score": -0.00988638077658772,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR gabor_mag edge_orient negate blur_7x7 negate blur edge_y closing downsample_4x edge_x edge_xx flip_h downsample_2x",
+    "body": "I_BLUR gabor_mag edge_orient negate blur_7x7 negate blur edge_y closing downsample_4x edge_x edge_xx flip_h downsample_2x",
+    "root_op": "",
+    "quality_anova_f": 24.567156752577,
+    "quality_pair": 12.881734612404234,
+    "rank_score": -0.010898839248926154,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG opening flip_h high_freq gabor_0 local_var texture_entropy corner_harris blur_7x7 stride_pool_4 I_LOG edge_mag stride_pool_4 multiply",
+    "body": "I_LOG opening flip_h high_freq gabor_0 local_var texture_entropy corner_harris blur_7x7 stride_pool_4 I_LOG edge_mag stride_pool_4 multiply",
+    "root_op": "",
+    "quality_anova_f": 9.396618317047059,
+    "quality_pair": 13.354352663345493,
+    "rank_score": -0.01452417989101079,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD pow2 blur_7x7 edge_orient downsample_2x flip_h edge_xx gabor_mag negate edge_yy laplacian diag_symmetry flip_v opening",
+    "body": "I_LOCALSTD pow2 blur_7x7 edge_orient downsample_2x flip_h edge_xx gabor_mag negate edge_yy laplacian diag_symmetry flip_v opening",
+    "root_op": "",
+    "quality_anova_f": 10.992963288942313,
+    "quality_pair": 13.267462994497642,
+    "rank_score": -0.015506786191229676,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_GRAD edge_yy downsample_2x corner_harris gabor_0 subtract",
+    "body": "I_BLUR I_GRAD edge_yy downsample_2x corner_harris gabor_0 subtract",
+    "root_op": "",
+    "quality_anova_f": 8.628958706211542,
+    "quality_pair": 13.353027775188904,
+    "rank_score": -0.015634222333190072,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAY laplacian local_std_5x5 corner_harris relu multiply",
+    "body": "I_GRAD I_GRAY laplacian local_std_5x5 corner_harris relu multiply",
+    "root_op": "",
+    "quality_anova_f": 8.858022572150277,
+    "quality_pair": 13.281467360831954,
+    "rank_score": -0.017944550226645057,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR low_freq abs low_freq I_GRAD log1p_abs closing edge_y local_range texture_entropy negate local_contrast edge_y multiply",
+    "body": "I_BLUR low_freq abs low_freq I_GRAD log1p_abs closing edge_y local_range texture_entropy negate local_contrast edge_y multiply",
+    "root_op": "",
+    "quality_anova_f": 9.94448867233427,
+    "quality_pair": 13.223370674606729,
+    "rank_score": -0.01857512598590275,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG high_freq normalize pow2 relu edge_mag stride_pool_4",
+    "body": "I_LOG high_freq normalize pow2 relu edge_mag stride_pool_4",
+    "root_op": "",
+    "quality_anova_f": 27.315542474779686,
+    "quality_pair": 12.558519712617976,
+    "rank_score": -0.01896427450005283,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF gabor_0 normalize blur_7x7 relu normalize corner_harris",
+    "body": "I_LRDIFF gabor_0 normalize blur_7x7 relu normalize corner_harris",
+    "root_op": "",
+    "quality_anova_f": 8.862853664781731,
+    "quality_pair": 13.236463194710987,
+    "rank_score": -0.019590011359366246,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_orient flip_v gabor_mag gabor_90 corner_harris abs flip_v edge_orient flip_v stride_pool_4 flip_h normalize negate",
+    "body": "I_GRAD edge_orient flip_v gabor_mag gabor_90 corner_harris abs flip_v edge_orient flip_v stride_pool_4 flip_h normalize negate",
+    "root_op": "",
+    "quality_anova_f": 4.468886050677386,
+    "quality_pair": 13.312693491505831,
+    "rank_score": -0.02286685297288879,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP laplacian normalize low_freq pow2 edge_orient opening",
+    "body": "I_LBP laplacian normalize low_freq pow2 edge_orient opening",
+    "root_op": "",
+    "quality_anova_f": 16.259594717358766,
+    "quality_pair": 12.79925072573009,
+    "rank_score": -0.02541334416075959,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF abs diag_symmetry normalize edge_y gabor_mag pow2",
+    "body": "I_LRDIFF abs diag_symmetry normalize edge_y gabor_mag pow2",
+    "root_op": "",
+    "quality_anova_f": 21.991397914407614,
+    "quality_pair": 12.549808096881984,
+    "rank_score": -0.026645514567658773,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF tb_symmetry gabor_45 stride_pool_4 closing I_LOG add",
+    "body": "I_LRDIFF tb_symmetry gabor_45 stride_pool_4 closing I_LOG add",
+    "root_op": "",
+    "quality_anova_f": 19.106604352363483,
+    "quality_pair": 12.535201411492835,
+    "rank_score": -0.03117039856471561,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY gabor_0 sigmoid local_range stride_pool_4 edge_yy texture_entropy",
+    "body": "I_GRAY gabor_0 sigmoid local_range stride_pool_4 edge_yy texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 15.794902213950367,
+    "quality_pair": 12.639924457964298,
+    "rank_score": -0.031904852808452414,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR gabor_0 local_var downsample_4x edge_orient negate edge_x",
+    "body": "I_BLUR gabor_0 local_var downsample_4x edge_orient negate edge_x",
+    "root_op": "",
+    "quality_anova_f": 13.630216867931471,
+    "quality_pair": 12.71819739710361,
+    "rank_score": -0.03202438982135519,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF log1p_abs normalize dog high_freq diag_symmetry dilate",
+    "body": "I_LRDIFF log1p_abs normalize dog high_freq diag_symmetry dilate",
+    "root_op": "",
+    "quality_anova_f": 31.883079920480526,
+    "quality_pair": 12.021406099378728,
+    "rank_score": -0.03236686126379865,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_mag flip_v high_freq tb_symmetry I_LOG gabor_90 subtract local_std_5x5 local_contrast normalize local_var gabor_90 low_freq",
+    "body": "I_BLUR edge_mag flip_v high_freq tb_symmetry I_LOG gabor_90 subtract local_std_5x5 local_contrast normalize local_var gabor_90 low_freq",
+    "root_op": "",
+    "quality_anova_f": 7.24279210925607,
+    "quality_pair": 12.919364402877196,
+    "rank_score": -0.03347095345399156,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_x diag_symmetry blur_7x7 sigmoid high_freq gabor_90",
+    "body": "I_GRAD edge_x diag_symmetry blur_7x7 sigmoid high_freq gabor_90",
+    "root_op": "",
+    "quality_anova_f": 7.648829512130839,
+    "quality_pair": 12.882811612802639,
+    "rank_score": -0.03425142948559427,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY dog negate gabor_mag local_std_5x5 gabor_mag downsample_2x gabor_90 gabor_45 texture_entropy corner_harris edge_mag closing gabor_90",
+    "body": "I_GRAY dog negate gabor_mag local_std_5x5 gabor_mag downsample_2x gabor_90 gabor_45 texture_entropy corner_harris edge_mag closing gabor_90",
+    "root_op": "",
+    "quality_anova_f": 9.392980151842274,
+    "quality_pair": 12.72483998684928,
+    "rank_score": -0.03763915077103537,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LOG pow2 gabor_90 edge_mag laplacian add relu dilate downsample_2x negate sigmoid flip_v corner_harris",
+    "body": "I_LRDIFF I_LOG pow2 gabor_90 edge_mag laplacian add relu dilate downsample_2x negate sigmoid flip_v corner_harris",
+    "root_op": "",
+    "quality_anova_f": 7.033175664286558,
+    "quality_pair": 12.757937415189508,
+    "rank_score": -0.03968690034693196,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_y closing negate sqrt_abs downsample_4x lbp_like edge_y flip_v local_std_5x5 edge_mag gabor_90 dilate edge_y",
+    "body": "I_BLUR edge_y closing negate sqrt_abs downsample_4x lbp_like edge_y flip_v local_std_5x5 edge_mag gabor_90 dilate edge_y",
+    "root_op": "",
+    "quality_anova_f": 6.374999893400292,
+    "quality_pair": 12.602227813531465,
+    "rank_score": -0.046313157805926444,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD abs gabor_45 dilate edge_y lbp_like flip_h downsample_4x normalize blur_7x7 downsample_2x edge_mag negate low_freq",
+    "body": "I_GRAD abs gabor_45 dilate edge_y lbp_like flip_h downsample_4x normalize blur_7x7 downsample_2x edge_mag negate low_freq",
+    "root_op": "",
+    "quality_anova_f": 8.810444156936443,
+    "quality_pair": 12.451094971643823,
+    "rank_score": -0.04849400433019533,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF laplacian local_var edge_orient blur_7x7 negate sqrt_abs local_contrast local_range lbp_like edge_mag edge_y dog border_sharp",
+    "body": "I_LRDIFF laplacian local_var edge_orient blur_7x7 negate sqrt_abs local_contrast local_range lbp_like edge_mag edge_y dog border_sharp",
+    "root_op": "",
+    "quality_anova_f": 6.454734524100807,
+    "quality_pair": 12.480943490174093,
+    "rank_score": -0.050655362370131865,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG edge_mag corner_harris normalize sqrt_abs high_freq dog downsample_2x flip_h sqrt_abs edge_x local_var log1p_abs flip_v",
+    "body": "I_LOG edge_mag corner_harris normalize sqrt_abs high_freq dog downsample_2x flip_h sqrt_abs edge_x local_var log1p_abs flip_v",
+    "root_op": "",
+    "quality_anova_f": 31.857982775343768,
+    "quality_pair": 11.440485361115336,
+    "rank_score": -0.05372765142602262,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF normalize gabor_mag edge_x I_LOG blur_7x7 div",
+    "body": "I_LRDIFF normalize gabor_mag edge_x I_LOG blur_7x7 div",
+    "root_op": "",
+    "quality_anova_f": 6.645596270788955,
+    "quality_pair": 12.304539444437523,
+    "rank_score": -0.05686740844380664,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF normalize texture_entropy sqrt_abs downsample_4x sqrt_abs closing abs normalize I_GRAY abs negate dog multiply",
+    "body": "I_LRDIFF normalize texture_entropy sqrt_abs downsample_4x sqrt_abs closing abs normalize I_GRAY abs negate dog multiply",
+    "root_op": "",
+    "quality_anova_f": 21.42474855338077,
+    "quality_pair": 11.73059899178764,
+    "rank_score": -0.05750284863481718,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD sqrt_abs downsample_4x gabor_90 I_GRAY texture_entropy multiply",
+    "body": "I_GRAD sqrt_abs downsample_4x gabor_90 I_GRAY texture_entropy multiply",
+    "root_op": "",
+    "quality_anova_f": 8.171391318532072,
+    "quality_pair": 12.057794229301392,
+    "rank_score": -0.06381599235267407,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur laplacian abs laplacian downsample_4x negate high_freq lbp_like stride_pool_4 laplacian edge_mag pow2 local_range",
+    "body": "I_GRAD blur laplacian abs laplacian downsample_4x negate high_freq lbp_like stride_pool_4 laplacian edge_mag pow2 local_range",
+    "root_op": "",
+    "quality_anova_f": 6.538921934761586,
+    "quality_pair": 12.055122326031057,
+    "rank_score": -0.06617121422322197,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_xx gabor_mag downsample_4x gabor_mag lbp_like dilate",
+    "body": "I_LRDIFF edge_xx gabor_mag downsample_4x gabor_mag lbp_like dilate",
+    "root_op": "",
+    "quality_anova_f": 20.22042755792854,
+    "quality_pair": 11.420249306810929,
+    "rank_score": -0.07056120158120426,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_BLUR flip_v edge_orient corner_harris downsample_2x abs closing downsample_2x blur edge_mag subtract abs texture_entropy",
+    "body": "I_LOG I_BLUR flip_v edge_orient corner_harris downsample_2x abs closing downsample_2x blur edge_mag subtract abs texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 14.915931287224188,
+    "quality_pair": 11.584827380450841,
+    "rank_score": -0.07185366448526496,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR tb_symmetry gabor_0 high_freq lbp_like stride_pool_4 edge_mag",
+    "body": "I_BLUR tb_symmetry gabor_0 high_freq lbp_like stride_pool_4 edge_mag",
+    "root_op": "",
+    "quality_anova_f": 6.910634184794132,
+    "quality_pair": 11.854582759189869,
+    "rank_score": -0.07301924262815482,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD local_std_5x5 normalize negate normalize opening low_freq",
+    "body": "I_GRAD local_std_5x5 normalize negate normalize opening low_freq",
+    "root_op": "",
+    "quality_anova_f": 15.227423698877924,
+    "quality_pair": 11.47803645237765,
+    "rank_score": -0.07534336436891417,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG local_std_5x5 edge_y texture_entropy blur abs normalize diag_symmetry closing stride_pool_4 gabor_mag abs log1p_abs opening",
+    "body": "I_LOG local_std_5x5 edge_y texture_entropy blur abs normalize diag_symmetry closing stride_pool_4 gabor_mag abs log1p_abs opening",
+    "root_op": "",
+    "quality_anova_f": 7.144692296156901,
+    "quality_pair": 11.756722537279407,
+    "rank_score": -0.07628815331406888,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_LOCALSTD normalize corner_harris gabor_0 corner_harris subtract",
+    "body": "I_BLUR I_LOCALSTD normalize corner_harris gabor_0 corner_harris subtract",
+    "root_op": "",
+    "quality_anova_f": 11.493102573200165,
+    "quality_pair": 11.474535775679211,
+    "rank_score": -0.08063513685263694,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD downsample_2x blur downsample_2x texture_entropy local_var local_contrast",
+    "body": "I_LOCALSTD downsample_2x blur downsample_2x texture_entropy local_var local_contrast",
+    "root_op": "",
+    "quality_anova_f": 17.904740533860867,
+    "quality_pair": 11.205534791778392,
+    "rank_score": -0.08164533730365484,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG relu downsample_4x gabor_90 abs sqrt_abs lbp_like border_sharp closing gabor_0 gabor_45 gabor_90 closing log1p_abs",
+    "body": "I_LOG relu downsample_4x gabor_90 abs sqrt_abs lbp_like border_sharp closing gabor_0 gabor_45 gabor_90 closing log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 9.162428684571049,
+    "quality_pair": 11.495146388561075,
+    "rank_score": -0.08310101051400876,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF tb_symmetry normalize gabor_mag downsample_2x diag_symmetry texture_entropy",
+    "body": "I_LRDIFF tb_symmetry normalize gabor_mag downsample_2x diag_symmetry texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 17.42200649179502,
+    "quality_pair": 11.179291024397461,
+    "rank_score": -0.08327622040783052,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY local_var I_BLUR sqrt_abs flip_v texture_entropy subtract",
+    "body": "I_GRAY local_var I_BLUR sqrt_abs flip_v texture_entropy subtract",
+    "root_op": "",
+    "quality_anova_f": 14.542915216999058,
+    "quality_pair": 11.273058318716215,
+    "rank_score": -0.08381472006189541,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD stride_pool_4 downsample_2x edge_x gabor_90 downsample_2x local_var opening local_var blur_7x7 edge_mag gabor_45 negate local_range",
+    "body": "I_GRAD stride_pool_4 downsample_2x edge_x gabor_90 downsample_2x local_var opening local_var blur_7x7 edge_mag gabor_45 negate local_range",
+    "root_op": "",
+    "quality_anova_f": 7.612822002188366,
+    "quality_pair": 11.522740038984514,
+    "rank_score": -0.08423058828970993,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR pow2 texture_entropy sigmoid negate edge_mag negate normalize gabor_90 blur_7x7 edge_mag local_std_5x5 low_freq gabor_90",
+    "body": "I_BLUR pow2 texture_entropy sigmoid negate edge_mag negate normalize gabor_90 blur_7x7 edge_mag local_std_5x5 low_freq gabor_90",
+    "root_op": "",
+    "quality_anova_f": 14.854873784775462,
+    "quality_pair": 11.205526934810292,
+    "rank_score": -0.08586252448140887,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG flip_v downsample_2x local_range lr_symmetry gabor_mag corner_harris local_contrast texture_entropy local_std_5x5 relu negate normalize diag_symmetry",
+    "body": "I_LOG flip_v downsample_2x local_range lr_symmetry gabor_mag corner_harris local_contrast texture_entropy local_std_5x5 relu negate normalize diag_symmetry",
+    "root_op": "",
+    "quality_anova_f": 5.605793994005679,
+    "quality_pair": 11.548357691285345,
+    "rank_score": -0.08606516028909533,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR low_freq texture_entropy I_GRAD gabor_0 edge_y add",
+    "body": "I_BLUR low_freq texture_entropy I_GRAD gabor_0 edge_y add",
+    "root_op": "",
+    "quality_anova_f": 13.089903453714987,
+    "quality_pair": 11.204043134411858,
+    "rank_score": -0.08835733255050929,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG edge_x pow2 gabor_mag texture_entropy edge_orient laplacian",
+    "body": "I_LOG edge_x pow2 gabor_mag texture_entropy edge_orient laplacian",
+    "root_op": "",
+    "quality_anova_f": 10.212583850831496,
+    "quality_pair": 11.299718875565086,
+    "rank_score": -0.0888233219114144,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR I_GRAD edge_yy downsample_2x diag_symmetry closing add",
+    "body": "I_BLUR I_GRAD edge_yy downsample_2x diag_symmetry closing add",
+    "root_op": "",
+    "quality_anova_f": 7.452405073589875,
+    "quality_pair": 11.36086470338278,
+    "rank_score": -0.09039496869312923,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize sqrt_abs closing downsample_2x laplacian I_GRAD closing pow2 diag_symmetry border_sharp flip_h edge_orient multiply",
+    "body": "I_LOG normalize sqrt_abs closing downsample_2x laplacian I_GRAD closing pow2 diag_symmetry border_sharp flip_h edge_orient multiply",
+    "root_op": "",
+    "quality_anova_f": 20.791466156199128,
+    "quality_pair": 10.832222264681668,
+    "rank_score": -0.09135862296404969,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_45 pow2 blur downsample_4x edge_y diag_symmetry",
+    "body": "I_LOCALSTD gabor_45 pow2 blur downsample_4x edge_y diag_symmetry",
+    "root_op": "",
+    "quality_anova_f": 11.125487139273838,
+    "quality_pair": 11.171389399739688,
+    "rank_score": -0.0922721791805167,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP stride_pool_4 sqrt_abs edge_orient I_LRDIFF edge_xx subtract",
+    "body": "I_LBP stride_pool_4 sqrt_abs edge_orient I_LRDIFF edge_xx subtract",
+    "root_op": "",
+    "quality_anova_f": 5.991555541808981,
+    "quality_pair": 11.331416210694975,
+    "rank_score": -0.09349589149873017,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY lbp_like edge_x lbp_like gabor_0 downsample_2x abs blur_7x7 edge_y stride_pool_4 high_freq corner_harris blur high_freq",
+    "body": "I_GRAY lbp_like edge_x lbp_like gabor_0 downsample_2x abs blur_7x7 edge_y stride_pool_4 high_freq corner_harris blur high_freq",
+    "root_op": "",
+    "quality_anova_f": 7.968732455810499,
+    "quality_pair": 11.180473509133355,
+    "rank_score": -0.09630338123462277,
+    "full_res_balanced_accuracy": 0.0
+  }
+]

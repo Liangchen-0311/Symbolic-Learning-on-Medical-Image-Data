@@ -1,0 +1,13 @@
+{
+  "method": "swin_tiny",
+  "acc": 0.9564444444444444,
+  "bal_acc": 0.9564444444444443,
+  "auc": 0.9955057777777778,
+  "per_class": {
+    "normal": 0.976,
+    "pneumonia": 0.9727,
+    "covid": 0.9207
+  },
+  "time_seconds": 620.3189446926117,
+  "epochs": 20
+}

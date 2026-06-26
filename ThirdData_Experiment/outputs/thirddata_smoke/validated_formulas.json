@@ -1,0 +1,578 @@
+[
+  {
+    "str": "I_LOG gabor_0 pow2 low_freq border_sharp lbp_like downsample_4x",
+    "body": "I_LOG gabor_0 pow2 low_freq border_sharp lbp_like downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 53.224137914755715,
+    "quality_pair": 26.050632905542727,
+    "rank_score": 2.7434448718733453,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD gabor_90 gabor_0 edge_y lr_symmetry edge_mag closing",
+    "body": "I_LOCALSTD gabor_90 gabor_0 edge_y lr_symmetry edge_mag closing",
+    "root_op": "",
+    "quality_anova_f": 25.91926636862313,
+    "quality_pair": 43.30136538273827,
+    "rank_score": 1.9345526320871538,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_y local_range negate local_range flip_v relu",
+    "body": "I_BLUR edge_y local_range negate local_range flip_v relu",
+    "root_op": "",
+    "quality_anova_f": 23.135830690492096,
+    "quality_pair": 44.9736366435578,
+    "rank_score": 1.8484805963350572,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_yy negate sigmoid opening abs local_range",
+    "body": "I_LRDIFF edge_yy negate sigmoid opening abs local_range",
+    "root_op": "",
+    "quality_anova_f": 29.481746993647686,
+    "quality_pair": 35.813263804912104,
+    "rank_score": 1.8206304075089847,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD closing gabor_90 downsample_2x laplacian log1p_abs low_freq",
+    "body": "I_LOCALSTD closing gabor_90 downsample_2x laplacian log1p_abs low_freq",
+    "root_op": "",
+    "quality_anova_f": 21.356704116279836,
+    "quality_pair": 39.71869563842237,
+    "rank_score": 1.528481592038901,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD blur_7x7 I_BLUR edge_orient lbp_like subtract low_freq",
+    "body": "I_GRAD blur_7x7 I_BLUR edge_orient lbp_like subtract low_freq",
+    "root_op": "",
+    "quality_anova_f": 25.919688216469382,
+    "quality_pair": 32.93303359169991,
+    "rank_score": 1.5001190728566547,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR log1p_abs local_contrast blur local_std_5x5 I_GRAD multiply",
+    "body": "I_BLUR log1p_abs local_contrast blur local_std_5x5 I_GRAD multiply",
+    "root_op": "",
+    "quality_anova_f": 26.072709700473876,
+    "quality_pair": 31.034162953802465,
+    "rank_score": 1.4291361151159712,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_GRAD log1p_abs relu pow2 multiply relu",
+    "body": "I_GRAD I_GRAD log1p_abs relu pow2 multiply relu",
+    "root_op": "",
+    "quality_anova_f": 21.19159256091163,
+    "quality_pair": 37.54617052031212,
+    "rank_score": 1.4281853714114896,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF blur_7x7 blur I_GRAD subtract texture_entropy downsample_4x",
+    "body": "I_LRDIFF blur_7x7 blur I_GRAD subtract texture_entropy downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 21.986426029756487,
+    "quality_pair": 35.63614299689191,
+    "rank_score": 1.3927390333157637,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY edge_mag abs I_LRDIFF edge_xx low_freq subtract",
+    "body": "I_GRAY edge_mag abs I_LRDIFF edge_xx low_freq subtract",
+    "root_op": "",
+    "quality_anova_f": 21.349161234689955,
+    "quality_pair": 31.367403919851686,
+    "rank_score": 1.178119902178494,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF edge_yy I_LBP border_sharp gabor_0 lbp_like multiply",
+    "body": "I_LRDIFF edge_yy I_LBP border_sharp gabor_0 lbp_like multiply",
+    "root_op": "",
+    "quality_anova_f": 22.82148432322834,
+    "quality_pair": 29.132288027228423,
+    "rank_score": 1.1670571542862347,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD closing flip_v abs diag_symmetry edge_mag local_range",
+    "body": "I_GRAD closing flip_v abs diag_symmetry edge_mag local_range",
+    "root_op": "",
+    "quality_anova_f": 18.44118940637286,
+    "quality_pair": 33.603999290006875,
+    "rank_score": 1.1087081789860418,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR relu local_range pow2 I_GRAD flip_v multiply",
+    "body": "I_BLUR relu local_range pow2 I_GRAD flip_v multiply",
+    "root_op": "",
+    "quality_anova_f": 21.504476334776648,
+    "quality_pair": 28.607337805872145,
+    "rank_score": 1.071179516808386,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD high_freq I_LRDIFF dog normalize lr_symmetry subtract",
+    "body": "I_LOCALSTD high_freq I_LRDIFF dog normalize lr_symmetry subtract",
+    "root_op": "",
+    "quality_anova_f": 17.892332251069952,
+    "quality_pair": 33.38033619350675,
+    "rank_score": 1.068546599661827,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP opening edge_x I_GRAY edge_mag diag_symmetry div",
+    "body": "I_LBP opening edge_x I_GRAY edge_mag diag_symmetry div",
+    "root_op": "",
+    "quality_anova_f": 20.019620112630147,
+    "quality_pair": 30.32961347817106,
+    "rank_score": 1.0600499874956948,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY edge_yy gabor_90 lbp_like I_LOCALSTD local_std_5x5 add",
+    "body": "I_GRAY edge_yy gabor_90 lbp_like I_LOCALSTD local_std_5x5 add",
+    "root_op": "",
+    "quality_anova_f": 19.92034274844431,
+    "quality_pair": 29.966531440041397,
+    "rank_score": 1.0392667824265376,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD lbp_like tb_symmetry diag_symmetry high_freq lbp_like gabor_90",
+    "body": "I_GRAD lbp_like tb_symmetry diag_symmetry high_freq lbp_like gabor_90",
+    "root_op": "",
+    "quality_anova_f": 17.642373208969282,
+    "quality_pair": 30.244608476570694,
+    "rank_score": 0.9231302079494708,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF log1p_abs lbp_like gabor_mag tb_symmetry I_LBP div",
+    "body": "I_LRDIFF log1p_abs lbp_like gabor_mag tb_symmetry I_LBP div",
+    "root_op": "",
+    "quality_anova_f": 24.24589223646134,
+    "quality_pair": 20.895551710935585,
+    "rank_score": 0.901824621050919,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD I_LOG flip_v subtract lr_symmetry tb_symmetry downsample_4x",
+    "body": "I_GRAD I_LOG flip_v subtract lr_symmetry tb_symmetry downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 17.161325127437536,
+    "quality_pair": 27.115426634837576,
+    "rank_score": 0.7650245605808141,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR sqrt_abs tb_symmetry normalize dog edge_y blur_7x7",
+    "body": "I_BLUR sqrt_abs tb_symmetry normalize dog edge_y blur_7x7",
+    "root_op": "",
+    "quality_anova_f": 15.441350246140393,
+    "quality_pair": 27.128169743359052,
+    "rank_score": 0.6690720445357651,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD I_BLUR gabor_45 downsample_2x blur_7x7 opening add",
+    "body": "I_LOCALSTD I_BLUR gabor_45 downsample_2x blur_7x7 opening add",
+    "root_op": "",
+    "quality_anova_f": 18.044362162482816,
+    "quality_pair": 22.503607757068472,
+    "rank_score": 0.6213148883931024,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD flip_h dog blur I_GRAD pow2 multiply",
+    "body": "I_LOCALSTD flip_h dog blur I_GRAD pow2 multiply",
+    "root_op": "",
+    "quality_anova_f": 17.22846213591061,
+    "quality_pair": 22.98599158964662,
+    "rank_score": 0.5957578508787789,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_range closing gabor_mag texture_entropy abs low_freq",
+    "body": "I_LOCALSTD local_range closing gabor_mag texture_entropy abs low_freq",
+    "root_op": "",
+    "quality_anova_f": 13.613673931011492,
+    "quality_pair": 27.77777523897568,
+    "rank_score": 0.5937637510187104,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG normalize dog lr_symmetry flip_h laplacian dog",
+    "body": "I_LOG normalize dog lr_symmetry flip_h laplacian dog",
+    "root_op": "",
+    "quality_anova_f": 18.886973018615677,
+    "quality_pair": 19.14876468577941,
+    "rank_score": 0.5280076147796162,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD diag_symmetry dilate blur log1p_abs stride_pool_4 local_range",
+    "body": "I_LOCALSTD diag_symmetry dilate blur log1p_abs stride_pool_4 local_range",
+    "root_op": "",
+    "quality_anova_f": 18.04453672400268,
+    "quality_pair": 19.90687711712734,
+    "rank_score": 0.5125156257903982,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_range relu stride_pool_4 I_LOCALSTD edge_x subtract",
+    "body": "I_LOCALSTD local_range relu stride_pool_4 I_LOCALSTD edge_x subtract",
+    "root_op": "",
+    "quality_anova_f": 11.867848127409584,
+    "quality_pair": 26.83602041212746,
+    "rank_score": 0.4563653758645098,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD edge_x blur I_LOCALSTD log1p_abs corner_harris subtract",
+    "body": "I_LOCALSTD edge_x blur I_LOCALSTD log1p_abs corner_harris subtract",
+    "root_op": "",
+    "quality_anova_f": 25.015291155510006,
+    "quality_pair": 9.08118185939228,
+    "rank_score": 0.44993647955009936,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP local_contrast flip_v blur_7x7 edge_xx edge_mag low_freq",
+    "body": "I_LBP local_contrast flip_v blur_7x7 edge_xx edge_mag low_freq",
+    "root_op": "",
+    "quality_anova_f": 15.92235919317624,
+    "quality_pair": 18.960964358452983,
+    "rank_score": 0.35383059080043333,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF I_LOG laplacian subtract abs dilate pow2",
+    "body": "I_LRDIFF I_LOG laplacian subtract abs dilate pow2",
+    "root_op": "",
+    "quality_anova_f": 14.527967091264966,
+    "quality_pair": 19.90801948426946,
+    "rank_score": 0.31529233807824364,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_GRAY edge_x edge_mag negate add edge_y",
+    "body": "I_LOG I_GRAY edge_x edge_mag negate add edge_y",
+    "root_op": "",
+    "quality_anova_f": 14.026763715678129,
+    "quality_pair": 20.5190477593476,
+    "rank_score": 0.31277953232653527,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY flip_v low_freq dog dilate low_freq normalize",
+    "body": "I_GRAY flip_v low_freq dog dilate low_freq normalize",
+    "root_op": "",
+    "quality_anova_f": 5.2070891129053205,
+    "quality_pair": 30.947368458976293,
+    "rank_score": 0.25498775542877394,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY edge_mag pow2 sqrt_abs stride_pool_4 gabor_90 lr_symmetry",
+    "body": "I_GRAY edge_mag pow2 sqrt_abs stride_pool_4 gabor_90 lr_symmetry",
+    "root_op": "",
+    "quality_anova_f": 11.642538618492662,
+    "quality_pair": 21.443242346058106,
+    "rank_score": 0.2177561034391403,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG tb_symmetry low_freq lbp_like local_var local_range edge_x",
+    "body": "I_LOG tb_symmetry low_freq lbp_like local_var local_range edge_x",
+    "root_op": "",
+    "quality_anova_f": 14.124241085185654,
+    "quality_pair": 16.643798591862804,
+    "rank_score": 0.1558658240348269,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP stride_pool_4 low_freq texture_entropy blur normalize dilate",
+    "body": "I_LBP stride_pool_4 low_freq texture_entropy blur normalize dilate",
+    "root_op": "",
+    "quality_anova_f": 15.191587081719968,
+    "quality_pair": 15.084552657445762,
+    "rank_score": 0.15040535239859854,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR low_freq gabor_90 edge_x border_sharp opening sqrt_abs",
+    "body": "I_BLUR low_freq gabor_90 edge_x border_sharp opening sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 8.590561355484713,
+    "quality_pair": 18.968171207735065,
+    "rank_score": -0.057163768980699164,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP blur edge_y dog edge_orient pow2 gabor_mag",
+    "body": "I_LBP blur edge_y dog edge_orient pow2 gabor_mag",
+    "root_op": "",
+    "quality_anova_f": 12.89462602767041,
+    "quality_pair": 12.816744547313512,
+    "rank_score": -0.07347511130357265,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP edge_x I_GRAD blur pow2 subtract border_sharp",
+    "body": "I_LBP edge_x I_GRAD blur pow2 subtract border_sharp",
+    "root_op": "",
+    "quality_anova_f": 9.895155322106367,
+    "quality_pair": 15.408938137369807,
+    "rank_score": -0.13311931021472218,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR laplacian border_sharp abs I_LRDIFF edge_x subtract",
+    "body": "I_BLUR laplacian border_sharp abs I_LRDIFF edge_x subtract",
+    "root_op": "",
+    "quality_anova_f": 9.707412305103134,
+    "quality_pair": 15.563841434369273,
+    "rank_score": -0.1371604364378427,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP gabor_45 flip_v edge_y local_contrast log1p_abs downsample_4x",
+    "body": "I_LBP gabor_45 flip_v edge_y local_contrast log1p_abs downsample_4x",
+    "root_op": "",
+    "quality_anova_f": 8.060442240307705,
+    "quality_pair": 17.40598127983261,
+    "rank_score": -0.1523615773256506,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG gabor_90 flip_v edge_xx log1p_abs closing edge_xx",
+    "body": "I_LOG gabor_90 flip_v edge_xx log1p_abs closing edge_xx",
+    "root_op": "",
+    "quality_anova_f": 9.771672498298061,
+    "quality_pair": 15.086451924270369,
+    "rank_score": -0.1535593242288842,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD log1p_abs relu stride_pool_4 I_GRAY edge_x add",
+    "body": "I_GRAD log1p_abs relu stride_pool_4 I_GRAY edge_x add",
+    "root_op": "",
+    "quality_anova_f": 10.236347859056764,
+    "quality_pair": 13.7201532543156,
+    "rank_score": -0.18474323952208088,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_BLUR subtract local_range dog low_freq log1p_abs",
+    "body": "I_LOG I_BLUR subtract local_range dog low_freq log1p_abs",
+    "root_op": "",
+    "quality_anova_f": 7.930476907015249,
+    "quality_pair": 14.185203322564535,
+    "rank_score": -0.29461041156922685,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP local_contrast low_freq local_std_5x5 closing local_contrast closing",
+    "body": "I_LBP local_contrast low_freq local_std_5x5 closing local_contrast closing",
+    "root_op": "",
+    "quality_anova_f": 8.598049726539253,
+    "quality_pair": 13.259555837856025,
+    "rank_score": -0.2959479543004553,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF corner_harris I_LBP downsample_4x blur_7x7 dog multiply",
+    "body": "I_LRDIFF corner_harris I_LBP downsample_4x blur_7x7 dog multiply",
+    "root_op": "",
+    "quality_anova_f": 8.483502951751166,
+    "quality_pair": 11.890897686360299,
+    "rank_score": -0.3597237154417854,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP I_GRAD low_freq edge_mag edge_x border_sharp add",
+    "body": "I_LBP I_GRAD low_freq edge_mag edge_x border_sharp add",
+    "root_op": "",
+    "quality_anova_f": 11.420425559135243,
+    "quality_pair": 7.728241620834083,
+    "rank_score": -0.36939434680621147,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOCALSTD local_range edge_xx sqrt_abs laplacian local_range opening",
+    "body": "I_LOCALSTD local_range edge_xx sqrt_abs laplacian local_range opening",
+    "root_op": "",
+    "quality_anova_f": 8.03653115342232,
+    "quality_pair": 12.238854332201884,
+    "rank_score": -0.37021757256392496,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF lbp_like edge_orient edge_y border_sharp local_std_5x5 flip_v",
+    "body": "I_LRDIFF lbp_like edge_orient edge_y border_sharp local_std_5x5 flip_v",
+    "root_op": "",
+    "quality_anova_f": 8.593676186386086,
+    "quality_pair": 9.933830388644422,
+    "rank_score": -0.4355489330510393,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP local_var I_LOCALSTD texture_entropy laplacian local_contrast subtract",
+    "body": "I_LBP local_var I_LOCALSTD texture_entropy laplacian local_contrast subtract",
+    "root_op": "",
+    "quality_anova_f": 13.280921668674697,
+    "quality_pair": 2.5836635171918085,
+    "rank_score": -0.4805947510216709,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY downsample_4x normalize sqrt_abs I_GRAY normalize div",
+    "body": "I_GRAY downsample_4x normalize sqrt_abs I_GRAY normalize div",
+    "root_op": "",
+    "quality_anova_f": 6.2204417113561545,
+    "quality_pair": 10.928405915274784,
+    "rank_score": -0.5270066891680052,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF pow2 abs downsample_2x relu local_var edge_yy",
+    "body": "I_LRDIFF pow2 abs downsample_2x relu local_var edge_yy",
+    "root_op": "",
+    "quality_anova_f": 6.581683221761873,
+    "quality_pair": 9.865616368486393,
+    "rank_score": -0.5512752579973754,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LOG I_GRAY relu local_std_5x5 local_contrast flip_v add",
+    "body": "I_LOG I_GRAY relu local_std_5x5 local_contrast flip_v add",
+    "root_op": "",
+    "quality_anova_f": 12.050787442834165,
+    "quality_pair": 2.470114821091484,
+    "rank_score": -0.5543602969218505,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP negate gabor_0 border_sharp blur_7x7 downsample_4x sqrt_abs",
+    "body": "I_LBP negate gabor_0 border_sharp blur_7x7 downsample_4x sqrt_abs",
+    "root_op": "",
+    "quality_anova_f": 5.9109229668487915,
+    "quality_pair": 9.455433813493732,
+    "rank_score": -0.6060909092384748,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR opening blur_7x7 sigmoid edge_mag diag_symmetry dilate",
+    "body": "I_BLUR opening blur_7x7 sigmoid edge_mag diag_symmetry dilate",
+    "root_op": "",
+    "quality_anova_f": 10.954317991046642,
+    "quality_pair": 2.6124520119067394,
+    "rank_score": -0.6099053543353594,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LRDIFF flip_h downsample_2x stride_pool_4 I_LRDIFF dog subtract",
+    "body": "I_LRDIFF flip_h downsample_2x stride_pool_4 I_LRDIFF dog subtract",
+    "root_op": "",
+    "quality_anova_f": 5.560775588973551,
+    "quality_pair": 9.526161826726772,
+    "rank_score": -0.6227696723565936,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD edge_x negate border_sharp I_GRAY corner_harris subtract",
+    "body": "I_GRAD edge_x negate border_sharp I_GRAY corner_harris subtract",
+    "root_op": "",
+    "quality_anova_f": 5.093415556318457,
+    "quality_pair": 9.534168736199812,
+    "rank_score": -0.6486519455625747,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR downsample_2x flip_h opening I_GRAY flip_h add",
+    "body": "I_BLUR downsample_2x flip_h opening I_GRAY flip_h add",
+    "root_op": "",
+    "quality_anova_f": 6.752309037298632,
+    "quality_pair": 7.02257094605177,
+    "rank_score": -0.6608337748819598,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAD dilate flip_v log1p_abs normalize local_std_5x5 flip_h",
+    "body": "I_GRAD dilate flip_v log1p_abs normalize local_std_5x5 flip_h",
+    "root_op": "",
+    "quality_anova_f": 9.115668921721847,
+    "quality_pair": 3.840659810881517,
+    "rank_score": -0.6615844105252304,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_LBP edge_x edge_xx relu edge_xx local_var texture_entropy",
+    "body": "I_LBP edge_x edge_xx relu edge_xx local_var texture_entropy",
+    "root_op": "",
+    "quality_anova_f": 3.9793992527609476,
+    "quality_pair": 6.828488581161679,
+    "rank_score": -0.8245198921233778,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY texture_entropy local_std_5x5 local_range gabor_45 gabor_90 edge_xx",
+    "body": "I_GRAY texture_entropy local_std_5x5 local_range gabor_45 gabor_90 edge_xx",
+    "root_op": "",
+    "quality_anova_f": 6.564554490469295,
+    "quality_pair": 2.2017824914978554,
+    "rank_score": -0.873368608198611,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR lr_symmetry pow2 closing border_sharp I_BLUR subtract",
+    "body": "I_BLUR lr_symmetry pow2 closing border_sharp I_BLUR subtract",
+    "root_op": "",
+    "quality_anova_f": 3.9368169459966382,
+    "quality_pair": 5.335593106470447,
+    "rank_score": -0.8894644514057957,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR edge_orient edge_mag blur_7x7 flip_h high_freq abs",
+    "body": "I_BLUR edge_orient edge_mag blur_7x7 flip_h high_freq abs",
+    "root_op": "",
+    "quality_anova_f": 4.737281147653887,
+    "quality_pair": 3.6996056545853264,
+    "rank_score": -0.9131120022927883,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY I_LBP normalize downsample_4x gabor_0 closing subtract",
+    "body": "I_GRAY I_LBP normalize downsample_4x gabor_0 closing subtract",
+    "root_op": "",
+    "quality_anova_f": 3.8909846460807516,
+    "quality_pair": 4.517980809239998,
+    "rank_score": -0.9262953913633962,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_GRAY blur_7x7 low_freq gabor_45 negate I_LRDIFF subtract",
+    "body": "I_GRAY blur_7x7 low_freq gabor_45 negate I_LRDIFF subtract",
+    "root_op": "",
+    "quality_anova_f": 4.098250128829649,
+    "quality_pair": 3.996452200805111,
+    "rank_score": -0.9365215549498234,
+    "full_res_balanced_accuracy": 0.0
+  },
+  {
+    "str": "I_BLUR normalize gabor_45 closing local_range texture_entropy dog",
+    "body": "I_BLUR normalize gabor_45 closing local_range texture_entropy dog",
+    "root_op": "",
+    "quality_anova_f": 2.9001935226815005,
+    "quality_pair": 5.525298635254808,
+    "rank_score": -0.9396674460270864,
+    "full_res_balanced_accuracy": 0.0
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "method": "resnet50",
+  "acc": 0.875,
+  "bal_acc": 0.8879419191919192,
+  "auc": 0.9462490313184757,
+  "per_class": {
+    "benign": 0.8485,
+    "malignant": 0.9062,
+    "normal": 0.9091
+  },
+  "time_seconds": 62.0793673992157,
+  "epochs": 30
+}

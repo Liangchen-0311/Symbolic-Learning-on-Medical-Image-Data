@@ -1,0 +1,13 @@
+{
+  "method": "efficientnet_b0",
+  "acc": 0.825,
+  "bal_acc": 0.8327020202020202,
+  "auc": 0.9490692425960283,
+  "per_class": {
+    "benign": 0.7879,
+    "malignant": 0.9375,
+    "normal": 0.7727
+  },
+  "time_seconds": 61.58107781410217,
+  "epochs": 30
+}
