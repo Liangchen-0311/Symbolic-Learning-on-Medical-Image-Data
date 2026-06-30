@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.5852534562211982,
+  "balanced_accuracy": 0.3201293995859213,
+  "macro_f1": 0.3713275379591169,
+  "weighted_f1": 0.5371084231477149,
+  "auc": 0.6282107459159317,
+  "tm_clauses": 2000,
+  "tm_T": 5000,
+  "tm_s": 10.0,
+  "tm_patch": 10,
+  "tm_epochs": 50,
+  "tm_img_size": 64,
+  "params_count": 13312000,
+  "clause_bank_elements": 0,
+  "weight_count": 2000,
+  "model_size_mb": 8.012089729309082,
+  "peak_gpu_mem_mb": 0.0,
+  "peak_cpu_mem_mb": 1351.0
+}

@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pyTsetlinMachineParallel
+Version: 0.2.1
+Summary: Multi-threaded implementation of the Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features and multigranularity.
+Home-page: https://github.com/cair/pyTsetlinMachineParallel/
+Author: Ole-Christoffer Granmo
+Author-email: ole.granmo@uia.no
+License: MIT
+Keywords: pattern-recognition machine-learning interpretable-machine-learning rule-based-machine-learning propositional-logic tsetlin-machine regression convolution
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+Multi-threaded implementation of the Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features and multigranularity.

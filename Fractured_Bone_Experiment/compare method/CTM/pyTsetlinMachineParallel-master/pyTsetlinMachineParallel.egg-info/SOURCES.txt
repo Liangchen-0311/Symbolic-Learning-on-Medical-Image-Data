@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+pyTsetlinMachineParallel/ConvolutionalTsetlinMachine.c
+pyTsetlinMachineParallel/ConvolutionalTsetlinMachine.h
+pyTsetlinMachineParallel/MultiClassConvolutionalTsetlinMachine.c
+pyTsetlinMachineParallel/MultiClassConvolutionalTsetlinMachine.h
+pyTsetlinMachineParallel/Tools.c
+pyTsetlinMachineParallel/Tools.h
+pyTsetlinMachineParallel/__init__.py
+pyTsetlinMachineParallel/fast_rand.h
+pyTsetlinMachineParallel/tm.py
+pyTsetlinMachineParallel/tools.py
+pyTsetlinMachineParallel.egg-info/PKG-INFO
+pyTsetlinMachineParallel.egg-info/SOURCES.txt
+pyTsetlinMachineParallel.egg-info/dependency_links.txt
+pyTsetlinMachineParallel.egg-info/top_level.txt

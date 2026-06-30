@@ -1,0 +1,21 @@
+Top-20 Feature Importances (GradientBoosting):
+  Feature_131: importance=0.2501
+  Feature_167: importance=0.1428
+  Feature_166: importance=0.0577
+  Feature_180: importance=0.0566
+  Feature_26: importance=0.0492
+  Feature_178: importance=0.0489
+  Feature_52: importance=0.0382
+  Feature_57: importance=0.0251
+  Feature_38: importance=0.0247
+  Feature_100: importance=0.0232
+  Feature_59: importance=0.0229
+  Feature_21: importance=0.0219
+  Feature_39: importance=0.0173
+  Feature_187: importance=0.0159
+  Feature_49: importance=0.0137
+  Feature_142: importance=0.0119
+  Feature_118: importance=0.0102
+  Feature_19: importance=0.0099
+  Feature_20: importance=0.0094
+  Feature_105: importance=0.0089

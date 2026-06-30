@@ -1,0 +1,456 @@
+{
+  "external_dir": "/home/lqg1/code_8T/25/lxw/4/test for HBFMID/filtered_external_test",
+  "total_samples": 272,
+  "internal_results": {
+    "resnet50": {
+      "test_acc": 0.9400921658986175,
+      "balanced_acc": 0.9391589690502734,
+      "auc": 0.996826155984377
+    },
+    "densenet121": {
+      "test_acc": 0.9539170506912442,
+      "balanced_acc": 0.9586624727929076,
+      "auc": 0.9965517370857038
+    },
+    "efficientnet_b0": {
+      "test_acc": 0.8986175115207373,
+      "balanced_acc": 0.9282890056803101,
+      "auc": 0.9944769708165178
+    },
+    "swin_tiny": {
+      "test_acc": 0.9308755760368663,
+      "balanced_acc": 0.8914147688060732,
+      "auc": 0.9932610113982312
+    },
+    "dinov2_linear": {
+      "test_acc": 0.8709677419354839,
+      "balanced_acc": 0.9279755268885704,
+      "auc": 0.9859666578605483
+    },
+    "rulefit": {
+      "test_acc": 0.8986175115207373,
+      "balanced_acc": 0.8735474066995806,
+      "auc": 0.9665678190583049
+    },
+    "cbm": {
+      "test_acc": 0.9124423963133641,
+      "balanced_acc": 0.8630112279025323,
+      "auc": 0.9890265625203132
+    },
+    "crl": {
+      "test_acc": 0.9216589861751152,
+      "balanced_acc": 0.9317469607686999,
+      "auc": 0.9791079024585146
+    },
+    "gradcam": {
+      "test_acc": 0.9354838709677419,
+      "balanced_acc": 0.9466223390136435,
+      "auc": 0.9954642603916156
+    }
+  },
+  "external_results": {
+    "resnet50": {
+      "exact_acc": 0.11397058823529412,
+      "loose_acc": 0.14705882352941177,
+      "superclass_acc": 0.21691176470588236,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.1839080459770115,
+          "loose": 0.1839080459770115,
+          "superclass": 0.21839080459770116,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.07692307692307693,
+          "loose": 0.07692307692307693,
+          "superclass": 0.09230769230769231,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.0,
+          "loose": 0.1956521739130435,
+          "superclass": 0.391304347826087,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.05,
+          "loose": 0.05,
+          "superclass": 0.2,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.125,
+          "loose": 0.125,
+          "superclass": 0.1875,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.5,
+          "loose": 0.5,
+          "superclass": 0.5,
+          "total": 6
+        }
+      }
+    },
+    "densenet121": {
+      "exact_acc": 0.10294117647058823,
+      "loose_acc": 0.14705882352941177,
+      "superclass_acc": 0.15441176470588236,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.13793103448275862,
+          "loose": 0.13793103448275862,
+          "superclass": 0.08045977011494253,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.12307692307692308,
+          "loose": 0.12307692307692308,
+          "superclass": 0.12307692307692308,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.06521739130434782,
+          "loose": 0.2826086956521739,
+          "superclass": 0.45652173913043476,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.0,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.041666666666666664,
+          "loose": 0.041666666666666664,
+          "superclass": 0.0625,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.5,
+          "loose": 0.8333333333333334,
+          "superclass": 0.5,
+          "total": 6
+        }
+      }
+    },
+    "efficientnet_b0": {
+      "exact_acc": 0.0661764705882353,
+      "loose_acc": 0.11029411764705882,
+      "superclass_acc": 0.1801470588235294,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.06896551724137931,
+          "loose": 0.06896551724137931,
+          "superclass": 0.19540229885057472,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.1076923076923077,
+          "loose": 0.1076923076923077,
+          "superclass": 0.13846153846153847,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.0,
+          "loose": 0.2391304347826087,
+          "superclass": 0.2391304347826087,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.05,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.08333333333333333,
+          "loose": 0.08333333333333333,
+          "superclass": 0.20833333333333334,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.16666666666666666,
+          "loose": 0.3333333333333333,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    },
+    "swin_tiny": {
+      "exact_acc": 0.0661764705882353,
+      "loose_acc": 0.15441176470588236,
+      "superclass_acc": 0.11029411764705882,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.10344827586206896,
+          "loose": 0.10344827586206896,
+          "superclass": 0.08045977011494253,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.09230769230769231,
+          "loose": 0.09230769230769231,
+          "superclass": 0.09230769230769231,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.021739130434782608,
+          "loose": 0.45652173913043476,
+          "superclass": 0.2608695652173913,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.05,
+          "loose": 0.05,
+          "superclass": 0.05,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.020833333333333332,
+          "loose": 0.020833333333333332,
+          "superclass": 0.0625,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.0,
+          "loose": 0.6666666666666666,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    },
+    "dinov2_linear": {
+      "exact_acc": 0.04411764705882353,
+      "loose_acc": 0.11397058823529412,
+      "superclass_acc": 0.10294117647058823,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.034482758620689655,
+          "loose": 0.034482758620689655,
+          "superclass": 0.06896551724137931,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.03076923076923077,
+          "loose": 0.03076923076923077,
+          "superclass": 0.046153846153846156,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.043478260869565216,
+          "loose": 0.3695652173913043,
+          "superclass": 0.2608695652173913,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.15,
+          "loose": 0.15,
+          "superclass": 0.15,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.041666666666666664,
+          "loose": 0.041666666666666664,
+          "superclass": 0.0625,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.0,
+          "loose": 0.6666666666666666,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    },
+    "rulefit": {
+      "exact_acc": 0.014705882352941176,
+      "loose_acc": 0.08088235294117647,
+      "superclass_acc": 0.058823529411764705,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.06896551724137931,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.015384615384615385,
+          "loose": 0.015384615384615385,
+          "superclass": 0.015384615384615385,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.0,
+          "loose": 0.2826086956521739,
+          "superclass": 0.13043478260869565,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.0,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.041666666666666664,
+          "loose": 0.041666666666666664,
+          "superclass": 0.041666666666666664,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.16666666666666666,
+          "loose": 1.0,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    },
+    "cbm": {
+      "exact_acc": 0.058823529411764705,
+      "loose_acc": 0.08823529411764706,
+      "superclass_acc": 0.13602941176470587,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.04597701149425287,
+          "loose": 0.04597701149425287,
+          "superclass": 0.10344827586206896,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.03076923076923077,
+          "loose": 0.03076923076923077,
+          "superclass": 0.09230769230769231,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.043478260869565216,
+          "loose": 0.15217391304347827,
+          "superclass": 0.2826086956521739,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.05,
+          "loose": 0.05,
+          "superclass": 0.1,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.14583333333333334,
+          "loose": 0.14583333333333334,
+          "superclass": 0.14583333333333334,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.0,
+          "loose": 0.5,
+          "superclass": 0.0,
+          "total": 6
+        }
+      }
+    },
+    "crl": {
+      "exact_acc": 0.0625,
+      "loose_acc": 0.08088235294117647,
+      "superclass_acc": 0.09926470588235294,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.13793103448275862,
+          "loose": 0.13793103448275862,
+          "superclass": 0.04597701149425287,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.046153846153846156,
+          "loose": 0.046153846153846156,
+          "superclass": 0.09230769230769231,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.0,
+          "loose": 0.06521739130434782,
+          "superclass": 0.2826086956521739,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.0,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.020833333333333332,
+          "loose": 0.020833333333333332,
+          "superclass": 0.0625,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.16666666666666666,
+          "loose": 0.5,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    },
+    "gradcam": {
+      "exact_acc": 0.09558823529411764,
+      "loose_acc": 0.17647058823529413,
+      "superclass_acc": 0.13970588235294118,
+      "total": 272,
+      "per_class": {
+        "Comminuted fracture": {
+          "exact": 0.12643678160919541,
+          "loose": 0.12643678160919541,
+          "superclass": 0.13793103448275862,
+          "total": 87
+        },
+        "Greenstick fracture": {
+          "exact": 0.07692307692307693,
+          "loose": 0.07692307692307693,
+          "superclass": 0.07692307692307693,
+          "total": 65
+        },
+        "Oblique fracture": {
+          "exact": 0.0,
+          "loose": 0.391304347826087,
+          "superclass": 0.1956521739130435,
+          "total": 46
+        },
+        "Segmental fracture": {
+          "exact": 0.0,
+          "loose": 0.0,
+          "superclass": 0.05,
+          "total": 20
+        },
+        "Spiral Fracture": {
+          "exact": 0.1875,
+          "loose": 0.1875,
+          "superclass": 0.20833333333333334,
+          "total": 48
+        },
+        "Transverse fracture": {
+          "exact": 0.16666666666666666,
+          "loose": 0.8333333333333334,
+          "superclass": 0.16666666666666666,
+          "total": 6
+        }
+      }
+    }
+  },
+  "symbolic_v3_reference": {
+    "symbolic_v3": {
+      "exact_acc": 0.0584,
+      "loose_acc": 0.1168,
+      "superclass_acc": 0.1314
+    }
+  }
+}
