@@ -1,0 +1,22 @@
+{
+  "method": "ctm",
+  "acc": 0.868125,
+  "bal_acc": 0.868125,
+  "auc": 0.9120833333333334,
+  "macro_f1": 0.8629877710089404,
+  "weighted_f1": 0.8629877710089405,
+  "time_seconds": 2179.7492125034332,
+  "epochs": 50,
+  "tm_clauses": 2000,
+  "tm_T": 5000,
+  "tm_s": 10.0,
+  "tm_patch": 10,
+  "tm_img_size": 64,
+  "report": "              precision    recall  f1-score   support\n\n      glioma     0.8832    0.6425    0.7438       400\n  meningioma     0.7896    0.8725    0.8290       400\n   pituitary     0.9300    0.9625    0.9459       400\n     notumor     0.8786    0.9950    0.9332       400\n\n    accuracy                         0.8681      1600\n   macro avg     0.8703    0.8681    0.8630      1600\nweighted avg     0.8703    0.8681    0.8630      1600\n",
+  "params_count": 13312000,
+  "clause_bank_elements": 0,
+  "weight_count": 2000,
+  "model_size_mb": 3.2051076889038086,
+  "peak_gpu_mem_mb": 0.0,
+  "peak_cpu_mem_mb": 1797.7
+}
