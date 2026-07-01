@@ -1,0 +1,22 @@
+{
+  "method": "ctm",
+  "acc": 0.7333333333333333,
+  "bal_acc": 0.6164772727272728,
+  "auc": 0.7142431257014591,
+  "macro_f1": 0.6591301793320782,
+  "weighted_f1": 0.7102482340530653,
+  "time_seconds": 249.79430198669434,
+  "epochs": 50,
+  "tm_clauses": 2000,
+  "tm_T": 5000,
+  "tm_s": 10.0,
+  "tm_patch": 10,
+  "tm_img_size": 64,
+  "report": "              precision    recall  f1-score   support\n\n      benign     0.6923    0.9545    0.8025        66\n   malignant     0.8095    0.5312    0.6415        32\n      normal     1.0000    0.3636    0.5333        22\n\n    accuracy                         0.7333       120\n   macro avg     0.8339    0.6165    0.6591       120\nweighted avg     0.7800    0.7333    0.7102       120\n",
+  "params_count": 13312000,
+  "clause_bank_elements": 0,
+  "weight_count": 2000,
+  "model_size_mb": 2.4039440155029297,
+  "peak_gpu_mem_mb": 0.0,
+  "peak_cpu_mem_mb": 1014.2
+}
