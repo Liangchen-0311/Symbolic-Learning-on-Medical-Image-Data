@@ -1,0 +1,22 @@
+{
+  "method": "ctm",
+  "acc": 0.6786427145708582,
+  "bal_acc": 0.19700222563603326,
+  "auc": 0.5403771064468604,
+  "macro_f1": 0.20433780422378428,
+  "weighted_f1": 0.6059009364575524,
+  "time_seconds": 3736.31059718132,
+  "epochs": 50,
+  "tm_clauses": 2000,
+  "tm_T": 5000,
+  "tm_s": 10.0,
+  "tm_patch": 10,
+  "tm_img_size": 64,
+  "report": "              precision    recall  f1-score   support\n\n       akiec     0.3000    0.0612    0.1017        49\n         bcc     0.2381    0.0649    0.1020        77\n         bkl     0.3208    0.1030    0.1560       165\n          df     0.0000    0.0000    0.0000        18\n         mel     0.3333    0.1916    0.2433       167\n          nv     0.7279    0.9582    0.8273      1005\n        vasc     0.0000    0.0000    0.0000        22\n\n    accuracy                         0.6786      1503\n   macro avg     0.2743    0.1970    0.2043      1503\nweighted avg     0.5809    0.6786    0.6059      1503\n",
+  "params_count": 13312000,
+  "clause_bank_elements": 0,
+  "weight_count": 2000,
+  "model_size_mb": 5.608598709106445,
+  "peak_gpu_mem_mb": 0.0,
+  "peak_cpu_mem_mb": 2389.5
+}
