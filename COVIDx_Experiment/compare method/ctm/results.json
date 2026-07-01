@@ -1,0 +1,22 @@
+{
+  "method": "ctm",
+  "acc": 0.7268888888888889,
+  "bal_acc": 0.7268888888888888,
+  "auc": 0.7951666666666668,
+  "macro_f1": 0.7157992541163715,
+  "weighted_f1": 0.7157992541163715,
+  "time_seconds": 1751.5514929294586,
+  "epochs": 20,
+  "tm_clauses": 2000,
+  "tm_T": 5000,
+  "tm_s": 10.0,
+  "tm_patch": 10,
+  "tm_img_size": 64,
+  "report": "              precision    recall  f1-score   support\n\n      normal     0.8007    0.7367    0.7674      1500\n   pneumonia     0.6576    0.9540    0.7786      1500\n       covid     0.7786    0.4900    0.6015      1500\n\n    accuracy                         0.7269      4500\n   macro avg     0.7457    0.7269    0.7158      4500\nweighted avg     0.7457    0.7269    0.7158      4500\n",
+  "params_count": 13312000,
+  "clause_bank_elements": 0,
+  "weight_count": 2000,
+  "model_size_mb": 2.4039440155029297,
+  "peak_gpu_mem_mb": 0.0,
+  "peak_cpu_mem_mb": 2799.5
+}
